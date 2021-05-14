@@ -1,9 +1,8 @@
 import React from "react";
 import {Link} from "react-router-dom";
 // reactstrap components
-import {Row, Container, Col, NavLink} from "reactstrap";
+import {Row, Col, NavLink} from "reactstrap";
 import {
-
     Form,
     Input,
     InputGroupAddon,
@@ -12,7 +11,6 @@ import {
 
 } from "reactstrap";
 import './Footer.css'
-
 function Footer() {
     return (
         <footer className="footer-new">
@@ -93,7 +91,7 @@ function Footer() {
                             data-placement="bottom"
                             href="https://www.instagram.com/auviitk/"
                             target="_blank"
-                            title="Fllow us on Instagram
+                            title="Follow us on Instagram
                     "
                             className="footer-nav-icon"
                         >

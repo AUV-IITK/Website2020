@@ -11,9 +11,9 @@ function TalkAbout() {
                     <iframe
                         className="yt-video"
                         src="https://www.youtube.com/embed/2kunTvZ_zLI"
-                        frameborder="0"
+                        frameBorder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen
+                        allowFullScreen
                     ></iframe>
                 </Container>
             </div>

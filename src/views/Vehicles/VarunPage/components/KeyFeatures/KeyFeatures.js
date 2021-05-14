@@ -31,7 +31,7 @@ function Posts() {
                                     title="A 3D model"
                                     className="sketchfab-ssk1 sketchfab-responsive"
                                     src="https://sketchfab.com/models/6e1274e10d9e4b6a922a5ed0baf9445f/embed?preload=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1"
-                                    frameborder="0"
+                                    frameBorder="0"
                                     allow="autoplay; fullscreen; vr"
                                     mozallowfullscreen="true"
                                     webkitallowfullscreen="true"
