@@ -16,12 +16,14 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
+// eslint-disable-next-line no-use-before-define
 import React from 'react'
 import { Link } from 'react-router-dom'
 // nodejs library that concatenates strings
 import classnames from 'classnames'
 
 // reactstrap components
+/* eslint-disable */ 
 import {
   Collapse,
   NavbarBrand,
@@ -31,6 +33,7 @@ import {
   Nav,
   Container
 } from 'reactstrap'
+/* eslint-enable */
 
 function ExamplesNavbar () {
   const [navbarColor, setNavbarColor] = React.useState('navbar-transparent')

@@ -1,9 +1,10 @@
-import React from 'react';
+// eslint-disable-next-line no-unused-vars
+import React from 'react'
 
-import classes from './Spinner.css';
+import classes from './Spinner.css'
 
 const spinner = () => (
     <div className={classes.Loader}>Loading...</div>
-);
+)
 
-export default spinner;
+export default spinner

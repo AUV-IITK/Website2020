@@ -122,10 +122,10 @@
     margin-top: 1rem;
 }
 
-.footer-section-left {
-    /* background-color: yellow; */
-    /* text-align: center; */
-}
+/* .footer-section-left {
+    background-color: yellow;
+    text-align: center; 
+} */
 
 @media (max-width: 992px) {
     .footer-section-center {
@@ -153,9 +153,9 @@
 
 
 @media (max-width: 768px) {
-    .footer-section-left {
-        /* background-color: red; */
-    }
+    /* .footer-section-left {
+        background-color: red; 
+    } */
 
     .footer-auv-logo {
         margin: 0rem auto;

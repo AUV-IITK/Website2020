@@ -1,31 +1,36 @@
-import React from "react";
-import {Link} from "react-router-dom";
+// eslint-disable-next-line no-unused-vars
+import React from 'react'
+import { Link } from 'react-router-dom'
 // reactstrap components
-import {Row, Col, NavLink} from "reactstrap";
+/* eslint-disable */ 
 import {
-    Form,
-    Input,
-    InputGroupAddon,
-    InputGroupText,
-    InputGroup,
+  Row,
+  Col,
+  NavLink,
+  Form,
+  Input,
+  InputGroupAddon,
+  InputGroupText,
+  InputGroup
 
-} from "reactstrap";
+} from 'reactstrap'
+/* eslint-enable */
 import './Footer.css'
-function Footer() {
-    return (
+function Footer () {
+  return (
         <footer className="footer-new">
             <Row className="footer-heading">
                 <h2 className="footer-heading-content"></h2>
             </Row>
-            <br/>
-            <Row style={{width: "100%", padding: "10px"}}>
+            <br />
+            <Row style={{ width: '100%', padding: '10px' }}>
                 <Col lg="4" md="6" className="footer-section-left">
                     <div className="footer-auv-logo"></div>
                     <div className="footer-heading-primary">Team AUV-IITK</div>
                     <div className="footer-address">
                         AUV Room, Hall-2,
-                        <br/>Indian Institute of Technology Kanpur,
-                        <br/>Uttar Pradesh-208016, India
+                        <br />Indian Institute of Technology Kanpur,
+                        <br />Uttar Pradesh-208016, India
                     </div>
                 </Col>
                 <Col lg="4" md="6" className="footer-section-center">
@@ -54,7 +59,7 @@ function Footer() {
                             title="Star on GitHub"
                             className="footer-nav-icon"
                         >
-                            <i className="fa fa-github"/>
+                            <i className="fa fa-github" />
                             <p className="d-lg-none"></p>
                         </NavLink>
                         <NavLink
@@ -64,7 +69,7 @@ function Footer() {
                             title="Follow us on Facebook"
                             className="footer-nav-icon"
                         >
-                            <i className="fa fa-facebook-square"/>
+                            <i className="fa fa-facebook-square" />
                             <p className="d-lg-none"></p>
                         </NavLink>
                         <NavLink
@@ -74,7 +79,7 @@ function Footer() {
                             title="Reach Us on Linkedin"
                             className="footer-nav-icon"
                         >
-                            <i className="fa fa-linkedin-square"/>
+                            <i className="fa fa-linkedin-square" />
                             <p className="d-lg-none"></p>
                         </NavLink>
                         <NavLink
@@ -84,23 +89,20 @@ function Footer() {
                             title="Write Us"
                             className="footer-nav-icon"
                         >
-                            <i className="fa fa-envelope-square"/>
+                            <i className="fa fa-envelope-square" />
                             <p className="d-lg-none"></p>
                         </NavLink>
                         <NavLink
                             data-placement="bottom"
                             href="https://www.instagram.com/auviitk/"
                             target="_blank"
-                            title="Follow us on Instagram
-                    "
+                            title="Follow us on Instagram"
                             className="footer-nav-icon"
                         >
-                            <i className="fa fa-instagram"/>
+                            <i className="fa fa-instagram" />
                             <p className="d-lg-none"></p>
                         </NavLink>
                     </div>
-
-
                 </Col>
                 <Col lg="4" md="12" className="footer-section-right">
 
@@ -112,20 +114,20 @@ function Footer() {
                                 <InputGroup>
                                     <InputGroupAddon addonType="prepend">
                                         <InputGroupText className="footer-input-group">
-                                            <i style={{color: "white"}} className="nc-icon nc-single-02"/>
+                                            <i style={{ color: 'white' }} className="nc-icon nc-single-02" />
                                         </InputGroupText>
                                     </InputGroupAddon>
-                                    <Input placeholder="Name" type="text" className="footer-input-group"/>
+                                    <Input placeholder="Name" type="text" className="footer-input-group" />
                                 </InputGroup>
                             </Col>
                             <Col md="12">
                                 <InputGroup className=" mt-4">
                                     <InputGroupAddon addonType="prepend">
                                         <InputGroupText className="footer-input-group">
-                                            <i style={{color: "white"}} className=" nc-icon nc-email-85"/>
+                                            <i style={{ color: 'white' }} className=" nc-icon nc-email-85" />
                                         </InputGroupText>
                                     </InputGroupAddon>
-                                    <Input placeholder="Email" type="text" className="footer-input-group"/>
+                                    <Input placeholder="Email" type="text" className="footer-input-group" />
                                 </InputGroup>
                             </Col>
                         </Row>
@@ -138,7 +140,7 @@ function Footer() {
                         <Row>
                             <Col md="12" className="mt-3">
                                 <a className="btn mt-3"
-                                   href="javascript:alert('Sorry we do not have a backend setup');">Send</a>
+                                    href="javascript:alert('Sorry we do not have a backend setup');">Send</a>
                             </Col>
                         </Row>
                     </Form>
@@ -146,7 +148,7 @@ function Footer() {
                 </Col>
             </Row>
         </footer>
-    );
+  )
 }
 
-export default Footer;
+export default Footer
