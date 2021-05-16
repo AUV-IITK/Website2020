@@ -1,34 +1,25 @@
-import React from "react";
-import anahitapic from "assets/img/anahita-1.jpg";
-import {useEffect} from "react";
-import {Link} from "react-router-dom";
-import './AboutUs.css';
-import {
+import React, { useEffect } from 'react'
+import anahitapic from 'assets/img/anahita-1.jpg'
 
-    Container,
-    Row,
-    Col,
-} from "reactstrap";
+import { Link } from 'react-router-dom'
+import './AboutUs.css'
+import { Container, Row, Col } from 'reactstrap'
 
-function AboutUs() {
-
-    useEffect(() => {
-        window.scrollTo(0, 0)
-    });
-    return (
+function AboutUs () {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  })
+  return (
         <div>
             <div className=" text-center ">
-                <Container className="" style={{marginTop: "10rem"}}>
+                <Container className="" style={{ marginTop: '10rem' }}>
                     <div className=" col-12 text-center">
                         <h2 className="heading-main mt-5 mb-5">ABOUT US</h2>
                     </div>
                     <Row>
                         <Col className="mt-0 left-desc" xl="9">
 
-                            <img
-                                src={anahitapic}
-                                className=" w-100"
-                            ></img>
+                            <img src={anahitapic} className=" w-100"/>
 
                             <p className="description desc-ssk1">
                                 We are a team of undergraduate students researching in the field
@@ -43,7 +34,7 @@ function AboutUs() {
                                 autonomous underwater vehicles (AUV), namely, Varun and Anahita.
                                 These machines are capable of navigating in unknown
                                 environments, performing acoustic localization, and identifying
-                                objects using computer vision.{" "}
+                                objects using computer vision.{' '}
                             </p>
                             <br/>
 
@@ -100,7 +91,7 @@ function AboutUs() {
                 </Container>
             </div>
         </div>
-    );
+  )
 }
 
-export default AboutUs;
+export default AboutUs

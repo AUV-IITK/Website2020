@@ -1,17 +1,16 @@
-import React from 'react';
-import varun from "assets/img/varun/varun-underwater.jpg";
-import anahita from "assets/img/anahita/anahita-underwater.png";
-import {Link} from "react-router-dom";
-import "./Vehicles.css"
+import React from 'react'
+import varun from 'assets/img/varun/varun-underwater.jpg'
+import anahita from 'assets/img/anahita/anahita-underwater.png'
+import { Link } from 'react-router-dom'
+import './Vehicles.css'
 import {
+  Container,
+  Row,
+  Col
+} from 'reactstrap'
 
-    Container,
-    Row,
-    Col
-} from "reactstrap";
-
-function Vehicles() {
-    return (
+function Vehicles () {
+  return (
         <>
             <div className="section landing-section mt-5">
                 <Container>
@@ -24,7 +23,7 @@ function Vehicles() {
                         <Col sm="12" lg="5" className="text-center">
                             <h2 className="mt-0 mb-3 small-heading">Varun</h2>
                             <Link to='/vehicles/varun'>
-                                <img src={varun} className="border border-info w-100"></img>
+                                <img src={varun} className="border border-info w-100" alt=""/>
                             </Link>
 
                             <p className="text-center desc-ssk1">Varun was the first Autonomous Underwater Vehicle
@@ -41,7 +40,7 @@ function Vehicles() {
                         <Col sm="12" lg="5" className="text-center">
                             <h2 className="mt-0 mb-3 small-heading">Anahita</h2>
                             <Link to='/vehicles/anahita'>
-                                <img src={anahita} className="border border-info  w-100"></img>
+                                <img src={anahita} className="border border-info  w-100" alt=""/>
                             </Link>
                             <p className="text-center desc-ssk1">Anahita is an improvement over AUV-IITK’s previous
                                 vehicle Varun in terms of its modularity, robustness, ease of manufacturing and
@@ -56,9 +55,7 @@ function Vehicles() {
             </div>
 
         </>
-    );
-
-
+  )
 }
 
-export default Vehicles;
+export default Vehicles

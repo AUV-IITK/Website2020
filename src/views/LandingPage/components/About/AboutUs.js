@@ -1,21 +1,19 @@
-import React from "react";
-import anahitapic from "assets/img/anahita-1.jpg";
-import {useEffect} from "react";
-import {Link} from "react-router-dom";
-import './AboutUs.css';
+import React, { useEffect } from 'react'
+import { Link } from 'react-router-dom'
+import './AboutUs.css'
 import {
 
-    Container,
-    Row,
-    Col,
-} from "reactstrap";
+  Container,
+  Row,
+  Col
+} from 'reactstrap'
 
-function AboutUs() {
-
-    useEffect(() => {
-        window.scrollTo(0, 0)
-    });
-    return (
+// eslint-disable-next-line no-unused-vars
+function AboutUs () {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  })
+  return (
         <>
             <div className="section landing-section text-center ">
                 <Container>
@@ -39,12 +37,10 @@ function AboutUs() {
                                 autonomous underwater vehicles (AUV), namely, Varun and Anahita.
                                 These machines are capable of navigating in unknown
                                 environments, performing acoustic localization, and identifying
-                                objects using computer vision.{" "}
+                                objects using computer vision.{' '}
                             </p>
 
-
                             <br/>
-
 
                         </Col>
 
@@ -98,7 +94,7 @@ function AboutUs() {
                 </Container>
             </div>
         </>
-    );
+  )
 }
 
-export default AboutUs;
+// export default AboutUs

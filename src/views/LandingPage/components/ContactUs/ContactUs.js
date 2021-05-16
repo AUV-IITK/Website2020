@@ -1,20 +1,9 @@
-import React from 'react';
-import {Link} from 'react-router-dom'
-import {
+import React from 'react'
+import { Form, Input, InputGroupAddon, InputGroupText, InputGroup, Container, Row, Col } from 'reactstrap'
+import './ContactUs.css'
 
-    Form,
-    Input,
-    InputGroupAddon,
-    InputGroupText,
-    InputGroup,
-    Container,
-    Row,
-    Col
-} from "reactstrap";
-import "./ContactUs.css"
-
-function ContactUs() {
-    return (
+function ContactUs () {
+  return (
         <>
             <div className="section landing-section">
                 <Container className="u-border">
@@ -94,9 +83,7 @@ function ContactUs() {
             </div>
 
         </>
-    );
-
-
+  )
 }
 
-export default ContactUs;
+export default ContactUs

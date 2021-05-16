@@ -1,22 +1,22 @@
-import React from "react";
-import {Container, Row, Col} from "reactstrap";
-import "./Event.css";
+import React from 'react'
+import { Container, Row, Col } from 'reactstrap'
+import './Event.css'
 
-function Event(props) {
-    return (
+function Event (props) {
+  return (
         <>
             <div className="">
                 <Container>
                     <Row className="event-container">
                         <Col className="ml-auto mr-auto" md="12">
-                            <a href={props.event.link} add target="_blank">
+                            <a href={props.event.link} target="_blank" rel="noreferrer">
                                 <h2 className="text-left comp-heading heading-main">
                                     {props.event.name}
                                 </h2>
                             </a>
                         </Col>
                         <Col md="8" className="event-image-container">
-                            <img src={props.event.image} className="event-image"></img>
+                            <img src={props.event.image} className="event-image" alt=""/>
                         </Col>
                         <Col md="4" className="headings-container">
                             <h1 className="small-heading primary-heading-event">
@@ -46,7 +46,7 @@ function Event(props) {
                 </Container>
             </div>
         </>
-    );
+  )
 }
 
-export default Event;
+export default Event

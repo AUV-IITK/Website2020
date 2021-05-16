@@ -1,24 +1,19 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
-import "./Posts.css"
-import {
+import React from 'react'
+import { Link } from 'react-router-dom'
+import './Posts.css'
+import { Row, Col } from 'reactstrap'
 
-    Row,
-    Col
-} from "reactstrap";
-
-
-function Posts() {
-    return (
+function Posts () {
+  return (
         <>
             <div className="section landing-section ">
                 <div className="container-ssk">
                     <Row className="">
-                        <Col md="2"></Col>
+                        <Col md="2"/>
                         <Col className="ml-auto mr-auto" md="8">
                             <h2 className="text-center mb-5 heading-main">Posts</h2>
                         </Col>
-                        <Col md="2"></Col>
+                        <Col md="2"/>
                         <Col xl="6" className="text-center ">
                             <div className="post-ssk">
                                 <h2 className="small-heading">ANSYS helps AUV-IITK design its latest vehicle
@@ -44,6 +39,7 @@ function Posts() {
                                     in my undergraduate university. This approach sometimes made changing even one
                                     sensor
                                     on our system a daunting task. However, things changed when we started using Robot
+                                    {/* eslint-disable-next-line react/no-unescaped-entities */}
                                     Operating System (ROS) as the framework for our robot's software stack. </p>
                                 <Link to='/about-us' className="btn-blue">
                                     Continue Reading
@@ -55,9 +51,7 @@ function Posts() {
             </div>
 
         </>
-    );
-
-
+  )
 }
 
-export default Posts;
+export default Posts
