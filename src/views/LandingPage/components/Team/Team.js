@@ -1,28 +1,22 @@
-import React from 'react';
-import teamphoto from "assets/img/team-photo.jpg"
-import {Link} from 'react-router-dom';
-import {useEffect} from "react";
+import React, { useEffect } from 'react'
+import teamphoto from 'assets/img/team-photo.jpg'
+import { Link } from 'react-router-dom'
 
-import "./Team.css"
-import {
+import './Team.css'
+import { Container, Row, Col } from 'reactstrap'
 
-    Container,
-    Row,
-    Col
-} from "reactstrap";
-
-function Team() {
-    useEffect(() => {
-        window.scrollTo(0, 0)
-    });
-    return (
-        <div style={{marginTop: "8rem"}}>
+function Team () {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  })
+  return (
+        <div style={{ marginTop: '8rem' }}>
             <div className="">
-                <Container style={{textAlign: "center"}}>
+                <Container style={{ textAlign: 'center' }}>
                     <Row>
                         <Col className="" md="12">
                             <h2 className="text-center heading-main">OUR TEAM</h2>
-                            <img src={teamphoto} className="w-100 "></img>
+                            <img src={teamphoto} className="w-100 " alt=""/>
                             <p className="description text-center mb-2 desc-ssk1">Over the past years, the team has
                                 witnessed a close collaboration between students from various departments coming and
                                 sharing ideas; creating a small yet strong network of people who are eagerly looking for
@@ -39,9 +33,7 @@ function Team() {
             </div>
 
         </div>
-    );
-
-
+  )
 }
 
-export default Team;
+export default Team
