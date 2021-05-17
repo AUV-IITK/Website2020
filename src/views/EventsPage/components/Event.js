@@ -45,6 +45,7 @@ function Event (props) {
                     </Row>
                 </Container>
             </div>
+
         </>
   )
 }

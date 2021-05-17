@@ -3,38 +3,39 @@ import classes from './Input.css';
 
 const input = (props) => {
 
-    let inputElement = null;
+    let inputElement= null;
     const inputClasses = [classes.InputElement];
 
-    if (props.invalid) {
+    if(props.invalid){
         inputClasses.push('classes.Invalid');
     }
-    switch (props.elementType) {
+    switch (props.elementType)
+    {
         case('input'):
-            inputElement = <input
-                className={inputClasses.join(' ')}
-                {...props.elementConfig}
-                value={props.value} onChange={props.changed}></input>
+            inputElement= <input 
+            className={inputClasses.join(' ')} 
+            {...props.elementConfig} 
+            value={props.value} onChange={props.changed} ></input>
             break;
         case('textarea'):
-            inputElement = <textarea
-                {...props.elementConfig}
-                value={props.value} onChange={props.changed}
-                className={inputClasses.join(' ')}/>
+            inputElement=<textarea 
+            {...props.elementConfig} 
+            value={props.value} onChange={props.changed} 
+            className={inputClasses.join(' ')}/>
             break;
         case('select'):
-            inputElement = <select
-                value={props.value} onChange={props.changed}
+                inputElement=<select 
+                value={props.value} onChange={props.changed} 
                 className={inputClasses.join(' ')}>
 
                 {props.elementConfig.options.map(option => (
                     <option
-                        key={option.value} value={option.value}> {option.displayValue}</option>
+                    key= {option.value} value={option.value}> {option.displayValue}</option>
                 ))}
             </select>
             break;
         default:
-            inputElement = <input {...props.elementConfig} value={props.value} className={inputClasses.join(' ')}/>
+            inputElement= <input {...props.elementConfig} value={props.value} className={inputClasses.join(' ')}/>
     }
     return (
         <div className={classes.Input}>

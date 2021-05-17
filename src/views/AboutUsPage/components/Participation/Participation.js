@@ -12,7 +12,7 @@ function Posts () {
             <div className="section landing-section">
                 <Container style={{ margin: '0 auto' }}>
                     <Row className="d-flex justify-content-center">
-                        <Col sm="12" lg="5" className="text-center">
+                        <Col sm="12" lg="5" className="text-center" >
                             <h2 className="mt-5 mb-3 small-heading">Student Competitions</h2>
                             <img src={combinedimage} className="w-100 large-image-responsiveness"/>
                             <p className="desc-ssk1">
@@ -31,8 +31,8 @@ function Posts () {
                                 vehicles
                             </p>
                         </Col>
-                    </Row>
-                    <Row className="d-flex justify-content-center">
+                    </Row > 
+                    <Row className="d-flex justify-content-center">   
                         <Col sm="12" lg="5" className="mt-5 text-center">
                             <h2 className="mt-5 mb-3 small-heading">Training</h2>
                             <img src={trainimage} className=" w-100 large-image-responsiveness"/>
@@ -58,6 +58,7 @@ function Posts () {
                     </Row>
                 </Container>
             </div>
+
         </>
   )
 }

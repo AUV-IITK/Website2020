@@ -1,3 +1,4 @@
+
 import React from "react";
 
 // reactstrap components
@@ -23,35 +24,35 @@ import SectionExamples from "views/index-sections/SectionExamples.js";
 import SectionDownload from "views/index-sections/SectionDownload.js";
 
 function Index() {
-    document.documentElement.classList.remove("nav-open");
-    React.useEffect(() => {
-        document.body.classList.add("index");
-        return function cleanup() {
-            document.body.classList.remove("index");
-        };
-    });
-    return (
-        <>
-            <IndexNavbar/>
-            <IndexHeader/>
-            <div className="main">
-                <SectionButtons/>
-                <SectionNavbars/>
-                <SectionNavigation/>
-                <SectionProgress/>
-                <SectionNotifications/>
-                <SectionTypography/>
-                <SectionJavaScript/>
-                <SectionCarousel/>
-                <SectionNucleoIcons/>
-                <SectionDark/>
-                <SectionLogin/>
-                <SectionExamples/>
-                <SectionDownload/>
-                <DemoFooter/>
-            </div>
-        </>
-    );
+  document.documentElement.classList.remove("nav-open");
+  React.useEffect(() => {
+    document.body.classList.add("index");
+    return function cleanup() {
+      document.body.classList.remove("index");
+    };
+  });
+  return (
+    <> 
+      <IndexNavbar />
+      <IndexHeader />
+      <div className="main">
+        <SectionButtons />
+        <SectionNavbars />
+        <SectionNavigation />
+        <SectionProgress />
+        <SectionNotifications />
+        <SectionTypography />
+        <SectionJavaScript />
+        <SectionCarousel />
+        <SectionNucleoIcons />
+        <SectionDark />
+        <SectionLogin />
+        <SectionExamples />
+        <SectionDownload />
+        <DemoFooter />
+      </div>
+    </>
+  );
 }
 
 export default Index;

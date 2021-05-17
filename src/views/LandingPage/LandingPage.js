@@ -22,7 +22,7 @@ function LandingPage () {
   return (
         <div className="mobile-responsive">
 
-            <LandingPageHeader/>
+  <LandingPageHeader />
 
             <ExamplesNavbar page="landing-page"/>
             <div className="main">

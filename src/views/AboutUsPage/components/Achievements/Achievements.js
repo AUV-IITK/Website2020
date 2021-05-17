@@ -9,7 +9,8 @@ function Posts () {
   return (
         <>
             <div className="section landing-section ">
-                <Container>
+                   <Container>
+                       
                     <Row className="d-flex justify-content-center">
                         <Col xl="4" className="text-center">
                             <h3 className="mt-0 mb-3 small-heading">
@@ -42,9 +43,12 @@ function Posts () {
                                 the National Insitute Of Ocean Technology, Chennai.
                             </p>
                         </Col>
+                        
                     </Row>
-                </Container>
+
+                    </Container>       
             </div>
+
         </>
   )
 }

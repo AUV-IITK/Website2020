@@ -34,11 +34,18 @@ function Blog (props) {
                             </p>
                             <Link to={topath}>
                                 <div className="btn-blue">Read More</div>
-                            </Link>
-                        </Col>
-                    </Row>
-                </Container>
+                                </Link>
+                            </Col>
+
+
+                                
+                                
+                             
+                        </Row>
+
+                    </Container>       
             </div>
+
         </>
   )
 }
