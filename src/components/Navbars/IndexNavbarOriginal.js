@@ -32,7 +32,6 @@ import {
   Nav,
   Container
 } from 'reactstrap'
-
 /* eslint-enable */
 
 function IndexNavbar () {
@@ -43,6 +42,7 @@ function IndexNavbar () {
     setNavbarCollapse(!navbarCollapse)
     document.documentElement.classList.toggle('nav-open')
   }
+ 
 
   React.useEffect(() => {
     const updateNavbarColor = () => {
@@ -163,6 +163,7 @@ function IndexNavbar () {
             </Container>
         </Navbar>
   )
+
 }
 
 export default IndexNavbar

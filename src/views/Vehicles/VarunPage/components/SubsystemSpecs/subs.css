@@ -1,4 +1,4 @@
-.white-bg {
+.white-bg{
     background-color: lightgray;
     border-radius: 20px;
     margin-top: 40px;
@@ -6,31 +6,31 @@
     box-shadow: 5px 5px 5px #cccccc;
 }
 
-.heading-ssk9 {
-    font-family: Montserrat;
+.heading-ssk9{
+    font-family: Montserrat  ;
     font-size: 35px;
     color: #DDE2EC;
     text-shadow: 2px 2px 10px #CCCCCC;
-
+    
 }
 
-.heading-ssk92 {
-    font-family: Montserrat;
+.heading-ssk92{
+    font-family: Montserrat  ;
     font-size: 40px;
-    color: #DDE2EC;
+    color: #DDE2EC; 
     text-shadow: 2px 2px 10px #CCCCCC;
-
+    
 }
 
-.heading-ssk292 {
-    font-family: Montserrat;
+.heading-ssk292{
+    font-family: Montserrat  ;
     font-size: 40px;
     color: rgb(2, 13, 19);
     text-shadow: 2px 2px 10px #CCCCCC;
     margin-top: 40px;
 }
 
-.white-bg2 {
+.white-bg2{
     background-color: lightgray;
     border-radius: 20px;
     margin-top: 40px;
@@ -38,32 +38,32 @@
     box-shadow: 5px 5px 5px darkgray;
 }
 
-.mb-large {
+.mb-large{
     margin-bottom: 5rem;
     margin-top: 6rem;
 }
 
-.mechanical-list-varun {
+.mechanical-list-varun{
     /* background-color: pink; */
     padding: 2rem;
     margin-top: 6rem;
 }
 
-@media (max-width: 992px) {
-    .mechanical-image-varun {
+@media(max-width: 992px){
+    .mechanical-image-varun{
         /* background-color: purple; */
         margin-top: 10rem;
         padding: 3rem 1rem;
     }
 }
 
-@media (max-width: 768px) {
-    .mechanical-image-varun {
+@media(max-width: 768px){
+    .mechanical-image-varun{
         /* background-color: yellowgreen; */
         margin-top: 0;
     }
 
-    .mechanical-list-varun {
+    .mechanical-list-varun{
         /* background-color: brown; */
         margin-top: 0;
         width: 75%;
@@ -71,51 +71,51 @@
     }
 }
 
-.electrical-list-varun {
+.electrical-list-varun{
     /* background-color: blueviolet; */
     margin-top: 6rem;
 }
 
-@media (max-width: 992px) {
-    .electrical-list-varun {
+@media(max-width: 992px){
+    .electrical-list-varun{
         margin-top: 0%;
         padding: 1rem;
         padding-top: 0;
     }
 }
 
-@media (max-width: 768px) {
-    .electrical-image-varun {
+@media(max-width: 768px){
+    .electrical-image-varun{
         /* background-color: orange; */
         margin-top: 2rem;
         margin-bottom: 0;
     }
 }
 
-.software-image-varun {
+.software-image-varun{
     /* background-color: aqua; */
     margin-top: 0;
 }
 
-.software-list-varun {
+.software-list-varun{
     margin-top: 8rem;
 }
 
-@media (max-width: 1200px) {
-    .software-list-varun {
+@media(max-width: 1200px){
+    .software-list-varun{
         /* background-color: indigo; */
         margin-top: 4rem;
     }
 }
 
-@media (max-width: 992px) {
-    .software-image-varun {
+@media(max-width: 992px){
+    .software-image-varun{
         margin-top: 6rem;
     }
 }
 
-@media (max-width: 768px) {
-    .software-image-varun {
+@media(max-width: 768px){
+    .software-image-varun{
         /* background-color: gainsboro; */
         margin-top: 0;
     }

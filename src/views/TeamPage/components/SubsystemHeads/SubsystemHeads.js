@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 import {
-    Button,
-    Card,
-    CardBody,
-    CardFooter,
-    CardTitle,
-    Container,
-    Row,
-    Col,
+  Button,
+  Card,
+  CardBody,
+  CardFooter,
+  CardTitle,
+  Container,
+  Row,
+  Col
 } from "reactstrap";
 import "./SubsystemHeads.css";
 import team from "../../../../data/TeamMembers.json";

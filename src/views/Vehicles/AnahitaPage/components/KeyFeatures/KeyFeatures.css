@@ -1,4 +1,4 @@
-.key-features-list {
+.key-features-list{
     /* background-color: green; */
     width: 80%;
     margin: 0 auto;
@@ -6,8 +6,9 @@
     text-align: center;
 }
 
-@media (max-width: 992px) {
-    .image-responsive-shift {
+@media(max-width:992px)
+{
+    .image-responsive-shift{
         margin-top: 10rem;
     }
 } 

@@ -160,6 +160,7 @@ function IndexNavbar () {
             </Container>
         </Navbar>
   )
+
 }
 
 export default IndexNavbar

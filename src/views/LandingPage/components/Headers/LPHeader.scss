@@ -1,73 +1,73 @@
-.animate {
-  width: 40%;
-  position: absolute;
-  animation-name: moveInBottom;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-  margin-left: -20%;
-  margin-top: -15%;
+ .animate{
+    width: 40%;
+    position: absolute;
+    animation-name: moveInBottom;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    margin-left: -20%;
+    margin-top: -15%;
+ }
+
+ .heading-text{
+    font-family: Montserrat  ;
+    animation-name: moveInBottom; 
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+
+ }
+
+.header-styling{
+    /* font-size: 62.5%; */
+    background-image:url(../../../../assets/img/backgrounds/drop-header2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 36rem;
+    max-width:100%;
 }
 
-.heading-text {
-  font-family: Montserrat;
-  animation-name: moveInBottom;
-  animation-duration: 1s;
-  animation-delay: 1s;
-  animation-fill-mode: both;
-  animation-timing-function: ease-out;
+ @keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
 
-}
+    80% {
+        transform: translateX(1rem);
+    }
 
-.header-styling {
-  /* font-size: 62.5%; */
-  background-image: url(../../../../assets/img/backgrounds/drop-header2.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 36rem;
-  max-width: 100%;
-}
-
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem);
-  }
-
-  80% {
-    transform: translateX(1rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
 
 @keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem);
-  }
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
 
-  80% {
-    transform: translateX(-1rem);
-  }
+    80% {
+        transform: translateX(-1rem);
+    }
 
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
 
 @keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(3rem);
-  }
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
 
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }

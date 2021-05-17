@@ -1,4 +1,4 @@
-.light-dark-ssk5 {
+.light-dark-ssk5{
     background: linear-gradient(to bottom, rgb(2, 13, 19), rgb(19, 47, 93));
     background-size: cover;
     background-position: top;
@@ -6,24 +6,24 @@
     /* clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%); */
 }
 
-.heading-ssk {
-    font-family: Montserrat;
+.heading-ssk{
+    font-family: Montserrat  ;
     font-size: 55px;
     color: #DDE2EC;
     text-shadow: 2px 2px 10px #CCCCCC;
-
+     
 }
 
-.robo-heading3 {
-    font-family: Montserrat;
+.robo-heading3{
+    font-family: Montserrat  ;
     color: #DDE2EC;
     letter-spacing: 2px;
     font-size: 30px;
 }
 
-.button-ssk {
+.button-ssk{
     background: linear-gradient(to left, rgb(2, 13, 19), rgb(19, 47, 93));
-    font-family: Montserrat;
+    font-family: Montserrat  ;
     color: #cccccc;
     border-radius: 10rem;
     display: inline-block;
@@ -35,42 +35,42 @@
     box-shadow: 0px 5px 10px #cccccc;
 }
 
-.button-ssk:hover {
-    background-color: #CCCCCC;
+.button-ssk:hover{
+    background-color:#CCCCCC;
     background: linear-gradient(to left, rgb(2, 13, 19), rgb(35, 90, 177));
     transform: translateY(3px);
     box-shadow: 0px 2px 10px #cccccc;
 }
 
-.button-ssk:hover::after {
+.button-ssk:hover::after{
     transform: scaleX(1.4) scaleY(1.7);
     opacity: 0;
 }
 
 
-.u-border {
+.u-border{
     padding: 5rem;
     background-color: #dddddd;
     border: 1px solid #aaaaaa;
 }
 
-.contact-form {
+.contact-form{
     /* background-color: yellow; */
     width: 100%;
-
+    
 }
 
-.contact-icon {
+.contact-icon{
     color: #626262;
     margin: 1rem 2rem;
     font-size: 3rem;
 }
 
 
-.contact-address-container {
+.contact-address-container{
     display: flex;
 }
 
-.desc-ssk {
+.desc-ssk{
     font-weight: 400;
 }

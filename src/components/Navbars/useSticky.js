@@ -1,3 +1,4 @@
+
 import { useEffect, useState, useRef } from 'react'
 
 function useSticky () {
@@ -14,8 +15,8 @@ function useSticky () {
   const debounce = (func, wait = 20, immediate = true) => {
     let timeOut
     return () => {
-      const context = this
-      const args = arguments
+      let context = this,
+        args = arguments
       const later = () => {
         timeOut = null
         if (!immediate) func.apply(context, args)

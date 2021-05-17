@@ -1,6 +1,5 @@
 // eslint-disable-next-line no-unused-vars
 import React, { Component } from 'react'
-
 import classes from './Modal.css'
 /* eslint-disable */ 
 import Aux from '../../../hoc/Aux/Aux'
@@ -18,7 +17,7 @@ class Modal extends Component {
   render () {
     return (
             <Aux>
-                <Backdrop show={this.props.show} clicked={this.props.modalClosed}/>
+                <Backdrop show={this.props.show} clicked={this.props.modalClosed} />
                 <div
                     className={classes.Modal}
                     style={{

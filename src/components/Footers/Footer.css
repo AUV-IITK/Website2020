@@ -1,18 +1,18 @@
-.footer-new {
+.footer-new{
     background-color: #2e2e2e;
     width: 100%;
     margin: 0 auto;
 }
 
-.footer-heading {
+.footer-heading{
 
-    background-color: rgba(102, 97, 91);
+    background-color: rgba(102,97,91); 
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding:0;
 }
-
-.footer-heading-content {
+ 
+.footer-heading-content{
     font-family: Roboto;
     font-weight: 400;
     color: white;
@@ -20,21 +20,21 @@
     font-size: 3rem;
 }
 
-.footer-heading-color {
+.footer-heading-color{
     color: rgba(35, 174, 244);
 }
 
-.footer-auv-logo {
+.footer-auv-logo{
     width: 120px;
     height: 12rem;
-    margin: 3rem;
+    margin: 3rem ; 
     /* background-image: linear-gradient(to bottom, orange, orange), url(../../assets/img/auv-logo-mini.png); */
-    background-image: url(../../assets/img/logos/auv_logo2.png);
+    background-image:  url(../../assets/img/logos/auv_logo2.png);
     background-size: 100% 100%;
 }
 
-.footer-heading-primary {
-    margin: 3rem;
+.footer-heading-primary{
+    margin: 3rem ; 
     font-size: 2rem;
     color: white;
     letter-spacing: 1px;
@@ -44,8 +44,8 @@
     width: 45%
 }
 
-.footer-address {
-    margin: 3rem;
+.footer-address{
+    margin: 3rem ; 
     margin-bottom: 5rem;
     font-size: 1.4rem;
     color: white;
@@ -56,21 +56,21 @@
     width: 100%;
 }
 
-.footer-nav-link {
+.footer-nav-link{
     /* background-color: red; */
     margin: 0;
-    padding: 0.5rem;
+    padding:0.5rem;
     font-family: Roboto;
     color: white;
     font-size: 1.5rem;
     font-weight: 400;
 }
 
-.u-margin-top-large {
-    margin-top: 5rem !important;
+.u-margin-top-large{
+    margin-top: 5rem!important;
 }
 
-.footer-links-heading {
+.footer-links-heading{
     font-family: Roboto;
     font-weight: 400;
     color: white;
@@ -78,107 +78,104 @@
     font-size: 2rem;
 }
 
-.footer-nav-icon {
+.footer-nav-icon{
     /* background-color: red; */
     /* display: inline-block; */
     margin: 0.5rem 1rem;
     text-align: center;
-    padding: 0.5rem;
+    padding:0.5rem;
     font-family: Roboto;
     color: white;
     font-size: 3rem;
     font-weight: 400;
 }
 
-.nav-icons-container {
+.nav-icons-container{
     display: flex;
     margin-top: 1rem;
 }
 
-.footer-form {
+.footer-form{
     margin-bottom: 2rem;
     width: 90%;
 }
 
-.u-margin-top-negative {
+.u-margin-top-negative{
     margin-top: 0rem;
 }
 
-.footer-input-group {
+.footer-input-group{
     font-family: Roboto;
-    background-color: rgb(10, 10, 10);
+    background-color: rgb(10,10,10);
     border-style: none;
 }
 
-.u-margin-bottom-small {
+.u-margin-bottom-small{
     margin-bottom: 2rem;
 }
 
-.u-margin-top-negative-medium {
+.u-margin-top-negative-medium{
     margin-top: 4rem;
 }
-
-.u-margin-top-negative-small {
+.u-margin-top-negative-small{
     margin-top: 1rem;
 }
 
-/* .footer-section-left {
-    background-color: yellow;
-    text-align: center; 
-} */
+.footer-section-left{
+    /* background-color: yellow; */
+    /* text-align: center; */
+}
 
-@media (max-width: 992px) {
-    .footer-section-center {
+@media(max-width: 992px){
+    .footer-section-center{
         /* background-color:   green; */
         text-align: center;
     }
 
-    .nav-icons-container {
+    .nav-icons-container{
         /* background-color: red; */
         display: flex;
         /* justify-items: center; */
         justify-content: center;
     }
 
-    .footer-section-right {
+    .footer-section-right{
         /* background-color: green; */
         margin: 0 auto;
         text-align: center;
     }
 
-    .footer-form {
+    .footer-form{
         margin: 0 auto;
     }
 }
 
-
-@media (max-width: 768px) {
-    /* .footer-section-left {
-        background-color: red; 
-    } */
-
-    .footer-auv-logo {
+@media(max-width: 768px){
+    .footer-section-left{
+        /* background-color: red; */
+    }
+    .footer-auv-logo{
         margin: 0rem auto;
     }
 
-    .footer-heading-primary {
+    .footer-heading-primary{
         /* background-color: green; */
         margin: 2rem auto;
         text-align: center;
     }
 
-    .footer-address {
+    .footer-address{
         margin: 0 auto;
         text-align: center;
         margin-bottom: 4rem;
     }
 
-    .footer-section-right {
+    .footer-section-right{
         /* background-color: purple; */
-        text-align: center;
+        text-align: center;  
     }
 
-    .footer-form {
+    .footer-form{
         margin: 1rem auto;
     }
 }

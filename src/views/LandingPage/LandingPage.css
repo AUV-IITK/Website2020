@@ -1,16 +1,16 @@
-.team {
+.team{
     z-index: 10;
 }
 
-.sponsors {
+.sponsors{
     z-index: -1;
 }
 
-.abc {
+.abc{
     background-color: wheat;
 }
-
-.mobile-responsive {
+ 
+.mobile-responsive{
     /* background-color: pink; */
     width: 100%;
     /* border: 1rem solid rgba(0, 0, 0, 0.233); */

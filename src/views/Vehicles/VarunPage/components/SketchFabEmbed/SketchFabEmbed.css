@@ -1,4 +1,4 @@
-.sketchfab-ssk1 {
+.sketchfab-ssk1{
     width: 100%;
     margin-top: 6rem;
     height: 36rem;
@@ -7,11 +7,11 @@
     /* box-shadow: 2px 2px 20px rgb(2, 13, 19); */
 }
 
-.heading-ssk29 {
-    font-family: Montserrat;
+.heading-ssk29{
+    font-family: Montserrat  ;
     font-size: 40px;
     color: rgb(2, 13, 19);
     text-shadow: 2px 2px 10px rgb(2, 13, 19);
     margin-bottom: 80px;
-    animation: moveInLeft 1s;
+    animation: moveInLeft 1s ;
 }

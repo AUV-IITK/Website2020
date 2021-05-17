@@ -1,17 +1,17 @@
-.Input {
+.Input{
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
 }
 
-.Label {
+.Label{
     font-weight: bold;
     display: block;
     margin-bottom: 8px;
 }
 
-.InputElement {
-    outline: none;
+.InputElement{
+    outline: none;  
     width: 100%;
     border: 1px solid #ccc;
     background-color: white;
@@ -20,14 +20,14 @@
     box-sizing: inherit;
 }
 
-.InputElement:focus {
+.InputElement:focus{
     outline: none;
     background-color: #ccc;
     display: block;
     width: 100%;
 }
 
-.Invalid {
+.Invalid{
     border: 1px solid red;
     background-color: #FDA49A;
 }
