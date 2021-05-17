@@ -24,12 +24,12 @@ function TalkAbout() {
                     <div className="author">
                       <img
                         alt="..."
-                        src={require("assets/img/team/mangal.jpg")}
+                        src={require("assets/img/team/indranilSaha.jpg")}
                         className="image-prof"
                       />
                       <></>
-                      <CardTitle tag="h4" className="desc-ssk1 pt-3 pt-3">Prof. Mangal Kothari</CardTitle>
-                      <h6 className="desc-ssk1">Aerospace Department, IITK</h6>
+                      <CardTitle tag="h4" className="desc-ssk1 pt-3 pt-3">Prof. Indranil Saha</CardTitle>
+                      <h6 className="desc-ssk1">Computer Science and Engineering Department, IITK</h6>
                     </div>
                   </a>
                 </CardBody>
