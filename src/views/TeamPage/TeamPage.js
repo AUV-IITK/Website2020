@@ -40,7 +40,6 @@ import ExamplesNavbar from "../../components/Navbars/ExamplesNavbar";
 import Team from "../LandingPage/components/Team/Team.js";
 import Subsytems from "./components/Subsystems/Subsystems";
 import SubsystemHeads from './components/SubsystemHeads/SubsystemHeads';
-import TeamMembers from './components/TeamMembers/TeamMembers';
 import TeamVideo from './components/TeamVideo/TeamVideo';
 function LandingPage() {
     document.documentElement.classList.remove("nav-open");
@@ -57,7 +56,6 @@ function LandingPage() {
                 <Team style={{marginTop:"8rem"}}/>
                 <Subsytems />
                 <SubsystemHeads />
-                {/* <TeamMembers/> */}
                 <TeamVideo />
             </div>
         </div>
