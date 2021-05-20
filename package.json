@@ -1,8 +1,5 @@
 {
-<<<<<<< HEAD
   "homepage": "",
-=======
->>>>>>> 047eb0e76428d42af310173003fad84bf3fe68f0
   "name": "paper-kit-react",
   "version": "1.0.0",
   "private": true,
@@ -52,14 +49,10 @@
     "typescript": "3.5.2"
   },
   "devDependencies": {
-<<<<<<< HEAD
     "@typescript-eslint/eslint-plugin": "^4.23.0",
     "@typescript-eslint/parser": "^4.23.0",
     "eslint": "^5.16.0",
     "webpack": "4.29.6",
     "webpack-cli": "^4.7.0"
-=======
-    "eslint": "5.16.0"
->>>>>>> 047eb0e76428d42af310173003fad84bf3fe68f0
   }
 }
