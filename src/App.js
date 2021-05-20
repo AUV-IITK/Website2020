@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
+import { HashRouter, Route, Redirect, Switch } from "react-router-dom";
 
 // styles
 import "assets/css/bootstrap.min.css";
@@ -21,7 +21,7 @@ import SingleBlog from "views/SingleBlogs/SingleBlog";
 const App = () => {
   return (
     <div>
-      <BrowserRouter>
+      <HashRouter>
         <Switch>
           <Route
             path="/landing-page"
@@ -57,7 +57,7 @@ const App = () => {
         </Switch>
 
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 };
