@@ -1,4 +1,4 @@
-.white-bg {
+.white-bg{
     background-color: lightgray;
     border-radius: 20px;
     margin-top: 40px;
@@ -6,73 +6,72 @@
     box-shadow: 5px 5px 5px #cccccc;
 }
 
-.heading-ssk9 {
-    font-family: Montserrat;
+.heading-ssk9{
+    font-family: Montserrat  ;
     font-size: 35px;
     color: #DDE2EC;
     text-shadow: 2px 2px 10px #CCCCCC;
-
+    
 }
-
-.heading-ssk92 {
-    font-family: Montserrat;
+ 
+.heading-ssk92{
+    font-family: Montserrat  ;
     font-size: 40px;
     color: #DDE2EC;
     text-shadow: 2px 2px 10px #CCCCCC;
-
+    
 }
 
-.heading-ssk292 {
-    font-family: Montserrat;
+.heading-ssk292{
+    font-family: Montserrat  ;
     font-size: 40px;
     color: rgb(2, 13, 19);
     text-shadow: 2px 2px 10px #CCCCCC;
     margin-top: 40px;
 }
 
-.white-bg2 {
+.white-bg2{
     background-color: lightgray;
 }
 
-.elec-edit {
+.elec-edit{
     background-color: white;
     border: none;
     margin-bottom: 2.5rem;
 }
 
-@media (max-width: 992px) {
-    .elec-edit {
+@media(max-width:992px){
+    .elec-edit{
         margin-top: 8rem;
     }
 }
-
-@media (max-width: 992px) {
-    .image-responsive-shift2 {
+@media(max-width: 992px)
+{
+    .image-responsive-shift2{
         margin-top: 12rem;
     }
 }
 
-.mechanical-list {
+.mechanical-list{
     margin-top: 8rem;
 }
 
-.electrical-list {
+.electrical-list{
     margin-top: 10rem;
 }
 
-@media (max-width: 1200px) {
-    .electrical-list {
+@media(max-width: 1200px){
+    .electrical-list{
         margin-top: 8rem;
     }
 }
-
-@media (max-width: 768px) {
-    .mechanical-list {
+@media(max-width: 768px){
+    .mechanical-list{
         margin-top: 0;
         margin-bottom: 8rem;
     }
 
-    .image-responsive-shift2 {
+    .image-responsive-shift2{
         margin-top: 0;
     }
 }

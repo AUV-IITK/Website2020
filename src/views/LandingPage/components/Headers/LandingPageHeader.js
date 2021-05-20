@@ -1,5 +1,5 @@
 import React from 'react'
-
+ 
 // reactstrap components
 import './LPHeader.scss'
 
@@ -8,8 +8,8 @@ function LandingPageHeader () {
         <div>
             <div className="image-fluid header-styling">
 
-            </div>
-        </div>
+	      </div>
+  	</div>
 
   )
 }

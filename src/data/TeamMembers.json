@@ -1,0 +1,105 @@
+{
+    "teamData": [
+        {
+            "heading": "Faculty Advisor",
+            "items": [
+                {
+                    "name": "Prof. Indranil Saha",
+                    "subheading": "Computer Science and Engineering Department, IITK",
+                    "image": "team/indranilSaha.jpg"
+                }
+            ]
+        },
+        {
+            "heading": "Senior Members",
+            "items": [
+                {
+                    "name": "Ayush Gupta",
+                    "subheading": "Y17, Software Subsystem",
+                    "image": "team/ayush.jpg"
+                },
+                {
+                    "name": "Inshu Namdev",
+                    "subheading": "Y17, Electrical Subsystem",
+                    "image": "team/inshu.jpg"
+                },
+                {
+                    "name": "Priank Prasad",
+                    "subheading": "Y17, Mechanical Subsystem",
+                    "image": "team/p.jpg"
+                }
+            ]
+        },
+        {
+            "heading": "Subsystem Heads",
+            "items": [
+                {
+                    "name": "Devendra Kharolia",
+                    "subheading": "Y18, Team Head",
+                    "image": "team/devendra.jpg"
+                },
+                {
+                    "name": "Jaskeerat Singh",
+                    "subheading": "Y18, Team Head",
+                    "image": "team/jaskeerat.jpg"
+                },
+                {
+                    "name": "Kamlesh Kalsariya",
+                    "subheading": "Y18, Team Head",
+                    "image": "team/kamlesh.jpg"
+                }
+            ]
+        },
+        {
+            "heading": "Software Subsystem",
+            "items": [
+                {
+                    "name": "Shubham Korde",
+                    "subheading": "",
+                    "image": "team/shubham.jpg"
+                },
+                {
+                    "name": "Prakhar Maheshwari",
+                    "subheading": "",
+                    "image": "team/prakhar.jpg"
+                },
+                {
+                    "name": "Aaryansh Mohan Bansal",
+                    "subheading": "",
+                    "image": "team/aryansh.jpg"
+                },
+                {
+                    "name": "Krishna Agarwal",
+                    "subheading": "",
+                    "image": "team/Krishna.jpg"
+                    
+                }
+            ]
+        },
+        {
+            "heading": "Electrical Subsystem",
+            "items": [
+                {
+                    "name": "Neelabh Singhania",
+                    "subheading": "",
+                    "image": "team/neelabh.jpg"
+                },
+                {
+                    "name": "Jayant Reddy",
+                    "subheading": "",
+                    "image": "team/jayant.jpeg"
+                }    
+            ]
+        },
+        {
+            "heading": "Mechanical Subsystem",
+            "items": [
+                {
+                    "name": "Shashank Katiyar",
+                    "subheading": "",
+                    "image": "team/shashank.jpeg"
+                }
+            ]
+        }
+    ]
+}

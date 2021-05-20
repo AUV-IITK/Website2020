@@ -1,7 +1,7 @@
-.light-light {
+.light-light{
     background: linear-gradient(to top, rgb(2, 13, 19), rgb(19, 47, 93));
     padding-top: 25%;
-    margin-top: -20%;
+    margin-top: -20%; 
     padding-bottom: 200px;
     background-size: cover;
     background-position: top;
@@ -9,36 +9,36 @@
     /* clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); */
 }
 
-.heading-ssk23 {
-    font-family: Lato;
+.heading-ssk23{
+    font-family: Lato  ;
     font-size: 40px;
     color: #000000;
     text-shadow: 2px 2px 10px #CCCCCC;
-
+    
 }
 
-.img-ssk1 {
+.img-ssk1{
     height: 18vh;
     margin-top: 40px;
     border-radius: 20px;
     margin-bottom: 40px;
 }
 
-.img-ssk2 {
+.img-ssk2{
     height: 200px;
     margin-top: 40px;
     border-radius: 20px;
     margin-bottom: 40px;
 }
 
-.img-ssk3 {
+.img-ssk3{
     height: 200px;
     margin-top: 40px;
     border-radius: 20px;
     margin-bottom: 40px;
 }
 
-.img-ssk4 {
+.img-ssk4{
     height: 200px;
     background-color: white;
     margin-top: 40px;
@@ -46,8 +46,8 @@
     margin-bottom: 40px;
 }
 
-.desc-ssk {
-    font-family: Lato;
+.desc-ssk{
+    font-family: Lato  ;
     color: #000000;
     font-size: 20px;
     margin-bottom: 20px;

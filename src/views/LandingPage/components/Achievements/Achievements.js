@@ -40,9 +40,9 @@ function Posts () {
 
                     </div>
 
-                </Container>
+                </Container>       
             </div>
-
+ 
         </>
   )
 }
