@@ -1,4 +1,5 @@
 {
+  "homepage": "",
   "name": "paper-kit-react",
   "version": "1.0.0",
   "private": true,
@@ -48,6 +49,6 @@
     "typescript": "3.5.2"
   },
   "devDependencies": {
-    "eslint": "5.16.0"
+    "eslint": "^5.16.0"
   }
 }
