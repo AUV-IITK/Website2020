@@ -2,6 +2,7 @@ import React from 'react'
 import { Form, Input, InputGroupAddon, InputGroupText, InputGroup, Container, Row, Col } from 'reactstrap'
 import './ContactUs.css'
 
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 function ContactUs () {
   return (
         <>

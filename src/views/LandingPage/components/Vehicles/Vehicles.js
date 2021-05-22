@@ -9,6 +9,7 @@ import {
   Col
 } from 'reactstrap'
 
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 function Vehicles () {
   return (
         <>

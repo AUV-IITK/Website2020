@@ -17,6 +17,7 @@ class BlogsPage extends Component {
     };
 
     componentDidMount () {
+      window.scrollTo(0, 0)
       document.documentElement.classList.remove('nav-open')
 
       this.setState({ loading: 'true' })

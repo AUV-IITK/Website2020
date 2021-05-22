@@ -43,6 +43,7 @@ import SubsystemHeads from "./components/SubsystemHeads/SubsystemHeads";
 // import TeamMembers from './components/TeamMembers/TeamMembers';
 import TeamVideo from "./components/TeamVideo/TeamVideo";
 
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 function LandingPage() {
     document.documentElement.classList.remove("nav-open");
     React.useEffect(() => {

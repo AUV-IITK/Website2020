@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-use-before-define
-import React, { Component } from 'react'
+import  React,{ Component,useState } from 'react'
 import Spinner from '../../components/UI/Spinner/Spinner'
 import axios from '../../axios-blogs'
 import Input from '../../components/UI/Input/Input'
@@ -11,17 +11,47 @@ import { Container, Row } from 'reactstrap'
 import ExamplesNavbar from '../../components/Navbars/ExamplesNavbar'
 
 import ContactUsComponent from '../LandingPage/components/ContactUs/ContactUs'
-
+import { db } from '../ContactUsPage/Firebase_contact_us'
+//import React,{ useState } from 'react'
 class ContactUsPage extends Component {
+  const[name, setName]  =  useState('');
+  const[email, setEmail]  =  useState('');
+  const[message, setMessage]  =  useState('');
+  const[loader, setLoader]  =  useState()
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoader(true);
+
+    db.collection("contacts")
+      .add({
+        name: name,
+        email: email,
+        message: message,
+      })
+      .then(() => {
+        setLoader(false);
+        alert("Your message has been submitted👍");
+      })
+      .catch((error) => {
+        alert(error.message);
+        setLoader(false);
+      });
+
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
     state = {
       messageForm: {
         name: {
           elementType: 'input',
           elementConfig: {
             type: 'text',
-            placeholder: 'Name'
+            placeholder: 'Name',
           },
-          value: '',
+          value: {name},
+          onchange={ void(e) => setName(e.target.value)},
           validation: {
             required: true
           }
@@ -32,18 +62,20 @@ class ContactUsPage extends Component {
             type: 'text',
             placeholder: 'Email'
           },
-          value: '',
+          value: {email},
+          onchange={void(e) => setEmail(e.target.value)},
           validation: {
             required: true
           }
-        },
+        };
         message: {
           elementType: 'input',
           elementConfig: {
             type: 'textarea',
             placeholder: 'Tell us your thoughts and feelings'
           },
-          value: '',
+          value: {message},
+          onchange={void(e) => setMessage(e.target.value)},
           validation: {
             required: true
           }

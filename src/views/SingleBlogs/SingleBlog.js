@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 
 // reactstrap components
-import {Container, Row, Col, Spinner} from "reactstrap";
+import {Container, Row, Spinner} from "reactstrap";
 
 // core components
 import ExamplesNavbar from "../../components/Navbars/ExamplesNavbar";
@@ -22,7 +22,8 @@ class BlogsPage extends Component {
         loading: false,
     };
 
-    componentDidMount() {
+    // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
+    componentDidMount(){
         document.documentElement.classList.remove("nav-open");
         window.scrollTo(0, 0);
         // console.log("single blog");
@@ -43,6 +44,7 @@ class BlogsPage extends Component {
             });
     }
 
+    // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
     render() {
 
 

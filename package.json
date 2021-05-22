@@ -6,6 +6,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "classnames": "2.2.6",
+    "firebase": "^8.6.2",
     "json-loader": "^0.5.7",
     "moment": "2.24.0",
     "node-sass": "4.13.1",
@@ -15,7 +16,7 @@
     "react-datetime": "2.16.3",
     "react-dom": "16.8.6",
     "react-router": "5.0.1",
-    "react-router-dom": "5.0.1",
+    "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "react-sticky-nav": "^4.0.6",
     "reactstrap": "8.0.0"
@@ -51,6 +52,9 @@
     "typescript": "3.5.2"
   },
   "devDependencies": {
-    "eslint": "5.16.0"
+    "@typescript-eslint/eslint-plugin": "^4.23.0",
+    "@typescript-eslint/parser": "^4.23.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.23.2"
   }
 }
