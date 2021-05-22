@@ -29,7 +29,7 @@ function Blog (props) {
                         </Col>
 
                         <Col sm="12" md="8" className="headings-container">
-                            <p className="desc-ssk1" style={{ textAlign: 'left' }}>
+                            <p className="auv-description-primary" style={{ textAlign: 'left' }}>
                                 {props.blog[1].para1}
                             </p>
                             <Link to={topath}>

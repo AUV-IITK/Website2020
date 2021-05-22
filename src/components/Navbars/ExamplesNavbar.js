@@ -146,7 +146,7 @@ const [scrolled,setScrolled]=React.useState(false);
                   // href="#pablo"
                   // onClick={e => e.preventDefault()}
                   style={{textAlign: "center"}}
-                  className=" dropdown-ssk"
+                  className=" auv-dropdown"
                   onClick={toggleNavbarCollapse}
                 >
                   Anahita
@@ -154,12 +154,12 @@ const [scrolled,setScrolled]=React.useState(false);
                   </Link>
                   
                         
-                  <Link to='/vehicles/varun' style={{color: 'black'}} className="dropdown-ssk">
+                  <Link to='/vehicles/varun' style={{color: 'black'}} className="auv-dropdown">
                   <DropdownItem
                   // href="#pablo"
                   // onClick={e => e.preventDefault()}
                   style={{textAlign: "center"}}
-                  className="dropdown-ssk"
+                  className="auv-dropdown"
                   onClick={toggleNavbarCollapse}
                 >
                   Varun

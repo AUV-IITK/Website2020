@@ -30,7 +30,7 @@ function AboutUs() {
               className=" w-100"
             ></img>
             
-            <p className="description desc-ssk1">
+            <p className="description auv-description-primary">
               We are a team of undergraduate students researching in the field
               of marine robotics. The team started off in 2014, as the
               brainchild of a group of enthusiastic engineers. From a team
@@ -38,7 +38,7 @@ function AboutUs() {
               have grown into a family of over 40 members, through consistent
               dedication and hard work.
               </p>
-            <p className="description desc-ssk1">
+            <p className="description auv-description-primary">
               We have successfully designed and manufactured two robust
               autonomous underwater vehicles (AUV), namely, Varun and Anahita.
               These machines are capable of navigating in unknown

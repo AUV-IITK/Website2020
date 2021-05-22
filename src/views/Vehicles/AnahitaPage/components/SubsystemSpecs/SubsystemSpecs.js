@@ -33,12 +33,12 @@ function Posts() {
                         
                     <Col md="6" className="text-center">    
                         <ul className="mechanical-list">
-                            <li className="text-left desc-ssk1"><b>Six</b> degrees of freedom.</li>
-                            <li className="text-left desc-ssk1">Weigth of <b>32 kg</b> with +1% buoyancy</li>
-                            <li className="text-left desc-ssk1">Max coefficient of drag at <b>0.6 m/s : 0.12</b></li>
-                            <li className="text-left text-left desc-ssk1"><b>8x T200 (Blue Robotics) thrusters</b> for locomotion</li>
-                            <li className="text-left desc-ssk1"><b>Pneumatics </b>actuation for torpedo shooting</li>
-                            <li className="text-left desc-ssk1">Fabricated using advanced in-house manufacturing facilities like <b>Abrasive Water-jet Machining</b></li>
+                            <li className="text-left auv-description-primary"><b>Six</b> degrees of freedom.</li>
+                            <li className="text-left auv-description-primary">Weigth of <b>32 kg</b> with +1% buoyancy</li>
+                            <li className="text-left auv-description-primary">Max coefficient of drag at <b>0.6 m/s : 0.12</b></li>
+                            <li className="text-left text-left auv-description-primary"><b>8x T200 (Blue Robotics) thrusters</b> for locomotion</li>
+                            <li className="text-left auv-description-primary"><b>Pneumatics </b>actuation for torpedo shooting</li>
+                            <li className="text-left auv-description-primary">Fabricated using advanced in-house manufacturing facilities like <b>Abrasive Water-jet Machining</b></li>
                         </ul>
                     </Col>
                 </Row>
@@ -52,11 +52,11 @@ function Posts() {
                     </Col>
                     <Col md="6" className="text-center mb-5">
                         <ul className="electrical-list" >
-                            <li className="text-left desc-ssk1">Powered by Two <b>25v Li-Po batteries</b></li>
-                            <li className="text-left desc-ssk1"><b>Intel i7 NUC</b> for fast processing</li>
-                            <li className="text-left desc-ssk1"><b>Two IDS UI-5260SE-C-HQ Rev.4</b> cameras for 1080p video feed</li>
-                            <li className="text-left desc-ssk1"><b>Teledyne Pathfinder DVL</b> for velocity measurements.</li>
-                            <li className="text-left desc-ssk1"><b>Custom PCB</b> for ESCs and Micro-controller with Compact design</li>
+                            <li className="text-left auv-description-primary">Powered by Two <b>25v Li-Po batteries</b></li>
+                            <li className="text-left auv-description-primary"><b>Intel i7 NUC</b> for fast processing</li>
+                            <li className="text-left auv-description-primary"><b>Two IDS UI-5260SE-C-HQ Rev.4</b> cameras for 1080p video feed</li>
+                            <li className="text-left auv-description-primary"><b>Teledyne Pathfinder DVL</b> for velocity measurements.</li>
+                            <li className="text-left auv-description-primary"><b>Custom PCB</b> for ESCs and Micro-controller with Compact design</li>
                         </ul>
                     </Col>
                     
@@ -71,12 +71,12 @@ function Posts() {
                     </Col>
                     <Col md="6" className="text-center mt-5 ml-auto mr-auto">
                         <ul className="mechanical-list">
-                            <li className="text-left desc-ssk1">System integration through ROS on <b>Ubuntu 18.04</b></li>
-                            <li className="text-left desc-ssk1">Simulation through <b>Gazebo and UWSim</b> to optimize testing time</li>
-                            <li className="text-left desc-ssk1">Making use of a <b>faster and simpler simulator</b> designed specifically for underwater vehicles</li>
-                            <li className="text-left desc-ssk1">New stack with <b>improved documentation, continuous deployment and optimised structure</b></li>
-                            <li className="text-left desc-ssk1">Experimenting with different types of control systems - <b>model based & model free</b></li>
-                            <li className="text-left desc-ssk1"><b>Code available on GitHub</b> with documentation under BSD-3 License Clause</li>
+                            <li className="text-left auv-description-primary">System integration through ROS on <b>Ubuntu 18.04</b></li>
+                            <li className="text-left auv-description-primary">Simulation through <b>Gazebo and UWSim</b> to optimize testing time</li>
+                            <li className="text-left auv-description-primary">Making use of a <b>faster and simpler simulator</b> designed specifically for underwater vehicles</li>
+                            <li className="text-left auv-description-primary">New stack with <b>improved documentation, continuous deployment and optimised structure</b></li>
+                            <li className="text-left auv-description-primary">Experimenting with different types of control systems - <b>model based & model free</b></li>
+                            <li className="text-left auv-description-primary"><b>Code available on GitHub</b> with documentation under BSD-3 License Clause</li>
                         </ul>
                     </Col>
                     <Col md="3"></Col>                    

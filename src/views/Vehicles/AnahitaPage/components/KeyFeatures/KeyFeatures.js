@@ -26,12 +26,12 @@ function Posts() {
                     <Col sm="12" md="6" className="text-center">
                     <h2 className="text-center mb-4 small-heading">Key Features</h2>
                         <ul className="key-features-list">
-                            <li><h4 className="text-left desc-ssk1"><b >Wired frame with truss structures,</b> for
+                            <li><h4 className="text-left auv-description-primary"><b >Wired frame with truss structures,</b> for
                             structural support and reduced mass</h4></li>
-                            <li><h4 className="text-left desc-ssk1">On board Camera, IMU, DVL, Pressure Sensor & Hydrophones </h4></li>
-                            <li><h4 className="text-left desc-ssk1">Only <b>32 Kgs</b> in weight</h4></li>
-                            <li><h4 className="text-left desc-ssk1">Upto <b>4 hours of continuous operation</b> capability</h4></li>
-                            <li><h4 className="text-left desc-ssk1">Production cost : Rs. <b >23,00,000</b></h4></li>
+                            <li><h4 className="text-left auv-description-primary">On board Camera, IMU, DVL, Pressure Sensor & Hydrophones </h4></li>
+                            <li><h4 className="text-left auv-description-primary">Only <b>32 Kgs</b> in weight</h4></li>
+                            <li><h4 className="text-left auv-description-primary">Upto <b>4 hours of continuous operation</b> capability</h4></li>
+                            <li><h4 className="text-left auv-description-primary">Production cost : Rs. <b >23,00,000</b></h4></li>
                         </ul>
                     </Col>
                 </Row>

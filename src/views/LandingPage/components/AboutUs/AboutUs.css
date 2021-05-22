@@ -34,7 +34,7 @@
     width: 100%;
     margin: 4.5rem 1rem;
 }
-.desc-ssk1{
+.auv-description-primary{
 
     font-family:  Roboto,Arial,sans-serif  ;
     color: rgb(61, 61, 61);
@@ -286,7 +286,7 @@
         font-size: 2rem;
     }
 
-    .desc-ssk1{
+    .auv-description-primary{
         font-size: 1.2rem;
     }
 

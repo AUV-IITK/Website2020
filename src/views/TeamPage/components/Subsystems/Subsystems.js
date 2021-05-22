@@ -29,7 +29,7 @@ function Posts() {
                     <Col md="5" className="text-center">
                         <h3 className="mt-0 mb-3 small-heading">Software</h3>
                         <img src={software} className="  w-100"></img>
-                        <p className="desc-ssk1">The software subsystem develops the algorithms 
+                        <p className="auv-description-primary">The software subsystem develops the algorithms 
                         controlling the robot and making it autonomous. We use latest cutting edge 
                         technologies in the world of robotics software. We use ROS(Robot Operating System) 
                         as a communication middleware between all processes running on our robot.The software 
@@ -45,7 +45,7 @@ function Posts() {
                     <Col md="5" className="text-center">
                         <h3 className="mt-0 mb-3 small-heading">Electrical</h3>
                         <img src={electrical} className="  w-100"></img>
-                        <p className="desc-ssk1">The Electrical Subsystem builds the electrical framework 
+                        <p className="auv-description-primary">The Electrical Subsystem builds the electrical framework 
                         powering our AUV. We work on the electrical aspects of the AUV, providing
                         power, driving actuators and interfacing with various sensors on board. We 
                         build custom made PCBs to meet the specific requirements of the tasks. The
@@ -58,7 +58,7 @@ function Posts() {
                     <Col md="5" className="text-center">
                         <h3 className="mt-5 mb-3 small-heading mb-2">Mechanical</h3>
                         <img src={mechanical} className="  w-100"></img>
-                        <p className="desc-ssk1">The mechanical subsystem if responsible for design and
+                        <p className="auv-description-primary">The mechanical subsystem if responsible for design and
                         manufacture of the vehicle. We design the entire vehicle and accessories - 
                         working on Fluid Dynamics, Actuator controls, and Pneumatics. We plan, simulate 
                         and test the physical structure of the AUV and then manufacture it
@@ -69,7 +69,7 @@ function Posts() {
                     <Col md="5" className="text-center">
                         <h3 className="mt-5 mb-3 small-heading mb-2">Business</h3>
                         <img src={business} className="  w-100"></img>
-                        <p className="desc-ssk1">The Business subsystem manages the fundings and outreach 
+                        <p className="auv-description-primary">The Business subsystem manages the fundings and outreach 
                         activities of the team. We manage the expenditures and fundings of the team.
                         We represent the team before our sponsors and try to procure them. 
                         We maintain the team website and pages on the different social media platforms. 

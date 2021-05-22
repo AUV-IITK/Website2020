@@ -15,7 +15,7 @@ function Posts () {
                         <Col sm="12" lg="5" className="text-center" >
                             <h2 className="mt-5 mb-3 small-heading">Student Competitions</h2>
                             <img src={combinedimage} className="w-100 large-image-responsiveness"/>
-                            <p className="desc-ssk1">
+                            <p className="auv-description-primary">
                                 We aim to participate in National and International
                                 student-level AUV compeititions - Robosub (organised by AUVSI),
                                 Singapore AUV Challenge, and the NIOT-Student AUV Challenge.
@@ -25,7 +25,7 @@ function Posts () {
                         <Col sm="12" lg="5" className="text-center">
                             <h2 className="mt-5  mb-3 small-heading">Research Potential</h2>
                             <img src={resimage} className="w-100 large-image-responsiveness"/>
-                            <p className="desc-ssk1">
+                            <p className="auv-description-primary">
                                 Contribute to the development in the fields of marine
                                 technology, and implement cutting-edge research ideas to our
                                 vehicles
@@ -36,7 +36,7 @@ function Posts () {
                         <Col sm="12" lg="5" className="mt-5 text-center">
                             <h2 className="mt-5 mb-3 small-heading">Training</h2>
                             <img src={trainimage} className=" w-100 large-image-responsiveness"/>
-                            <p className="desc-ssk1">
+                            <p className="auv-description-primary">
                                 Team AUV-IITK provides training to all its new recruits in the
                                 various field of Robotics. It is because of this training that
                                 many of the past members of team AUV-IITK are pursuing their
@@ -49,7 +49,7 @@ function Posts () {
                         <Col sm="12" lg="5" className=" mt-5 text-center">
                             <h2 className="mt-5 mb-3 small-heading ">Social Projects</h2>
                             <img src={csrimage} className="w-100 large-image-responsiveness"/>
-                            <p className="desc-ssk1">
+                            <p className="auv-description-primary">
                                 Apart from Robotics competitions, team AUV-IITK also actively
                                 participates various hackathon and undertakes projects owing its
                                 responsibility to the society.

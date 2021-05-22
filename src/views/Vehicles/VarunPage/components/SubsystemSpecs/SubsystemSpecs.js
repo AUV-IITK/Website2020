@@ -36,12 +36,12 @@ function Posts() {
                     </Col>
                     <Col sm="12" md="6" className="text-center">
                         <ul className="ml-0">
-                            <li className="text-left desc-ssk1">Five degrees of freedom</li>
-                            <li className="text-left desc-ssk1">Weigth of 44.5 kg with +1% buoyancy</li>
-                            <li className="text-left desc-ssk1">Max coefficient of drag at 1.5 m/s : 0.42</li>
-                            <li className="text-left desc-ssk1">6x brushed-DC Seabotix thrusters for locomotion</li>
-                            <li className="text-left desc-ssk1">Pneumatics actuation for torpedo shooting</li>
-                            <li className="text-left desc-ssk1">Fabricated using in-house manufacturing facilities</li>
+                            <li className="text-left auv-description-primary">Five degrees of freedom</li>
+                            <li className="text-left auv-description-primary">Weigth of 44.5 kg with +1% buoyancy</li>
+                            <li className="text-left auv-description-primary">Max coefficient of drag at 1.5 m/s : 0.42</li>
+                            <li className="text-left auv-description-primary">6x brushed-DC Seabotix thrusters for locomotion</li>
+                            <li className="text-left auv-description-primary">Pneumatics actuation for torpedo shooting</li>
+                            <li className="text-left auv-description-primary">Fabricated using in-house manufacturing facilities</li>
                         </ul>
                     </Col>
                 </Row>
@@ -56,11 +56,11 @@ function Posts() {
                     </Col>
                     <Col sm="12" md="6" className="text-center mb-5">    
                         <ul className="ml-0" >
-                            <li className="text-left desc-ssk1">Powered by four 3S Lithium-Polymer Batteries</li>
-                            <li className="text-left desc-ssk1">Custom made power-distribution board with protection and monitoring circuits</li>
-                            <li className="text-left desc-ssk1">Two Logitech C290 cameras for 1080p video feed</li>
-                            <li className="text-left desc-ssk1">Bluerobotics Depth Sensor for precision depth</li>
-                            <li className="text-left desc-ssk1">Intel NUC for high-processing power</li>
+                            <li className="text-left auv-description-primary">Powered by four 3S Lithium-Polymer Batteries</li>
+                            <li className="text-left auv-description-primary">Custom made power-distribution board with protection and monitoring circuits</li>
+                            <li className="text-left auv-description-primary">Two Logitech C290 cameras for 1080p video feed</li>
+                            <li className="text-left auv-description-primary">Bluerobotics Depth Sensor for precision depth</li>
+                            <li className="text-left auv-description-primary">Intel NUC for high-processing power</li>
                         </ul>
                     </Col>
                 </Row>
@@ -74,12 +74,12 @@ function Posts() {
                     </Col>
                     <Col sm="12" md="6" className="text-center">
                         <ul className="ml-0">
-                            <li className="text-left desc-ssk1">System integration through ROS on Ubuntu 14.04</li>
-                            <li className="text-left desc-ssk1">Simulation through Gazebo to optimize testing time</li>
-                            <li className="text-left desc-ssk1">Image processing to perform vision-based tasks</li>
-                            <li className="text-left desc-ssk1">Navigation through dead-reckoning sensors</li>
-                            <li className="text-left desc-ssk1">GUI enabled control for debugging</li>
-                            <li className="text-left desc-ssk1">Code available on GitHub with documentation under BSD-3 License Clause</li>
+                            <li className="text-left auv-description-primary">System integration through ROS on Ubuntu 14.04</li>
+                            <li className="text-left auv-description-primary">Simulation through Gazebo to optimize testing time</li>
+                            <li className="text-left auv-description-primary">Image processing to perform vision-based tasks</li>
+                            <li className="text-left auv-description-primary">Navigation through dead-reckoning sensors</li>
+                            <li className="text-left auv-description-primary">GUI enabled control for debugging</li>
+                            <li className="text-left auv-description-primary">Code available on GitHub with documentation under BSD-3 License Clause</li>
                         </ul>
                     </Col>                    
                 </Row>

@@ -40,8 +40,8 @@ function Event (props) {
                         </Col>
                     </Row>
                     <Row>
-                        <p className="ml-3 text-left desc-ssk1 ">{props.event.para1}</p>
-                        <p className="ml-3 text-left desc-ssk1 ">{props.event.para2}</p>
+                        <p className="ml-3 text-left auv-description-primary ">{props.event.para1}</p>
+                        <p className="ml-3 text-left auv-description-primary ">{props.event.para2}</p>
                     </Row>
                 </Container>
             </div>

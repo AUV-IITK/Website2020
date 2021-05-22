@@ -59,8 +59,8 @@ class BlogsPage extends Component {
     <div className="main">
       <Container>
         <img src={this.state.blogs.image} className="image-anahita"></img>
-        <h1 className="desc-ssk1">{this.state.blogs.para1}</h1>
-        <h1 className="desc-ssk1">{this.state.blogs.para2}</h1>
+        <h1 className="auv-description-primary">{this.state.blogs.para1}</h1>
+        <h1 className="auv-description-primary">{this.state.blogs.para2}</h1>
       </Container>
     </div></div>
     }

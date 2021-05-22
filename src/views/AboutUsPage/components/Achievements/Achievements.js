@@ -18,7 +18,7 @@ function Posts () {
                                 &nbsp; Undergraduate Roboticists{' '}
                             </h3>
                             <img src={atwork} className="border border-info w-100 large-image-responsiveness"/>
-                            <p className="desc-ssk1">
+                            <p className="auv-description-primary">
                                 Selected after a comprehensive recruitment, sharing our love for
                                 robotics, we build low-cost robust AUV systems.
                             </p>
@@ -28,7 +28,7 @@ function Posts () {
                                 Ingenious Design & Creativity
                             </h3>
                             <img src={desbot} className="border border-info w-100 large-image-responsiveness"/>
-                            <p className="desc-ssk1 ">
+                            <p className="auv-description-primary ">
                                 The designing process behind our latest vehicle, Anahita, has
                                 been appreciated at the international level.
                             </p>
@@ -38,7 +38,7 @@ function Posts () {
                                 National Competition Winner
                             </h3>
                             <img src={niotwin} className="border border-info w-100 large-image-responsiveness"/>
-                            <p className="desc-ssk1">
+                            <p className="auv-description-primary">
                                 Twice Runners’ Up (2017 & 2019) at the NIOT SAVe, organised by
                                 the National Insitute Of Ocean Technology, Chennai.
                             </p>

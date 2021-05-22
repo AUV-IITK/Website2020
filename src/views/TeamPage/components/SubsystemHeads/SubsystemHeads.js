@@ -39,10 +39,10 @@ function TalkAbout() {
                                                                             className="image-prof"
                                                                         />
                                                                         <></>
-                                                                        <CardTitle tag="h4" className="desc-ssk1 pt-3">
+                                                                        <CardTitle tag="h4" className="auv-description-primary pt-3">
                                                                             {teamMember.name}
                                                                         </CardTitle>
-                                                                        <h6 className="desc-ssk1"> {teamMember.subheading}</h6>
+                                                                        <h6 className="auv-description-primary"> {teamMember.subheading}</h6>
                                                                     </div>
                                                                 </a>
                                                             </CardBody>
