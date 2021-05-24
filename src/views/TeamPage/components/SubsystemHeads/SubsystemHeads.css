@@ -1,63 +1,37 @@
-.light-dark-ssk5{
-    background: linear-gradient(to bottom, rgb(2, 13, 19), rgb(19, 47, 93));
-    background-size: cover;
-    background-position: top;
-    position: relative;
-    /* clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%); */
+.rowPadding {
+  padding-bottom: 20px;
 }
 
-
-
-.text-info13{
-    font-family: Montserrat  ;
-    color: #DDE2EC;
-    letter-spacing: 2px;
-    font-size: 20px;
-    padding-bottom: 20px;
+.colPadding {
+  padding: 0px 15px 50px 15px;
 }
 
-.image-prof{
-    margin-top: -100px;
-    box-shadow: 2px 2px 2px #cccccc;
+.cardBody {
+  background: rgb(223, 223, 223);
+  border-radius: 10px;
 }
 
-img.image-prof{
-    /* width: 40vh; */
-    /* max-height: 20vw; */
-    width: 85%; /* width of container */
-    height: 85%;
-    /* width: 85%; */
-    object-fit: cover;
-    /* height: 85%; */
-}
-.margin-neg{
-    margin-top: -40px;
-    /* border-bottom: 2px solid beige; */
-    border-radius: 20px;
+.memberImage {
+  padding: 20px 5px 10px 5px;
+  width: 100%;
 }
 
-.card-plain{
-    perspective: 1000px;
-}
-.card-plain:hover{
-    transform: scale(1.02);
-    transition: transform .5s;
-}
-
-.flip:hover{
-    transform: scale(2);
-    transition: transform ;
+.image-prof {
+  margin-top: -100px;
+  box-shadow: 2px 2px 2px #cccccc;
+  width: 85%;
+  height: 15%;
 }
 
-.card-ssk{
-    box-shadow: 2px 2px 2px #cccccc;
+.socialList {
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
-.padding-small{
-    padding-left: 5vw;
-    padding-right: 5vw;
-}
-
-.auv-description-primary{
-    text-align: center;
+.social:hover {
+  color: blue;
+  transition: all 0.3s ease-in;
 }
