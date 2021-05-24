@@ -1,14 +1,28 @@
-.key-features-list{
-    /* background-color: green; */
-    width: 80%;
-    margin: 0 auto;
-    margin-top: -8rem;
-    text-align: center;
+.imgCol {
+  padding-top: 20px;
 }
 
-@media(max-width:992px)
-{
-    .image-responsive-shift{
-        margin-top: 10rem;
-    }
-} 
+.featureCol {
+  padding: 20px 55px 20px 55px;
+}
+
+.vehicleImage {
+  border-radius: 15px;
+}
+
+.heading {
+  padding-top: 0px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.key-features-list {
+  padding: 0px;
+}
+
+.key-features-list > li {
+  padding-top: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}

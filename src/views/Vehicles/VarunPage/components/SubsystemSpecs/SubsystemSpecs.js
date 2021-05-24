@@ -21,7 +21,6 @@ function Posts() {
             <div className="section landing-section">
             <Container>
                 <Row className="">
-                    
                     <Col className="ml-auto mr-auto" md="8">
                         <h2 className="text-center mb-4 heading-main"><b>SPECIFICATIONS</b></h2>
                     </Col>
@@ -30,18 +29,18 @@ function Posts() {
                     <h3 className="small-heading ml-auto mr-auto">Mechanical</h3>
                 </Row>
                 <Row>
-                    <Col sm="12" md="6" className="text-center">
+                    <Col sm="12" md="6" className="text-center my-auto imgCol">
                         <img src={labelled} className="w-100"></img>
                         <p className="small-heading-edited">VARUN VEHICLE : STRUCTURE</p>
                     </Col>
-                    <Col sm="12" md="6" className="text-center">
-                        <ul className="ml-0">
-                            <li className="text-left auv-description-primary">Five degrees of freedom</li>
-                            <li className="text-left auv-description-primary">Weigth of 44.5 kg with +1% buoyancy</li>
-                            <li className="text-left auv-description-primary">Max coefficient of drag at 1.5 m/s : 0.42</li>
-                            <li className="text-left auv-description-primary">6x brushed-DC Seabotix thrusters for locomotion</li>
-                            <li className="text-left auv-description-primary">Pneumatics actuation for torpedo shooting</li>
-                            <li className="text-left auv-description-primary">Fabricated using in-house manufacturing facilities</li>
+                    <Col sm="12" md="6" className="featureCol my-auto">
+                        <ul className="features-list">
+                            <li ><b style={{fontWeight:600}}>Five</b> degrees of freedom</li>
+                            <li >Weigth of <b style={{fontWeight:600}}>44.5 kg</b> with +1% buoyancy</li>
+                            <li >Max coefficient of drag at <b style={{fontWeight:600}}>1.5 m/s : 0.42</b></li>
+                            <li ><b style={{fontWeight:600}}>6x brushed-DC Seabotix thrusters</b> for locomotion</li>
+                            <li ><b style={{fontWeight:600}}>Pneumatics actuation</b> for torpedo shooting</li>
+                            <li >Fabricated using in-house manufacturing facilities</li>
                         </ul>
                     </Col>
                 </Row>
@@ -50,17 +49,17 @@ function Posts() {
                 </Row>
                 <Row>
                     
-                    <Col sm="12" md="6" className="text-center mb-5">
+                    <Col sm="12" md="6" className="text-center my-auto imgCol">
                         <img src={powerimg} className="w-100"></img>
                         <p className="small-heading-edited mt-5">POWER DISTRIBUTION</p>
                     </Col>
-                    <Col sm="12" md="6" className="text-center mb-5">    
-                        <ul className="ml-0" >
-                            <li className="text-left auv-description-primary">Powered by four 3S Lithium-Polymer Batteries</li>
-                            <li className="text-left auv-description-primary">Custom made power-distribution board with protection and monitoring circuits</li>
-                            <li className="text-left auv-description-primary">Two Logitech C290 cameras for 1080p video feed</li>
-                            <li className="text-left auv-description-primary">Bluerobotics Depth Sensor for precision depth</li>
-                            <li className="text-left auv-description-primary">Intel NUC for high-processing power</li>
+                    <Col sm="12" md="6" className="featureCol my-auto">    
+                        <ul className="features-list" >
+                            <li >Powered by four<b style={{fontWeight:600}}> 3S Lithium-Polymer Batteries</b></li>
+                            <li ><b style={{fontWeight:600}}>Custom made power-distribution board</b> with protection and monitoring circuits</li>
+                            <li >Two <b style={{fontWeight:600}}>Logitech C290 cameras</b> for 1080p video feed</li>
+                            <li ><b style={{fontWeight:600}}>Bluerobotics Depth Sensor</b> for precision depth</li>
+                            <li ><b style={{fontWeight:600}}>Intel NUC</b> for high-processing power</li>
                         </ul>
                     </Col>
                 </Row>
@@ -68,18 +67,18 @@ function Posts() {
                     <h3 className="small-heading ml-auto mr-auto">Software</h3>
                 </Row>
                 <Row>
-                    <Col sm="12" md="6" className="text-center mt-5">
+                    <Col sm="12" md="6" className="text-center my-auto imgCol">
                         <img src={soft} className="w-100"></img>
                         <p className="small-heading-edited">FRAMEWORKS USED IN VARUN</p>
                     </Col>
-                    <Col sm="12" md="6" className="text-center">
-                        <ul className="ml-0">
-                            <li className="text-left auv-description-primary">System integration through ROS on Ubuntu 14.04</li>
-                            <li className="text-left auv-description-primary">Simulation through Gazebo to optimize testing time</li>
-                            <li className="text-left auv-description-primary">Image processing to perform vision-based tasks</li>
-                            <li className="text-left auv-description-primary">Navigation through dead-reckoning sensors</li>
-                            <li className="text-left auv-description-primary">GUI enabled control for debugging</li>
-                            <li className="text-left auv-description-primary">Code available on GitHub with documentation under BSD-3 License Clause</li>
+                    <Col sm="12" md="6" className="featureCol my-auto">
+                        <ul className="features-list">
+                            <li >System integration through ROS on <b style={{fontWeight:600}}>Ubuntu 14.04</b></li>
+                            <li >Simulation through <b style={{fontWeight:600}}>Gazebo</b> to optimize testing time</li>
+                            <li >Image processing to perform vision-based tasks</li>
+                            <li >Navigation through <b style={{fontWeight:600}}>dead-reckoning sensors</b></li>
+                            <li ><b style={{fontWeight:600}}>GUI enabled</b> control for debugging</li>
+                            <li ><b style={{fontWeight:600}}>Code available on GitHub </b>with documentation under BSD-3 License Clause</li>
                         </ul>
                     </Col>                    
                 </Row>

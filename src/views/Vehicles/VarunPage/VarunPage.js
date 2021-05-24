@@ -1,11 +1,8 @@
-
 import React from "react";
 // reactstrap components
 import {
-
   Container,
-  Row,
-  Col
+  Row
 } from "reactstrap";
 
 import ExamplesNavbar from "../../../components/Navbars/ExamplesNavbar";
@@ -27,7 +24,6 @@ function LandingPage() {
     <ExamplesNavbar activePage="/vehicles/varun"/>
     <div className="section text-center ">
         <Container className="reduce-margin">
-        
           <Row>
             <h2 className="heading-main">VARUN</h2>          
           </Row>

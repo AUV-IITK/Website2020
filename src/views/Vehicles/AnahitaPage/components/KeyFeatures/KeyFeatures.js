@@ -1,46 +1,47 @@
-import React from 'react';
-import {useEffect} from 'react';
+import React from "react";
+import {useEffect} from "react";
 import "./KeyFeatures.css";
-import {
-    Container,
-    Row,
-    Col
-} from "reactstrap";
-
+import {Container, Row, Col} from "react-bootstrap";
 
 
 function Posts() {
-
     useEffect(() => {
-        window.scrollTo(0, 0)
-      }); 
+        window.scrollTo(0, 0);
+    });
     return (
         <>
             <div className="mt-5">
-            <Container>
-                <Row className="d-flex justify-content-center">
-                    <Col sm="12" md="6"> 
-                        {/* <h2 className="text-center mb-4 small-heading">ANAHITA</h2> */}
-                        <img src={require("../../../../../assets/img/anahita/anahita-3.jpg")} className="w-100"></img>
-                    </Col>                    
-                    <Col sm="12" md="6" className="text-center">
-                    <h2 className="text-center mb-4 small-heading">Key Features</h2>
-                        <ul className="key-features-list">
-                            <li><h4 className="text-left auv-description-primary"><b >Wired frame with truss structures,</b> for
-                            structural support and reduced mass</h4></li>
-                            <li><h4 className="text-left auv-description-primary">On board Camera, IMU, DVL, Pressure Sensor & Hydrophones </h4></li>
-                            <li><h4 className="text-left auv-description-primary">Only <b>32 Kgs</b> in weight</h4></li>
-                            <li><h4 className="text-left auv-description-primary">Upto <b>4 hours of continuous operation</b> capability</h4></li>
-                            <li><h4 className="text-left auv-description-primary">Production cost : Rs. <b >23,00,000</b></h4></li>
-                        </ul>
-                    </Col>
-                </Row>
+                <Container>
+                    <Row className="d-flex justify-content-center">
+                        <Col sm="12" lg="6" className=" imgCol my-auto text-center">
+                            <img
+                                src={require("../../../../../assets/img/anahita/anahita-3.jpg")}
+                                className="w-100 vehicleImage"
+                            />
+                        </Col>
+                        <Col sm="12" lg="6" className="featureCol my-auto">
+                            <p className="text-center heading">Key Features</p>
+                            <ul className="key-features-list">
+                                <li> <b style={{fontWeight:600}}>Wired frame with truss structures,</b> for structural support and reduced mass.</li>
+                                <li>
+                                    On board Camera, IMU, DVL, Pressure Sensor & Hydrophones.
+                                </li>
+                                <li>
+                                    Only <b style={{fontWeight:600}}>32 Kgs</b> in weight.
+                                </li>
+                                <li>
+                                    Upto <b style={{fontWeight:600}}>4 hours of continuous operation</b> capability.
+                                </li>
+                                <li>
+                                    Production cost : Rs. <b style={{fontWeight:600}}>23,00,000</b>
+                                </li>
+                            </ul>
+                        </Col>
+                    </Row>
                 </Container>
             </div>
-
         </>
     );
-
-
 }
+
 export default Posts;
