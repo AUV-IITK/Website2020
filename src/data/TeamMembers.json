@@ -6,7 +6,9 @@
                 {
                     "name": "Prof. Indranil Saha",
                     "subheading": "Computer Science and Engineering Department, IITK",
-                    "image": "team/indranilSaha.jpg"
+                    "image": "team/indranilSaha.jpg",
+                    "facebook": "https://www.facebook.com/",
+                    "linkedin": "https://www.linkedin.com/"
                 }
             ]
         },
@@ -16,17 +18,23 @@
                 {
                     "name": "Ayush Gupta",
                     "subheading": "Y17, Software Subsystem",
-                    "image": "team/ayush.jpg"
+                    "image": "team/ayush.jpg",
+                    "facebook": "https://www.facebook.com/",
+                    "linkedin": "https://www.linkedin.com/"
                 },
                 {
                     "name": "Inshu Namdev",
                     "subheading": "Y17, Electrical Subsystem",
-                    "image": "team/inshu.jpg"
+                    "image": "team/inshu.jpg",
+                    "facebook": "https://www.facebook.com/",
+                    "linkedin": "https://www.linkedin.com/"
                 },
                 {
                     "name": "Priank Prasad",
                     "subheading": "Y17, Mechanical Subsystem",
-                    "image": "team/p.jpg"
+                    "image": "team/p.jpg",
+                    "facebook": "https://www.facebook.com/",
+                    "linkedin": "https://www.linkedin.com/"
                 }
             ]
         },
@@ -36,17 +44,23 @@
                 {
                     "name": "Devendra Kharolia",
                     "subheading": "Y18, Team Head",
-                    "image": "team/devendra.jpg"
+                    "image": "team/devendra.jpg",
+                    "facebook": "https://www.facebook.com/",
+                    "linkedin": "https://www.linkedin.com/"
                 },
                 {
                     "name": "Jaskeerat Singh",
                     "subheading": "Y18, Team Head",
-                    "image": "team/jaskeerat.jpg"
+                    "image": "team/jaskeerat.jpg",
+                    "facebook": "https://www.facebook.com/",
+                    "linkedin": "https://www.linkedin.com/"
                 },
                 {
                     "name": "Kamlesh Kalsariya",
                     "subheading": "Y18, Team Head",
-                    "image": "team/kamlesh.jpg"
+                    "image": "team/kamlesh.jpg",
+                    "facebook": "https://www.facebook.com/",
+                    "linkedin": "https://www.linkedin.com/"
                 }
             ]
         },
@@ -56,22 +70,30 @@
                 {
                     "name": "Shubham Korde",
                     "subheading": "",
-                    "image": "team/shubham.jpg"
+                    "image": "team/shubham.jpg",
+                    "facebook": "https://www.facebook.com/",
+                    "linkedin": "https://www.linkedin.com/"
                 },
                 {
                     "name": "Prakhar Maheshwari",
                     "subheading": "",
-                    "image": "team/prakhar.jpg"
+                    "image": "team/prakhar.jpg",
+                    "facebook": "https://www.facebook.com/",
+                    "linkedin": "https://www.linkedin.com/"
                 },
                 {
                     "name": "Aaryansh Mohan Bansal",
                     "subheading": "",
-                    "image": "team/aryansh.jpg"
+                    "image": "team/aryansh.jpg",
+                    "facebook": "https://www.facebook.com/",
+                    "linkedin": "https://www.linkedin.com/"
                 },
                 {
                     "name": "Krishna Agarwal",
                     "subheading": "",
-                    "image": "team/Krishna.jpg"
+                    "image": "team/Krishna.jpg",
+                    "facebook": "https://www.facebook.com/",
+                    "linkedin": "https://www.linkedin.com/"
                     
                 }
             ]
@@ -82,12 +104,16 @@
                 {
                     "name": "Neelabh Singhania",
                     "subheading": "",
-                    "image": "team/neelabh.jpg"
+                    "image": "team/neelabh.jpg",
+                    "facebook": "https://www.facebook.com/",
+                    "linkedin": "https://www.linkedin.com/"
                 },
                 {
                     "name": "Jayant Reddy",
                     "subheading": "",
-                    "image": "team/jayant.jpeg"
+                    "image": "team/jayant.jpeg",
+                    "facebook": "https://www.facebook.com/",
+                    "linkedin": "https://www.linkedin.com/"
                 }    
             ]
         },
@@ -97,7 +123,9 @@
                 {
                     "name": "Shashank Katiyar",
                     "subheading": "",
-                    "image": "team/shashank.jpeg"
+                    "image": "team/shashank.jpeg",
+                    "facebook": "https://www.facebook.com/",
+                    "linkedin": "https://www.linkedin.com/"
                 }
             ]
         }

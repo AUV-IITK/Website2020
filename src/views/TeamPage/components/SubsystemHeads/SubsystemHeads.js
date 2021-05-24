@@ -10,14 +10,12 @@ function TalkAbout() {
                 <Container>
                     {
                         team.teamData.map((section) => {
-                            // console.log(section);
                             return (
                                 <div>
                                     <h1 className="title heading-main">{section.heading}</h1>
                                     <div>
                                         <Row className="rowPadding">
                                             {section.items.map((teamMember) => {
-                                                // console.log(teamMember);
                                                 return (
                                                     <Col lg="4 ml-auto mr-auto" sm="6" className="colPadding">
                                                         <Card>
@@ -30,10 +28,14 @@ function TalkAbout() {
                                                                 </Card.Text>
                                                                 <ul className="socialList">
                                                                     <li>
-                                                                        <i className="social fa fa-facebook fa-2x" />
+                                                                        <a href={teamMember.facebook} target="blank">
+                                                                            <i className="social fa fa-facebook fa-2x" />
+                                                                        </a>
                                                                     </li>
                                                                     <li>
-                                                                         <i className="social fa fa-linkedin fa-2x" />
+                                                                        <a href={teamMember.linkedin} target="blank">
+                                                                            <i className="social fa fa-linkedin fa-2x" />
+                                                                        </a>
                                                                     </li>
                                                                 </ul>
                                                             </Card.Body>

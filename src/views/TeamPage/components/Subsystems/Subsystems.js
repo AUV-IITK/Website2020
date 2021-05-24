@@ -22,7 +22,7 @@ function Posts() {
                         </Col>
                         <Col lg="6" className="subsys">
                             <h3 className="mt-0 mb-3 small-heading text-center ">Software</h3>
-                            {/* <img src={software} className="  w-100"></img> */}
+                            <img src={software} className=" subsysImg w-100"></img>
                             <p className="subsysDesc">The software subsystem develops the algorithms
                                 controlling the robot and making it autonomous. We use latest cutting edge
                                 technologies in the world of robotics software. We use ROS(Robot Operating System)
@@ -36,7 +36,7 @@ function Posts() {
                         </Col>
                         <Col lg="6" className="subsys">
                             <h3 className="mt-0 mb-3 small-heading text-center ">Electrical</h3>
-                            {/* <img src={electrical} className="  w-100"></img> */}
+                            <img src={electrical} className=" subsysImg w-100"></img>
                             <p className="subsysDesc">The Electrical Subsystem builds the electrical framework
                                 powering our AUV. We work on the electrical aspects of the AUV, providing
                                 power, driving actuators and interfacing with various sensors on board. We
@@ -49,7 +49,7 @@ function Posts() {
                         </Col>
                         <Col lg="6" className="subsys">
                             <h3 className="mt-5 mb-3 small-heading mb-2 text-center ">Mechanical</h3>
-                            {/* <img src={mechanical} className="  w-100"></img> */}
+                            <img src={mechanical} className=" subsysImg w-100"></img>
                             <p className="subsysDesc">The mechanical subsystem if responsible for design and
                                 manufacture of the vehicle. We design the entire vehicle and accessories -
                                 working on Fluid Dynamics, Actuator controls, and Pneumatics. We plan, simulate
@@ -60,7 +60,7 @@ function Posts() {
                         </Col>
                         <Col lg="6" className="subsys">
                             <h3 className="mt-5 mb-3 small-heading mb-2 text-center">Business</h3>
-                            {/* <img src={business} className="  w-100"></img> */}
+                            <img src={business} className=" subsysImg w-100"></img>
                             <p className="subsysDesc">The Business subsystem manages the fundings and outreach
                                 activities of the team. We manage the expenditures and fundings of the team.
                                 We represent the team before our sponsors and try to procure them.

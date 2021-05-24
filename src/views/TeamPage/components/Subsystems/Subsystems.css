@@ -1,5 +1,9 @@
-.small-heading {
+.subsysImg {
   padding-bottom: 20px;
+}
+
+.small-heading {
+  padding: 20px;
 }
 
 .subsys {
@@ -7,6 +11,6 @@
 }
 
 .subsysDesc {
-  padding: 0px 0px 0px 10px;
+  padding: 0px 0px 20px 10px;
   color: black;
 }
