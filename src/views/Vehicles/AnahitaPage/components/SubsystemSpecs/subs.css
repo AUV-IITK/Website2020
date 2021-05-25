@@ -1,41 +1,22 @@
-.elec-edit{
-    background-color: white;
-    border: none;
-    margin-bottom: 2.5rem;
+.features-list {
+  padding: 0px;
 }
 
-@media(max-width:992px){
-    .elec-edit{
-        margin-top: 8rem;
-    }
-}
-@media(max-width: 992px)
-{
-    .image-responsive-shift2{
-        margin-top: 12rem;
-    }
+.features-list > li {
+  padding-top: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
 }
 
-.mechanical-list{
-    margin-top: 8rem;
+.features-list > li:first-child {
+  padding-top: 0px;
 }
 
-.electrical-list{
-    margin-top: 10rem;
+.imgCol {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-@media(max-width: 1200px){
-    .electrical-list{
-        margin-top: 8rem;
-    }
-}
-@media(max-width: 768px){
-    .mechanical-list{
-        margin-top: 0;
-        margin-bottom: 8rem;
-    }
-
-    .image-responsive-shift2{
-        margin-top: 0;
-    }
+.featureCol {
+  padding: 20px 35px 20px 35px;
 }
