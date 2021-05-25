@@ -1,27 +1,17 @@
 
-
-.robo-heading4{
-    font-family: Montserrat  ;
-    color: rgb(2, 13, 19);
-    letter-spacing: 2px;
-    font-size: 25px;
-    padding-bottom: 20px;
-    padding-top: 30px;
-}
-
-.container-ssk{
+.container-auv{
     margin-left: 10vw;
     margin-right: 10vw;
 }
 
-.para-ssk2{
+.para-auv2{
     color: rgb(2, 13, 19);
     font-family: Montserrat  ;
     font-size: 18px;
     padding:10px;
 }
 
-.post-ssk{
+.post-auv{
     padding: 3rem;
     min-height: 450px;
  box-shadow: 0px 3px 10px #cccccc;
@@ -30,7 +20,7 @@
     cursor: pointer;
 }
 
-.post-ssk:hover{
+.post-auv:hover{
     border: none;
     box-shadow: 2px 2px 10px rgba(35,174,244,0.67)  ;
     transform: scale(1.005);

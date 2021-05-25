@@ -13,7 +13,7 @@ import { Container, Row, Col } from 'reactstrap'
 function Sponsors() {
     return (
         <> 
-            <div className="section landing-section light-ssk" style={{backgroundColor:"yellow"}}>
+            <div className="section landing-section light-auv" style={{backgroundColor:"yellow"}}>
           <Container >
             <Row style={{textAlign:"center"}}>
               <Col md="2"></Col>

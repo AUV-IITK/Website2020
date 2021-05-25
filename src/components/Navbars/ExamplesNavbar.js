@@ -48,7 +48,7 @@ const [scrolled,setScrolled]=React.useState(false);
     window.addEventListener('scroll',handleScroll)
   })
 
-  let x=['navbar','custom-navbar-ssk'];
+  let x=['navbar','custom-navbar-auv'];
   if(props.page == "landing-page"){
     if(scrolled){
       x.push('scrolled');
@@ -61,7 +61,7 @@ const [scrolled,setScrolled]=React.useState(false);
       <Navbar
       color-on-scroll="300"
       expand="lg"
-      className="custom-navbar-ssk"
+      className="custom-navbar-auv"
     >
       <Container className="navbar-container">
       <div className="navbar-translate">

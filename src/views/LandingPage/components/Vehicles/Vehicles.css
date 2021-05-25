@@ -18,14 +18,14 @@
     margin-left: 50px;
     margin-right: 50px;
 }
-.para-ssk{
+.para-auv{
     color: #cccccc;
     font-family: Montserrat  ;
     font-size: 18px;
     padding:10px;
 }
 
-.button-ssk{
+.button-auv{
     background: linear-gradient(to left, rgb(2, 13, 19), rgb(19, 47, 93));
     font-family: Montserrat  ;
     color: #cccccc;
@@ -39,14 +39,14 @@
     box-shadow: 0px 5px 10px #cccccc;
 }
 
-.button-ssk:hover{
+.button-auv:hover{
     background-color:#CCCCCC;
     background: linear-gradient(to left, rgb(2, 13, 19), rgb(35, 90, 177));
     transform: translateY(3px);
     box-shadow: 0px 2px 10px #cccccc;
 }
 
-.button-ssk:hover::after{
+.button-auv:hover::after{
     transform: scaleX(1.4) scaleY(1.7);
     opacity: 0;
 }

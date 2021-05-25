@@ -46,7 +46,7 @@ function AboutUs () {
 
                         <div className="row mt-3 mx-auto">
                             <div className="col-md-3 col-sm-6">
-                                <div className=" icon-ssk">
+                                <div className=" icon-auv">
                                     <i className=" mt-4 fa fa-cogs fa-5x"/>
                                     <div className="description">
                                         <h4 className=""><strong>2 Vehicles Made</strong></h4>
@@ -55,7 +55,7 @@ function AboutUs () {
                                 </div>
                             </div>
                             <div className="col-md-3 col-sm-6">
-                                <div className=" icon-ssk">
+                                <div className=" icon-auv">
                                     <i className="  mt-4 fa fa-users fa-5x"/>
                                     <div className="description">
                                         <h4 className=""><strong>30 Team Members</strong></h4>
@@ -64,7 +64,7 @@ function AboutUs () {
                                 </div>
                             </div>
                             <div className="col-md-3 col-sm-6">
-                                <div className=" icon-ssk">
+                                <div className=" icon-auv">
                                     <i className="mt-4 fa fa-briefcase fa-5x"/>
                                     <div className="description">
                                         <h4 className=""><strong>30+ Projects </strong></h4>
@@ -73,7 +73,7 @@ function AboutUs () {
                                 </div>
                             </div>
                             <div className="col-md-3 col-sm-6">
-                                <div className=" icon-ssk">
+                                <div className=" icon-auv">
                                     <i className="mt-4 fa fa-coffee fa-5x"/>
                                     <div className="description">
                                         <h4 className=""><strong>400+ NightOuts</strong></h4>

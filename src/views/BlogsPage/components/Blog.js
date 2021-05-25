@@ -12,7 +12,7 @@ function Blog (props) {
   return (
         <>
             <div className="section landing-section ">
-                <Container className="red-back">
+                <Container className="w-100">
                     <Row className="blog-container">
                         <Col sm="0" md="4" className=""/>
 
@@ -36,11 +36,6 @@ function Blog (props) {
                                 <div className="btn-blue">Read More</div>
                                 </Link>
                             </Col>
-
-
-                                
-                                
-                             
                         </Row>
 
                     </Container>       
