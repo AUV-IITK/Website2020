@@ -69,7 +69,7 @@
     color: white;
 }
 
-.button-ssk:hover::after{
+.button-auv:hover::after{
     transform: scaleX(1.4) scaleY(1.7);
     opacity: 0;
 }
@@ -78,7 +78,7 @@
     /* background-color: orange; */
     margin-left: 2rem;
 }
-.icon-ssk{
+.icon-auv{
     width: 25rem;
     height: 15rem;
     font-weight: 900;
@@ -92,18 +92,18 @@
     display: block;
 }
 
-.icon-ssk:hover{
+.icon-auv:hover{
 
 
     transform: translateY(-10px);
 }
 
 
-.icon-ssk:hover .icon-info{
+.icon-auv:hover .icon-info{
     
     transform: scale(1.1);
 }
-.icon-ssk:hover .info-title{
+.icon-auv:hover .info-title{
     
 
     transform: scale(1.1);
@@ -170,7 +170,7 @@
 }
 
 @media screen and (max-width: 600px) {
-    .icon-ssk{
+    .icon-auv{
         width: 15rem;
         height: 15rem;
 

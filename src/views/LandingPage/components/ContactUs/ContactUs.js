@@ -13,7 +13,7 @@ function ContactUs () {
                 <Form className="contact-form">
                   <Row>
                     <Col md="12">   
-                      <label className="mb-0 desc-ssk">Name</label>
+                      <label className="mb-0 desc-auv">Name</label>
                       <InputGroup>
                         <InputGroupAddon addonType="prepend">
                           <InputGroupText>
@@ -24,7 +24,7 @@ function ContactUs () {
                       </InputGroup>
                     </Col>
                     <Col md="12">
-                      <label className="mb-0 desc-ssk">Email</label>
+                      <label className="mb-0 desc-auv">Email</label>
                       <InputGroup>
                         <InputGroupAddon addonType="prepend">
                           <InputGroupText>
@@ -35,7 +35,7 @@ function ContactUs () {
                       </InputGroup>
                     </Col>
                   </Row>
-                  <label className="mb-0 desc-ssk">Message</label>
+                  <label className="mb-0 desc-auv">Message</label>
                   <Input
                     placeholder="Tell us your thoughts and feelings..."
                     type="textarea"
@@ -56,21 +56,21 @@ function ContactUs () {
                     <i className="fa fa-phone contact-icon" />
                   </Col>
                   <Col md="10" className="ml-3 mt-4">
-                    <p className="desc-ssk">Phone Number : +91 9521597992 </p>
+                    <p className="desc-auv">Phone Number : +91 9521597992 </p>
                   </Col>
 
                   <Col md="1" >
                     <i className="fa fa-envelope-square contact-icon" />
                   </Col>
                   <Col md="10" className="ml-3 mt-4">
-                    <p className="desc-ssk">Email id : iitkauv@gmail.com </p>
+                    <p className="desc-auv">Email id : iitkauv@gmail.com </p>
                   </Col>
 
                   <Col md="1" >
                     <i className="fa fa-map-marker contact-icon" />
                   </Col>
                   <Col md="10" className="ml-3 mt-4">
-                    <p className="desc-ssk">Address : AUV Room, Hall of Residence 2,
+                    <p className="desc-auv">Address : AUV Room, Hall of Residence 2,
                 Indian Institute of Technology, Kanpur,  Uttar Pradesh, India - 208016 </p>
                   </Col>
                 </div>

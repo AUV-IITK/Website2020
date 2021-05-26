@@ -7,7 +7,7 @@ function Posts() {
     return (
         <>
         <div className="section landing-section ">
-          <div className="container-ssk">
+          <div className="container-auv">
             <Row className="">
               <Col md="2"></Col>
               <Col className="ml-auto mr-auto" md="8">
@@ -15,7 +15,7 @@ function Posts() {
               </Col>
               <Col md="2"></Col>
               <Col xl="6" className="text-center ">
-                <div className="post-ssk">
+                <div className="post-auv">
                 <h2 className="small-heading">ANSYS helps AUV-IITK design its latest vehicle Anahita</h2>
                 <p className="auv-description-primary">One of the primary stages in designing and modeling of an AUV is the study of the motion of the vehicle and the subsequent visualization of fluid flow across the body of the bot.</p>
 
@@ -26,7 +26,7 @@ function Posts() {
                 </div>
               </Col>
               <Col xl="6" className="text-center ">
-                <div className="post-ssk">
+                <div className="post-auv">
                 <h2 className="small-heading">7 Useful Tips for ROS Users</h2>
                 <p className="auv-description-primary">Earlier people had to write a large amount of code ranging 
                 from low-level driver functions to high-level control algorithms for their robots. 

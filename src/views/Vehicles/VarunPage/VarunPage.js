@@ -1,11 +1,8 @@
-
 import React from "react";
 // reactstrap components
 import {
-
   Container,
-  Row,
-  Col
+  Row
 } from "reactstrap";
 
 import ExamplesNavbar from "../../../components/Navbars/ExamplesNavbar";
@@ -24,19 +21,18 @@ function LandingPage() {
   });
   return (
     <div className="mobile-responsive">
-    <ExamplesNavbar activePage="/vehicles/varun"/>
-    <div className="section text-center ">
-        <Container className="reduce-margin">
-        
-          <Row>
-            <h2 className="heading-main">VARUN</h2>          
-          </Row>
-        </Container>
-      </div>
-      <div className="main">
-        <KeyFeatures/>
-        <SubsystemSpecs/>
-      </div>  
+        <ExamplesNavbar activePage="/vehicles/varun"/>
+        {/* <div className="section text-center ">
+          <Container className="reduce-margin">
+            <Row>
+              <p className="heading-main">VARUN</p>
+            </Row>
+          </Container>
+        </div> */}
+        <div className="main">
+          <KeyFeatures/>
+          <SubsystemSpecs/>
+        </div>  
     </div>
   );
 }

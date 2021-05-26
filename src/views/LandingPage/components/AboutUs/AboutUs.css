@@ -70,7 +70,7 @@
     color: white;
 }
 
-.button-ssk:hover::after{
+.button-auv:hover::after{
     transform: scaleX(1.4) scaleY(1.7);
     opacity: 0;
 }
@@ -79,7 +79,7 @@
     /* background-color: orange; */
     margin-left: 2rem;
 }
-.icon-ssk{
+.icon-auv{
     position: relative;
     width: 25rem;
     height: 15rem;
@@ -94,18 +94,18 @@
     opacity: 0.8;
 }
 
-.icon-ssk:hover{
+.icon-auv:hover{
 
 
     transform: translateY(-10px);
 }
 
 
-.icon-ssk:hover .icon-info{
+.icon-auv:hover .icon-info{
     
     transform: scale(1.1);
 }
-.icon-ssk:hover .info-title{
+.icon-auv:hover .info-title{
     
 
     transform: scale(1.1);
@@ -178,7 +178,7 @@
 }
 
 @media screen and (max-width: 600px) {
-    .icon-ssk{
+    .icon-auv{
         width: 15rem;
         height: 15rem;
 
@@ -256,7 +256,7 @@
     .icon-responsive{
         font-size: 4rem;
     }
-    .icon-ssk{
+    .icon-auv{
         /* background-color: red; */
         width: 20rem;
     }
@@ -269,7 +269,7 @@
 }
 
 @media (max-width: 480px){
-    .icon-ssk{
+    .icon-auv{
         /* background-color: red; */
         width: 18rem;
     }
@@ -303,21 +303,21 @@
     }
 }
 @media(max-width: 600px){
-    .icon-ssk{
+    .icon-auv{
         width: 16rem;
         /* background-color: aqua; */
         margin: 1rem;
     }
 }
 @media(max-width: 430px){
-    .icon-ssk{
+    .icon-auv{
         width: 14rem;
         /* background-color: aqua; */
         margin: 1rem;
     }
 }
 @media (max-width: 380px){
-    .icon-ssk{
+    .icon-auv{
         /* background-color: red; */
         width: 12rem;
     }

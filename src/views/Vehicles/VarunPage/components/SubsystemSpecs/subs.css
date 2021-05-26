@@ -1,82 +1,22 @@
-.mb-large{
-    margin-bottom: 5rem;
-    margin-top: 6rem;
+.imgCol {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.mechanical-list-varun{
-    /* background-color: pink; */
-    padding: 2rem;
-    margin-top: 6rem;
+.featureCol {
+  padding: 20px 35px 20px 35px;
 }
 
-@media(max-width: 992px){
-    .mechanical-image-varun{
-        /* background-color: purple; */
-        margin-top: 10rem;
-        padding: 3rem 1rem;
-    }
+.features-list {
+  padding: 0px;
 }
 
-@media(max-width: 768px){
-    .mechanical-image-varun{
-        /* background-color: yellowgreen; */
-        margin-top: 0;
-    }
-
-    .mechanical-list-varun{
-        /* background-color: brown; */
-        margin-top: 0;
-        width: 75%;
-        margin: 0 auto;
-    }
+.features-list > li {
+  padding-top: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
 }
 
-.electrical-list-varun{
-    /* background-color: blueviolet; */
-    margin-top: 6rem;
-}
-
-@media(max-width: 992px){
-    .electrical-list-varun{
-        margin-top: 0%;
-        padding: 1rem;
-        padding-top: 0;
-    }
-}
-
-@media(max-width: 768px){
-    .electrical-image-varun{
-        /* background-color: orange; */
-        margin-top: 2rem;
-        margin-bottom: 0;
-    }
-}
-
-.software-image-varun{
-    /* background-color: aqua; */
-    margin-top: 0;
-}
-
-.software-list-varun{
-    margin-top: 8rem;
-}
-
-@media(max-width: 1200px){
-    .software-list-varun{
-        /* background-color: indigo; */
-        margin-top: 4rem;
-    }
-}
-
-@media(max-width: 992px){
-    .software-image-varun{
-        margin-top: 6rem;
-    }
-}
-
-@media(max-width: 768px){
-    .software-image-varun{
-        /* background-color: gainsboro; */
-        margin-top: 0;
-    }
+.features-list > li:first-child {
+  padding-top: 0px;
 }
