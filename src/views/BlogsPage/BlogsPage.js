@@ -25,6 +25,7 @@ class BlogsPage extends Component {
   // });
   componentDidMount(){ 
     document.documentElement.classList.remove("nav-open");
+    window.scrollTo(0,0);
     // document.body.classList.add("profile-page");
     // return function cleanup() {
     //   document.body.classList.remove("profile-page");
