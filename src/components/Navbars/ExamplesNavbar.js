@@ -165,6 +165,17 @@ const [scrolled,setScrolled]=React.useState(false);
                   Varun
                   </DropdownItem>
                   </Link>
+                  <Link to='/vehicles/triton' style={{color: 'black'}}>
+                  <DropdownItem
+                  // href="#pablo"
+                  // onClick={e => e.preventDefault()}
+                  style={{textAlign: "center"}}
+                  className=" auv-dropdown"
+                  onClick={toggleNavbarCollapse}
+                >
+                  Triton
+                  </DropdownItem>
+                  </Link>
               </DropdownMenu>
             </UncontrolledDropdown>
             <NavItem>

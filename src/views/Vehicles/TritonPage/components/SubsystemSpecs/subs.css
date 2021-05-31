@@ -1,0 +1,22 @@
+.features-list {
+  padding: 0px;
+}
+
+.features-list > li {
+  padding-top: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+.features-list > li:first-child {
+  padding-top: 0px;
+}
+
+.imgCol {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.featureCol {
+  padding: 20px 35px 20px 35px;
+}

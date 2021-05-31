@@ -21,11 +21,11 @@ function LandingPage() {
   });
   return (
     <div className="mobile-responsive">
-        <ExamplesNavbar activePage="/vehicles/varun"/>
+        <ExamplesNavbar activePage="/vehicles/triton"/>
         {/* <div className="section text-center ">
           <Container className="reduce-margin">
             <Row>
-              <p className="heading-main">VARUN</p>
+              <p className="heading-main">TRITON</p>
             </Row>
           </Container>
         </div> */}
