@@ -37,10 +37,11 @@ import React from "react";
 import ExamplesNavbar from "../../components/Navbars/ExamplesNavbar";
 
 // core components
-import Team from "../LandingPage/components/Team/Team.js";
 import Subsytems from "./components/Subsystems/Subsystems";
 import SubsystemHeads from './components/SubsystemHeads/SubsystemHeads';
 import TeamVideo from './components/TeamVideo/TeamVideo';
+import TeamHeads from "./components/TeamHeads/TeamHeads";
+
 function LandingPage() {
     document.documentElement.classList.remove("nav-open");
     React.useEffect(() => {
@@ -53,9 +54,9 @@ function LandingPage() {
         <div className="mobile-responsive">
         <ExamplesNavbar activePage="/team"/>
             <div className="main">
-                <Team style={{marginTop:"8rem"}}/>
+                <TeamHeads style={{marginTop:"8rem"}}/>
                 <Subsytems />
-                <SubsystemHeads />
+                {/* <SubsystemHeads /> */}
                 <TeamVideo />
             </div>
         </div>

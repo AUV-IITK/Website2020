@@ -1,0 +1,9 @@
+.subsys-link {
+  padding: 15px;
+}
+
+.subsystem-heading{
+  font-size: 32px;
+  text-transform: capitalize;
+  font-weight: 700;
+}

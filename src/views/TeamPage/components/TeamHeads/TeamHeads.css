@@ -1,0 +1,21 @@
+.img-col {
+  padding: 30px;
+}
+
+.social-list {
+  padding: 10px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.content-image {
+  max-width: 500px;
+  height: 100%;
+  width: 100%;
+}
+
+.overlay-text{
+  padding: 20px;
+}
