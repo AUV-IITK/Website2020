@@ -2,8 +2,6 @@
   padding: 15px;
 }
 
-.subsystem-heading{
-  font-size: 32px;
-  text-transform: capitalize;
-  font-weight: 700;
+.heading-main{
+  padding-top: 10px;
 }

@@ -6,6 +6,7 @@ import { MDBRipple } from 'mdb-react-ui-kit';
 
 import "./TeamHeads.css"
 import {
+    Card,
     Container,
     Row,
     Col
@@ -27,17 +28,61 @@ function TeamHeads() {
                             </Col>
                         </Row>
                         <Row>
-                            <Col>
+                            <Col lg="9" sm="12" className="text-center">
                                 <img src={teamphoto} className="w-100 "></img>
                                 <p className="mb-2 mt-3">Over the past years, the team has witnessed a close collaboration between students from various departments coming and sharing ideas; creating a small yet strong network of people who are eagerly looking for a low-cost solution to large-scale problems.</p>
-                                <p className="mb-3 ">Working long hours and brainstorming some complex problems leads to a very special bonding between the members of the teams. This leads to a lot of nicknames and some extremely fun gaming nights.</p>
+                                {/* <p className="mb-3 ">Working long hours and brainstorming some complex problems leads to a very special bonding between the members of the teams. This leads to a lot of nicknames and some extremely fun gaming nights.</p> */}
+                            </Col>
+                            <Col lg="3" className="text-center my-auto mr-auto ml-auto">
+                                <Row>
+                                    <Col lg="12" xs="6" className="highlights">
+                                        <Card style={{ width: '16rem', height: '13rem' }}>
+                                            <Card.Body>
+                                                <Card.Title>Card Title</Card.Title>
+                                                <Card.Text>
+                                                    Lines of Code
+                                                </Card.Text>
+                                            </Card.Body>
+                                        </Card>
+                                    </Col>
+                                    <Col lg="12" xs="6" >
+                                        <Card style={{ width: '16rem', height: '13rem' }}>
+                                            <Card.Body>
+                                                <Card.Title>Card Title</Card.Title>
+                                                <Card.Text>
+                                                    Hours of Work
+                                                </Card.Text>
+                                            </Card.Body>
+                                        </Card>
+                                    </Col>
+                                    <Col lg="12" xs="6">
+                                        <Card style={{ width: '16rem', height: '13rem' }}>
+                                            <Card.Body>
+                                                <Card.Title>Card Title</Card.Title>
+                                                <Card.Text>
+                                                    Gaming Nights
+                                                </Card.Text>
+                                            </Card.Body>
+                                        </Card>
+                                    </Col>
+                                    <Col lg="12" xs="6">
+                                        <Card style={{ width: '16rem', height: '13rem' }}>
+                                            <Card.Body>
+                                                <Card.Title>Card Title</Card.Title>
+                                                <Card.Text>
+                                                    Lines of Code
+                                                </Card.Text>
+                                            </Card.Body>
+                                        </Card>
+                                    </Col>
+                                </Row>
                             </Col>
                         </Row>
                     </Container>
                 </div>
             </div>
             <div className="section text-center">
-                <Container>
+                <Container fluid="md">
                     {
                         teamheads.teamData.map((section) => {
                             return (
@@ -45,7 +90,7 @@ function TeamHeads() {
                                     <Row>
                                         {section.items.map((teamMember) => {
                                             return (
-                                                <Col lg="4" sm="6" className="text-center img-col mr-auto ml-auto">
+                                                <Col lg="3" className="text-center img-col mr-auto ml-auto">
                                                     <MDBRipple className='bg-image' rippleTag='div' rippleColor='light' >
                                                         <img src={require("assets/img/" + teamMember.image)}
                                                             className="content-image" />
@@ -53,7 +98,7 @@ function TeamHeads() {
                                                             <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.2)' }}></div>
                                                             <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.65)' }}>
                                                                 <div className='overlay-text h-100 text-left'>
-                                                                    <p style={{ color: 'white' }}>{teamMember.text}</p>
+                                                                    <p style={{ color: 'white' }} className="overlay-text">{teamMember.text}</p>
                                                                     <ul className="social-list">
                                                                         <li>
                                                                             <a href={teamMember.facebook} target="blank">

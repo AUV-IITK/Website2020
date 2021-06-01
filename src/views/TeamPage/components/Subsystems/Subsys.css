@@ -1,0 +1,24 @@
+.card-background{
+    width: 100%;
+}
+
+.subsystem-heading{
+  font-size: 32px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+.subsystem-text{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.card-image{
+  opacity: 0.12;
+}
+
+.overlay-text{
+  padding: 10px;
+  font-size: 14px;
+  color: whitesmoke;
+}

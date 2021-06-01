@@ -38,25 +38,23 @@ import ExamplesNavbar from "../../components/Navbars/ExamplesNavbar";
 
 // core components
 import Subsytems from "./components/Subsystems/Subsystems";
-import SubsystemHeads from './components/SubsystemHeads/SubsystemHeads';
 import TeamVideo from './components/TeamVideo/TeamVideo';
 import TeamHeads from "./components/TeamHeads/TeamHeads";
 
 function LandingPage() {
-    document.documentElement.classList.remove("nav-open");
-    React.useEffect(() => {
-        document.body.classList.add("profile-page");
-        return function cleanup() {
-            document.body.classList.remove("profile-page");
-        };
-    });
+    // document.documentElement.classList.remove("nav-open");
+    // React.useEffect(() => {
+    //     document.body.classList.add("profile-page");
+    //     return function cleanup() {
+    //         document.body.classList.remove("profile-page");
+    //     };
+    // });
     return (
-        <div className="mobile-responsive">
-        <ExamplesNavbar activePage="/team"/>
+        <div>
+            <ExamplesNavbar activePage="/team" />
             <div className="main">
-                <TeamHeads style={{marginTop:"8rem"}}/>
+                <TeamHeads />
                 <Subsytems />
-                {/* <SubsystemHeads /> */}
                 <TeamVideo />
             </div>
         </div>

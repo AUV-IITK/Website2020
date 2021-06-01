@@ -8,14 +8,29 @@ import {
 import mechanical from "assets/img/mechanical.jpg"
 import { MDBRipple } from 'mdb-react-ui-kit';
 import mechanicalteam from "../../../../data/MechanicalTeam.json";
+import "./Subsys.css"
 
 const Mechanical = () => {
     return (
         <div>
             <Container>
+                {/* <Card className="bg-dark text-white">
+                    <Card.Img src={mechanical} alt="Card image" className="card-image" />
+                    <Card.ImgOverlay>
+                        <Card.Title className="mb-4 text-center subsystem-heading">MECHANICAL</Card.Title>
+                        <Card.Text>
+                            The mechanical subsystem if responsible for design and
+                            manufacture of the vehicle. We design the entire vehicle and accessories -
+                            working on Fluid Dynamics, Actuator controls, and Pneumatics. We plan, simulate
+                            and test the physical structure of the AUV and then manufacture it
+                            using state of art manufacturing techniques. We use latest software such as SolidWorks and ANSYS
+                            to make the design robust, modular, light and strong.
+                        </Card.Text>
+                    </Card.ImgOverlay>
+                </Card> */}
                 <Card style={{ width: '100%' }}>
                     <Card.Body>
-                        <Card.Title className="mb-4">Mechanical</Card.Title>
+                        <Card.Title className="mb-4 text-center subsystem-heading">MECHANICAL</Card.Title>
                         <Card.Text>
                             The mechanical subsystem if responsible for design and
                             manufacture of the vehicle. We design the entire vehicle and accessories -
@@ -38,7 +53,7 @@ const Mechanical = () => {
                                     <Row>
                                         {section.items.map((teamMember) => {
                                             return (
-                                                <Col lg="4" sm="6" className="text-center img-col mr-auto ml-auto">
+                                                <Col lg="3" sm="6" className="text-center img-col mr-auto ml-auto">
                                                     <MDBRipple className='bg-image' rippleTag='div' rippleColor='light' >
                                                         <img src={require("assets/img/" + teamMember.image)}
                                                             className="content-image" />
@@ -47,7 +62,7 @@ const Mechanical = () => {
                                                             <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.65)' }}>
                                                                 <div className='overlay-text h-100 text-left'>
                                                                     {/* <h3 style={{ color: 'white' }}>This is a title</h3> */}
-                                                                    <p style={{ color: 'white' }}>{teamMember.text}</p>
+                                                                    <p className="overlay-text">{teamMember.text}</p>
                                                                     <ul className="social-list">
                                                                         <li>
                                                                             <a href={teamMember.facebook} target="blank">
