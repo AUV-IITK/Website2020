@@ -140,7 +140,18 @@ const [scrolled,setScrolled]=React.useState(false);
                 className="dropdown-info ml-auto mr-auto"
                 style={{backgroundColor:"rgb(220,220,220)",borderRadius:"0", textAlign:"center"}}
               >
-                
+                  <Link to='/vehicles/triton' style={{color: 'black'}}>
+                  <DropdownItem
+                  // href="#pablo"
+                  // onClick={e => e.preventDefault()}
+                  style={{textAlign: "center"}}
+                  className=" auv-dropdown"
+                  onClick={toggleNavbarCollapse}
+                >
+                  Triton
+                  </DropdownItem>
+                  </Link>
+                  
                   <Link to='/vehicles/anahita' style={{color: 'black'}}>
                   <DropdownItem
                   // href="#pablo"

@@ -1,0 +1,21 @@
+.imgCol {
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.featureCol {
+  padding: 20px 55px 20px 55px;
+}
+
+.heading {
+  padding-top: 0px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.key-features-list > li {
+  padding-top: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}

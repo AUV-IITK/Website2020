@@ -41,10 +41,13 @@ function Footer() {
                 <NavLink to="/team" tag={Link} className="footer-nav-link">
                     Team
                 </NavLink> 
+                <NavLink to="/vehicles/triton" tag={Link} className="footer-nav-link">
+                    Triton
+                </NavLink> 
                 <NavLink to="/vehicles/anahita" tag={Link} className="footer-nav-link">
                     Anahita
                 </NavLink> 
-                <NavLink to="/vehicles/anahita" tag={Link} className="footer-nav-link">
+                <NavLink to="/vehicles/varun" tag={Link} className="footer-nav-link">
                     Varun
                 </NavLink> 
 
