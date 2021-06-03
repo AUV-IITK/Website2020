@@ -2,7 +2,7 @@ import React from "react";
 import {useEffect} from "react";
 import "./KeyFeatures.css";
 import {Container, Row, Col} from "react-bootstrap";
-
+import AnahitaCAD from "../../../../../assets/models/AnahitaCAD.glb";
 
 function Posts() {
     useEffect(() => {
@@ -22,7 +22,14 @@ function Posts() {
                             <h3  className="mt-2 mb-2">The Goddess of Waters</h3>
                         </Row>  
                     </div>
-
+                    <model-viewer 
+                    id="reveal" 
+                    loading="eager" 
+                    camera-controls 
+                    auto-rotate 
+                    src={AnahitaCAD}
+                    class="cad-model"
+                    alt="A 3D model of a Triton"></model-viewer>
                     <Row className="d-flex justify-content-center">
                         <Col sm="12" lg="6" className=" imgCol my-auto text-center">
                             <img

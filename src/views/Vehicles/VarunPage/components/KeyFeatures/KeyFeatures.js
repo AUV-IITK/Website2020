@@ -28,12 +28,12 @@ function Posts() {
                     </Row>  
                            
                     <Row className="d-flex justify-content-center">
-                        <Col sm="12" lg="6" className="imgCol my-auto text-center"> 
+                        <Col sm="12" lg="12" className="imgCol my-auto text-center mt-5"> 
                             <div className="iframe-container">
-                                <iframe title="A 3D model" className="sketchfab-ssk1 sketchfab-responsive" src="https://sketchfab.com/models/6e1274e10d9e4b6a922a5ed0baf9445f/embed?preload=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                                <iframe title="A 3D model" className="cad-model sketchfab-responsive" src="https://sketchfab.com/models/6e1274e10d9e4b6a922a5ed0baf9445f/embed?preload=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
                             </div>
                         </Col>
-                        <Col sm="12" lg="6" className="featureCol my-auto">
+                        <Col sm="12" lg="12" className="featureCol my-auto">
                         <p className="text-center heading">Key Features</p>
                             <ul className="key-features-list">
                                 <li><b style={{fontWeight:600}}>Modular design</b> for easy assembly and installation</li>
