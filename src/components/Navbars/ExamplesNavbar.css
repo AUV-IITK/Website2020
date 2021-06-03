@@ -68,7 +68,7 @@
 
 .navbar-content{
 
-  font-family: Roboto,Arial,sans-serif ;
+  font-family: var(--font-primary) ;
   font-size: 1.4rem !important;
   font-weight: 900 !important;
   letter-spacing: 0.08em;

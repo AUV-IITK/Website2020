@@ -24,6 +24,8 @@
 
 .key-features-list {
   padding: 0px;
+  text-align: center;
+  font-family: var(--font-primary);
 }
 
 .key-features-list > li {
