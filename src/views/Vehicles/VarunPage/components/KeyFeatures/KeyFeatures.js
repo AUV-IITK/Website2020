@@ -14,13 +14,11 @@ function Posts() {
                 <Container>
                     <div className="title-block">
                         <Row className="mt-5 justify-content-center">
-                            <h2>
-                                VARUN
-                            </h2>
+                            <div>
+                                <h2 className="heading-main">VARUN</h2>
+                                <h3 className="small-heading">The First of them</h3>
+                            </div>
                         </Row>    
-                        <Row className="title-name justify-content-center">
-                            <h3  className="mt-2 mb-2">The First of them</h3>
-                        </Row>  
                     </div>
 
                     <Row className="d-flex col-main justify-content-center">

@@ -15,13 +15,11 @@ function Posts() {
                 <Container>
                     <div className="title-block">
                         <Row className="mt-5 justify-content-center">
-                            <h2>
-                                TRITON
-                            </h2>
-                        </Row>    
-                        <Row className="title-name justify-content-center">
-                            <h3  className="mt-2 mb-2">The God</h3>
-                        </Row>  
+                            <div>
+                                <h2 className="heading-main">TRITON</h2>
+                                <h3 className="small-heading">The God</h3>
+                            </div>
+                        </Row>
                     </div>
 
                     <Row className="d-flex col-main justify-content-center">
@@ -39,7 +37,7 @@ function Posts() {
                             <div className="briefspec">
                                 <Tabs defaultActiveKey="home" id="uncontrolled-tab">
                                     <Tab className="Tab-content" eventKey="home" title="What we made">
-                                        <div className="my-1">
+                                        <div className="my-1 brief">
                                         {specs.brief}
                                         </div>
                                     </Tab>

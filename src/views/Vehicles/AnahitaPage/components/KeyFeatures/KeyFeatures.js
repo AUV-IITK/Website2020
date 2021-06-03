@@ -15,13 +15,11 @@ function Posts() {
                 <Container>
                     <div className="title-block">
                         <Row className="mt-5 justify-content-center">
-                            <h2>
-                                ANAHITA
-                            </h2>
-                        </Row>    
-                        <Row className="title-name justify-content-center">
-                            <h3  className="mt-2 mb-2">The Goddess of Water</h3>
-                        </Row>  
+                            <div>
+                                <h2 className="heading-main">ANAHITA</h2>
+                                <h3 className="small-heading">The Goddess of Water</h3>
+                            </div>
+                        </Row>     
                     </div>
 
                     <Row className="d-flex col-main justify-content-center">

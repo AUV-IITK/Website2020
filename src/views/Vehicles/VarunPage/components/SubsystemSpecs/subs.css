@@ -19,7 +19,7 @@
   cursor: pointer;
 }
 .subsystem-headings {
-  border-bottom: 2px solid blue;
+  border-bottom: 2px solid var(--color-primary);
 
 }
 .spec-container {
@@ -27,8 +27,8 @@
 }
 
 .accord-head {
-  background: #ADD8E6;
-  color: #1a2228;
+  background: var(--color-quartenary);
+  color: var(--color-primary);
   font-weight: 900;
 }
 

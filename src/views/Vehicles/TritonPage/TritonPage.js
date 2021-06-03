@@ -1,7 +1,5 @@
 import React from "react";
 import ExamplesNavbar from "../../../components/Navbars/ExamplesNavbar";
-// import "./Triton.css";
-import { Container, Row, Col } from "react-bootstrap";
 
 // core components
 import KeyFeatures from "./components/KeyFeatures/KeyFeatures";
