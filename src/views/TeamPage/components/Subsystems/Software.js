@@ -6,7 +6,7 @@ import {
     Col
 } from "react-bootstrap";
 import { MDBRipple } from 'mdb-react-ui-kit';
-import software from "assets/img/software.jpg"
+import software from "assets/img/softwaretransparent.jpg"
 import softwareteam from "../../../../data/SoftwareTeam.json";
 import "./Subsys.css"
 
@@ -34,10 +34,13 @@ const Software = () => {
                         </Card.Text>
                     </Card.ImgOverlay>
                 </Card> */}
-                <Card style={{ width: '100%' }}>
+                <div className="card-background" style={{
+                    backgroundImage: `url(${software})`, backgroundPosition: 'center',
+                    backgroundSize: 'cover'
+                }}>
                     <Card.Body>
                         <Card.Title className="mb-4 text-center subsystem-heading">SOFTWARE</Card.Title>
-                        <Card.Text>
+                        <Card.Text className="subsystem-text">
                             The software subsystem develops the algorithms
                             controlling the robot and making it autonomous. We use latest cutting edge
                             technologies in the world of robotics software. We use ROS(Robot Operating System)
@@ -50,7 +53,7 @@ const Software = () => {
                             vehicles motion and enable it perform at full potential.
                             </Card.Text>
                     </Card.Body>
-                </Card>
+                </div>
             </Container>
             <div className="section text-center">
                 <Container>
@@ -61,7 +64,7 @@ const Software = () => {
                                     <Row>
                                         {section.items.map((teamMember) => {
                                             return (
-                                                <Col lg="3" sm="6" className="text-center img-col mr-auto ml-auto">
+                                                <Col lg="4" className="text-center img-col mr-auto ml-auto">
                                                     <MDBRipple className='bg-image' rippleTag='div' rippleColor='light' >
                                                         <img src={require("assets/img/" + teamMember.image)}
                                                             className="content-image" />

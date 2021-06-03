@@ -5,7 +5,7 @@ import {
     Row,
     Col
 } from "react-bootstrap";
-import business from "assets/img/business.jpg"
+import business from "assets/img/businesstransparent.jpg"
 import { MDBRipple } from 'mdb-react-ui-kit';
 import businessteam from "../../../../data/BusinessTeam.json";
 import "./Subsys.css"
@@ -31,7 +31,7 @@ const Business = () => {
                         </Card.Text>
                     </Card.ImgOverlay>
                 </Card> */}
-                <Card className="card-background" style={{
+                <div className="card-background" style={{
                     backgroundImage: `url(${business})`, backgroundPosition: 'center',
                     backgroundSize: 'cover'
                 }}>
@@ -47,7 +47,7 @@ const Business = () => {
                             three subsystems.
                             </Card.Text>
                     </Card.Body>
-                </Card>
+                </div>
             </Container>
             <div className="section text-center">
                 <Container>
@@ -58,7 +58,7 @@ const Business = () => {
                                     <Row>
                                         {section.items.map((teamMember) => {
                                             return (
-                                                <Col lg="3" sm="6" className="text-center img-col mr-auto ml-auto">
+                                                <Col lg="4" className="text-center img-col mr-auto ml-auto">
                                                     <MDBRipple className='bg-image' rippleTag='div' rippleColor='light' >
                                                         <img src={require("assets/img/" + teamMember.image)}
                                                             className="content-image" />

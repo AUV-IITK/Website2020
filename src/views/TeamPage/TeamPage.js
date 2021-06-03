@@ -42,13 +42,13 @@ import TeamVideo from './components/TeamVideo/TeamVideo';
 import TeamHeads from "./components/TeamHeads/TeamHeads";
 
 function LandingPage() {
-    // document.documentElement.classList.remove("nav-open");
-    // React.useEffect(() => {
-    //     document.body.classList.add("profile-page");
-    //     return function cleanup() {
-    //         document.body.classList.remove("profile-page");
-    //     };
-    // });
+    document.documentElement.classList.remove("nav-open");
+    React.useEffect(() => {
+        document.body.classList.add("profile-page");
+        return function cleanup() {
+            document.body.classList.remove("profile-page");
+        };
+    });
     return (
         <div>
             <ExamplesNavbar activePage="/team" />

@@ -5,7 +5,7 @@ import {
     Row,
     Col
 } from "react-bootstrap";
-import electrical from "assets/img/electrical.jpeg"
+import electrical from "assets/img/electricaltransparent.jpg"
 import { MDBRipple } from 'mdb-react-ui-kit';
 import electricalteam from "../../../../data/ElectricalTeam.json";
 import "./Subsys.css"
@@ -33,10 +33,13 @@ const Electrical = () => {
                         </Card.Text>
                     </Card.ImgOverlay>
                 </Card> */}
-                <Card style={{ width: '100%' }}>
+                <div className="card-background" style={{
+                    backgroundImage: `url(${electrical})`, backgroundPosition: 'center',
+                    backgroundSize: 'cover'
+                }}>
                     <Card.Body>
-                        <Card.Title className="mb-4">Electrical</Card.Title>
-                        <Card.Text>
+                        <Card.Title className="mb-4 text-center subsystem-heading">Electrical</Card.Title>
+                        <Card.Text className="subsystem-text">
                             The Electrical Subsystem builds the electrical framework
                             powering our AUV. We work on the electrical aspects of the AUV, providing
                             power, driving actuators and interfacing with various sensors on board. We
@@ -47,10 +50,8 @@ const Electrical = () => {
                             The main aim of the Electrical subsystem is to manage electrical setup and
                             act as an interface between the software and mechanical subsystems.
                             </Card.Text>
-                        <Card.Link href="#">Card Link</Card.Link>
-                        <Card.Link href="#">Another Link</Card.Link>
                     </Card.Body>
-                </Card>
+                </div>
             </Container>
             <div className="section text-center">
                 <Container>
@@ -61,7 +62,7 @@ const Electrical = () => {
                                     <Row>
                                         {section.items.map((teamMember) => {
                                             return (
-                                                <Col lg="3" sm="6" className="text-center img-col mr-auto ml-auto">
+                                                <Col lg="4" className="text-center img-col mr-auto ml-auto">
                                                     <MDBRipple className='bg-image' rippleTag='div' rippleColor='light' >
                                                         <img src={require("assets/img/" + teamMember.image)}
                                                             className="content-image" />

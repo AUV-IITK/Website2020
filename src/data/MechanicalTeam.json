@@ -4,14 +4,6 @@
             "heading": "Team Members",
             "items": [
                 {
-                    "name": "Shashank Katiyar",
-                    "subheading": "Subsystem Head",
-                    "image": "team/shashank.jpeg",
-                    "facebook": "https://www.facebook.com/",
-                    "linkedin": "https://www.linkedin.com/",
-                    "text": "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut "
-                },
-                {
                     "name": "Priank Prasad",
                     "subheading": "Y17, Senior Member",
                     "image": "team/p.jpg",
@@ -31,6 +23,14 @@
                     "name": "Kamlesh Kalsariya",
                     "subheading": "Y18, Senior Member",
                     "image": "team/kamlesh.jpg",
+                    "facebook": "https://www.facebook.com/",
+                    "linkedin": "https://www.linkedin.com/",
+                    "text": "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut "
+                },
+                {
+                    "name": "Shashank Katiyar",
+                    "subheading": "Y19, Subsystem Head",
+                    "image": "team/shashank.jpeg",
                     "facebook": "https://www.facebook.com/",
                     "linkedin": "https://www.linkedin.com/",
                     "text": "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut "

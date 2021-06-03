@@ -5,7 +5,7 @@ import {
     Row,
     Col
 } from "react-bootstrap";
-import mechanical from "assets/img/mechanical.jpg"
+import mechanical from "assets/img/mechanicaltransparent.jpg"
 import { MDBRipple } from 'mdb-react-ui-kit';
 import mechanicalteam from "../../../../data/MechanicalTeam.json";
 import "./Subsys.css"
@@ -28,10 +28,13 @@ const Mechanical = () => {
                         </Card.Text>
                     </Card.ImgOverlay>
                 </Card> */}
-                <Card style={{ width: '100%' }}>
+                <div className="card-background" style={{
+                    backgroundImage: `url(${mechanical})`, backgroundPosition: 'center',
+                    backgroundSize: 'cover'
+                }}>
                     <Card.Body>
                         <Card.Title className="mb-4 text-center subsystem-heading">MECHANICAL</Card.Title>
-                        <Card.Text>
+                        <Card.Text className="subsystem-text">
                             The mechanical subsystem if responsible for design and
                             manufacture of the vehicle. We design the entire vehicle and accessories -
                             working on Fluid Dynamics, Actuator controls, and Pneumatics. We plan, simulate
@@ -39,10 +42,8 @@ const Mechanical = () => {
                             using state of art manufacturing techniques. We use latest software such as SolidWorks and ANSYS
                             to make the design robust, modular, light and strong.
                             </Card.Text>
-                        <Card.Link href="#">Card Link</Card.Link>
-                        <Card.Link href="#">Another Link</Card.Link>
                     </Card.Body>
-                </Card>
+                </div>
             </Container>
             <div className="section text-center">
                 <Container>
@@ -53,7 +54,7 @@ const Mechanical = () => {
                                     <Row>
                                         {section.items.map((teamMember) => {
                                             return (
-                                                <Col lg="3" sm="6" className="text-center img-col mr-auto ml-auto">
+                                                <Col lg="4" className="text-center img-col mr-auto ml-auto">
                                                     <MDBRipple className='bg-image' rippleTag='div' rippleColor='light' >
                                                         <img src={require("assets/img/" + teamMember.image)}
                                                             className="content-image" />

@@ -1,5 +1,13 @@
+.cardbody{
+  background-color: beige;
+  border-radius: 1em;
+  padding: 10px;
+}
+
 .card-background{
-    width: 100%;
+  width: 100%;
+  border-radius: 1em;
+  padding: 10px;
 }
 
 .subsystem-heading{
