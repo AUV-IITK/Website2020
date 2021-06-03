@@ -1,0 +1,14 @@
+:root{
+
+    /* Color Scheme */
+    --color-primary: #1F2833;
+    --color-secondary: #2152CC;
+    --color-tertiary: #5AB9EA;
+    --color-quartenary: #8FC1E3;
+    --color-black: #0B0C01;
+    --color-white: #C5C6C7;
+
+    /* Fonts */
+    --font-primary: Titillium Web, Roboto, Arial;
+    --font-heading: Overpass;
+}
