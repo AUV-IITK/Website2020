@@ -7,16 +7,32 @@
   padding: 20px 35px 20px 35px;
 }
 
-.features-list {
-  padding: 0px;
+.spec-card {
+  background: #ADD8E6;
+  transition: none !important;
 }
 
-.features-list > li {
-  padding-top: 20px;
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+.spec-card:hover {
+  transition: none !important;
+  animation: none !important;
+  transform: none !important;
+  cursor: pointer;
+}
+.subsystem-headings {
+  border-bottom: 2px solid blue;
+
+}
+.spec-container {
+  margin-bottom: 100px;
 }
 
-.features-list > li:first-child {
-  padding-top: 0px;
+.accord-head {
+  background: #ADD8E6;
+  color: #1a2228;
+  font-weight: 900;
+}
+
+.add-icon {
+  margin-right: 10px;
+  opacity: 0.7;
 }

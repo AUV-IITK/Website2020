@@ -1,0 +1,47 @@
+.col-main {
+  display: flex;
+  flex-direction: row;
+}
+
+.title-block {
+  padding: 25px;
+}
+
+.imgCol {
+  padding-top: 10px;
+}
+
+.featureCol {
+  padding: 10px 45px 10px 45px;
+}
+
+.heading {
+  padding-top: 0px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.key-features-list {
+  padding: 0px;
+}
+
+.key-features-list > li {
+  padding-top: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  list-style: none;
+}
+
+.Tab-content {
+  background: white !important;
+  height: 100%;
+}
+
+.cad-model {
+  width: 100%;
+  /* border: 1px solid black; */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  height: 600px;
+  margin-bottom: 3rem;
+}

@@ -19,13 +19,6 @@ function LandingPage() {
     return (
         <div className="mobile-responsive">
             <ExamplesNavbar activePage="/vehicles/anahita"/>
-            {/* <div className="section text-center ">
-                <Container className="reduce-margin">
-                    <Row>
-                        <h2 className="heading-main">ANAHITA</h2>
-                    </Row>
-                </Container>
-            </div> */}
             <div className="main">
                 <KeyFeatures/>
                 <SubsystemSpecs/>

@@ -1,93 +1,132 @@
-import React from 'react';
-import {
+import React from "react";
+import {Container, Row, Col, Accordion, Card} from "react-bootstrap";
+import anahita_exploded from "../../../../../assets/img/anahita/anahita_exploded.png";
+import powerimg from "../../../../../assets/img/anahita/AnahitaElec.jpg";
+import soft from "../../../../../assets/img/anahita/AnahitaSoft.jpg";
 
-    Container,
-    Row,
-    Col
-} from "reactstrap";
-import labelled from '../../../../../assets/img/varun/varun_labelled.png';
-import powerimg from '../../../../../assets/img/varun/varun_power.png';
-import soft from '../../../../../assets/img/varun/software_logos.png';
-import "./subs.css"
-const embedstyle= {
-    fontSize: "13px",
-    fontWeight: "normal",
-    margin: "5px",
-    color: "#4A4A4A"
-} 
+import "./subs.css";
+import specs from "../../data.js";
+
 function Posts() {
+    console.log(specs);
     return (
         <>
+        {
             <div className="section landing-section">
-            <Container>
-                <Row className="">
-                    <Col className="ml-auto mr-auto" md="8">
-                        <h2 className="text-center mb-4 heading-main"><b>SPECIFICATIONS</b></h2>
-                    </Col>
-                </Row>
-                <Row>
-                    <h3 className="small-heading ml-auto mr-auto">Mechanical</h3>
-                </Row>
-                <Row>
-                    <Col sm="12" md="6" className="text-center my-auto imgCol">
-                        <img src={labelled} className="w-100"></img>
-                        <p className="small-heading-edited">VARUN VEHICLE : STRUCTURE</p>
-                    </Col>
-                    <Col sm="12" md="6" className="featureCol my-auto">
-                        <ul className="features-list">
-                            <li ><b style={{fontWeight:600}}>Five</b> degrees of freedom</li>
-                            <li >Weigth of <b style={{fontWeight:600}}>44.5 kg</b> with +1% buoyancy</li>
-                            <li >Max coefficient of drag at <b style={{fontWeight:600}}>1.5 m/s : 0.42</b></li>
-                            <li ><b style={{fontWeight:600}}>6x brushed-DC Seabotix thrusters</b> for locomotion</li>
-                            <li ><b style={{fontWeight:600}}>Pneumatics actuation</b> for torpedo shooting</li>
-                            <li >Fabricated using in-house manufacturing facilities</li>
-                        </ul>
-                    </Col>
-                </Row>
-                <Row>
-                    <h3 className="small-heading ml-auto mr-auto">Electrical</h3>
-                </Row>
-                <Row>
-                    
-                    <Col sm="12" md="6" className="text-center my-auto imgCol">
-                        <img src={powerimg} className="w-100"></img>
-                        <p className="small-heading-edited mt-5">POWER DISTRIBUTION</p>
-                    </Col>
-                    <Col sm="12" md="6" className="featureCol my-auto">    
-                        <ul className="features-list" >
-                            <li >Powered by four<b style={{fontWeight:600}}> 3S Lithium-Polymer Batteries</b></li>
-                            <li ><b style={{fontWeight:600}}>Custom made power-distribution board</b> with protection and monitoring circuits</li>
-                            <li >Two <b style={{fontWeight:600}}>Logitech C290 cameras</b> for 1080p video feed</li>
-                            <li ><b style={{fontWeight:600}}>Bluerobotics Depth Sensor</b> for precision depth</li>
-                            <li ><b style={{fontWeight:600}}>Intel NUC</b> for high-processing power</li>
-                        </ul>
-                    </Col>
-                </Row>
-                <Row>
-                    <h3 className="small-heading ml-auto mr-auto">Software</h3>
-                </Row>
-                <Row>
-                    <Col sm="12" md="6" className="text-center my-auto imgCol">
-                        <img src={soft} className="w-100"></img>
-                        <p className="small-heading-edited">FRAMEWORKS USED IN VARUN</p>
-                    </Col>
-                    <Col sm="12" md="6" className="featureCol my-auto">
-                        <ul className="features-list">
-                            <li >System integration through ROS on <b style={{fontWeight:600}}>Ubuntu 14.04</b></li>
-                            <li >Simulation through <b style={{fontWeight:600}}>Gazebo</b> to optimize testing time</li>
-                            <li >Image processing to perform vision-based tasks</li>
-                            <li >Navigation through <b style={{fontWeight:600}}>dead-reckoning sensors</b></li>
-                            <li ><b style={{fontWeight:600}}>GUI enabled</b> control for debugging</li>
-                            <li ><b style={{fontWeight:600}}>Code available on GitHub </b>with documentation under BSD-3 License Clause</li>
-                        </ul>
-                    </Col>                    
-                </Row>
-            </Container>
-            </div>
+                <Container>
+                    <Row>
+                        <Col md="2"></Col>
+                        <Col className="ml-auto mr-auto" md="8">
+                            <h2 className="text-center mb-4 heading-main">
+                                <b>COMPONENTS</b>
+                            </h2>
+                        </Col>
+                        <Col md="2"></Col>
+                    </Row>
+                    <Row className="subsystem-headings">
+                        <h3 className="small-heading">Mechanical</h3>
+                    </Row>
+                    <div className="spec-container">
+                        <Row>
+                            <Col lg="4" className="text-center my-auto imgCol">
+                                <img src={anahita_exploded} className="w-100"></img>
+                                <p className="small-heading-edited">
+                                    ANAHITA VEHICLE : STRUCTURE
+                                </p>
+                            </Col>
+                            <Col lg="8" className="featureCol my-auto">
+                                <Accordion defaultActiveKey="">
+                                {
+                                    specs.mechanical.map(
+                                        (data) => (
+                                            <Card className="card-plain spec-card">
+                                                <Accordion.Toggle className="accord-head" as={Card.Header} eventKey={String(data.id)}>
+                                                <svg className="add-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z"/></svg>
+                                                {data.title}
+                                                </Accordion.Toggle>
+                                                <Accordion.Collapse eventKey={String(data.id)}>
+                                                <Card.Body>{data.content}</Card.Body>
+                                                </Accordion.Collapse>
+                                            </Card>
+                                        )
+                                    )
+                                }
+                                </Accordion>
+                            </Col>
+                        </Row>
+                     </div>
+                    <Row className="subsystem-headings">
+                        <h3 className="small-heading">Electrical</h3>
+                    </Row>
+                    <div className="spec-container">
+                        <Row>
+                            <Col md="8" sm={{ order: 'last' }} lg={{order:'first'}} xs={{ order: 'last' }} className="my-auto featureCol">
+                                <Accordion defaultActiveKey="">
+                                {
+                                    specs.electrical.map(
+                                        (data) => (
+                                            <Card className="card-plain spec-card">
+                                                <Accordion.Toggle className="accord-head" as={Card.Header} eventKey={String(data.id)}>
+                                                <svg className="add-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z"/></svg>
 
+                                                {data.title}
+                                                </Accordion.Toggle>
+                                                <Accordion.Collapse eventKey={String(data.id)}>
+                                                <Card.Body>{data.content}</Card.Body>
+                                                </Accordion.Collapse>
+                                            </Card>
+                                        )
+                                    )
+                                }
+                                </Accordion>
+                            </Col>
+                            <Col md="4" className="text-center my-auto imgCol">
+                                <img src={powerimg} className="w-100"></img>
+                                <p className="small-heading-edited">
+                                    ELECTRICAL ARCHITECTURE
+                                </p>
+                            </Col>
+                        </Row>
+                     </div>
+                    <Row className="subsystem-headings">
+                        <h3 className="small-heading">Software</h3>
+                    </Row>
+                    <div className="spec-container">
+                        <Row>
+                            <Col md="4" className="text-center my-auto imgCol">
+                                <img src={soft} className="w-100"></img>
+                                <p className="small-heading-edited">
+                                    SOFTWARE DATA & CONTROL FLOW
+                                </p>
+                            </Col>
+                            <Col md="8" className="my-auto featureCol">
+                                <Accordion defaultActiveKey="">
+                                {
+                                    specs.software.map(
+                                        (data) => (
+                                            <Card className="card-plain spec-card">
+                                                <Accordion.Toggle className="accord-head" as={Card.Header} eventKey={String(data.id)}>
+                                                <svg className="add-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z"/></svg>
+
+                                                {data.title}
+                                                </Accordion.Toggle>
+                                                <Accordion.Collapse eventKey={String(data.id)}>
+                                                <Card.Body>{data.content}</Card.Body>
+                                                </Accordion.Collapse>
+                                            </Card>
+                                        )
+                                    )
+                                }
+                                </Accordion>
+                            </Col>
+                            <Col md="3"></Col>
+                        </Row>
+                    </div>
+                </Container>
+            </div>
+        }
         </>
     );
-
-
 }
+
 export default Posts;

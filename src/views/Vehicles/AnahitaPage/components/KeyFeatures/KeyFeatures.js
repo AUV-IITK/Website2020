@@ -1,8 +1,9 @@
 import React from "react";
 import {useEffect} from "react";
 import "./KeyFeatures.css";
-import {Container, Row, Col} from "react-bootstrap";
-
+import {Container, Row, Col, Tabs, Tab, Table} from "react-bootstrap";
+import anahitaCAD from '../../../../../assets/models/AnahitaCAD.glb';
+import specs from "../../data.js";
 
 function Posts() {
     useEffect(() => {
@@ -19,34 +20,52 @@ function Posts() {
                             </h2>
                         </Row>    
                         <Row className="title-name justify-content-center">
-                            <h3  className="mt-2 mb-2">The Goddess of Waters</h3>
+                            <h3  className="mt-2 mb-2">The Goddess of Water</h3>
                         </Row>  
                     </div>
 
-                    <Row className="d-flex justify-content-center">
-                        <Col sm="12" lg="6" className=" imgCol my-auto text-center">
-                            <img
-                                src={require("../../../../../assets/img/anahita/anahita-3.jpg")}
-                                className="w-100 vehicleImage"
-                            />
+                    <Row className="d-flex col-main justify-content-center">
+                        <Col sm="12" lg="6" className="my-auto text-center mt-5"> 
+                                <model-viewer 
+                                id="reveal" 
+                                loading="eager" 
+                                camera-controls 
+                                auto-rotate 
+                                src={anahitaCAD}
+                                class="cad-model"
+                                alt="A 3D model of a Triton"></model-viewer>
                         </Col>
                         <Col sm="12" lg="6" className="featureCol my-auto">
-                            <p className="text-center heading">Key Features</p>
-                            <ul className="key-features-list">
-                                <li> <b style={{fontWeight:600}}>Wired frame with truss structures,</b> for structural support and reduced mass.</li>
-                                <li>
-                                    On board Camera, IMU, DVL, Pressure Sensor & Hydrophones.
-                                </li>
-                                <li>
-                                    Only <b style={{fontWeight:600}}>32 Kgs</b> in weight.
-                                </li>
-                                <li>
-                                    Upto <b style={{fontWeight:600}}>4 hours of continuous operation</b> capability.
-                                </li>
-                                <li>
-                                    Production cost : Rs. <b style={{fontWeight:600}}>23,00,000</b>
-                                </li>
-                            </ul>
+                            <div className="briefspec">
+                                <Tabs defaultActiveKey="home" id="uncontrolled-tab">
+                                    <Tab className="Tab-content" eventKey="home" title="What we made">
+                                        <div className="my-1">
+                                        {specs.brief}
+                                        </div>
+                                        <div>
+                                            <a className="tdr-button" href="https://drive.google.com/file/d/1AN2uvKzoERqeampDUTVilUPUmSCickFL/view?usp=sharing" target="_blank">
+                                                Report
+                                            </a>
+                                        </div>
+                                    </Tab>
+                                    <Tab className="Tab-content" eventKey="specs" title="Specifications">
+                                        <Table bordered className="my-1">
+                                        <tbody>
+                                            {
+                                                specs.specsTable.map(
+                                                    (data) => (
+                                                    <tr>
+                                                        <td style={{width:'30%', fontWeight:'bold'}}>{data.name}</td>
+                                                        <td>{data.spec}</td>
+                                                    </tr>
+                                                    )
+                                                )
+                                            }
+                                        </tbody>
+                                        </Table>
+                                    </Tab>
+                                </Tabs>
+                            </div>
                         </Col>
                     </Row>
                 </Container>
