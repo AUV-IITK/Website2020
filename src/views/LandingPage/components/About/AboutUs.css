@@ -1,5 +1,5 @@
 .heading-main{
-    font-family: Roboto,Arial,sans-serif  ;
+    font-family: var(--font-heading);
     font-size: 3.4rem;
     font-weight: 600;
     animation: ease-in 1s ;
@@ -10,18 +10,18 @@
 }
 
 .small-heading{
-    font-family: Roboto,Arial,sans-serif  ;
+    font-family: var(--font-primary);
     font-weight: 500;
     line-height: 1.35;
     position: relative;
     font-size: 3rem;
     text-transform: none;
     letter-spacing: 2px;
-    color: rgb(61, 61, 61);
+    color: var(--color-primary);
 }
 
 .small-heading-edited{
-    font-family: Roboto,Arial,sans-serif  ;
+    font-family: var(--font-primary);
     font-weight: 400;
     line-height: 1.35;
     position: relative;
@@ -36,7 +36,7 @@
 }
 .auv-description-primary{
 
-    font-family:  Roboto,Arial,sans-serif  ;
+    font-family:  var(--font-primary);
     color: rgb(61, 61, 61);
     font-size: 16px;
     text-align: left;
@@ -56,7 +56,7 @@
     color: rgba(20,150,180);
     background-color: white;
     border: 2px solid  rgba(20,150,180,0.67);
-    font-family: Roboto,Arial,sans-serif  ;
+    font-family: var(--font-primary);
     text-transform: uppercase;
     font-weight: 700;
     display: inline-block;
@@ -201,7 +201,7 @@
 }
 
 .icon-infos{
-    font-family: Roboto;
+    font-family: var(--font-primary);
     margin-top: 244px !important;
     font-weight: 400;
 }
