@@ -114,7 +114,7 @@
     color: rgba(20,150,180, 1);
     font-weight: 800;
     font-size: 3rem;
-    font-family: Lato  ;
+    font-family: var(--font-primary);
     text-decoration: bold;
 }
 
@@ -125,7 +125,7 @@
 }
 
 .info-title{
-    font-family: Lato  ;
+    font-family: var(--font-primary);
     text-transform: uppercase;
     text-decoration: bold;
     color: rgba(20,150,180, 1);
@@ -180,13 +180,13 @@
         color: rgba(20,150,180, 0.67);
         font-weight: 800;
         font-size: 2rem;
-        font-family: Lato  ;
+        font-family: var(--font-primary);
         text-decoration: bold;
     }
     
     
     .info-title{
-        font-family: Lato  ;
+        font-family: var(--font-primary);
         text-transform: uppercase;
         text-decoration: bold;
         color: rgba(20,150,180, 0.67);

@@ -1,6 +1,6 @@
 
 .desc-auv{
-    font-family: Lato  ;
+    font-family: var(--font-primary);
     color: #000000;
     font-size: 20px;
     margin-bottom: 20px;
