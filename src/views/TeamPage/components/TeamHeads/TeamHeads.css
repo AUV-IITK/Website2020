@@ -9,14 +9,12 @@
   flex-direction: row;
   justify-content: space-evenly;
 }
-
-.content-image {
-  max-width: 500px;
-  height: 100%;
+.member-image {
   width: 100%;
+  max-width: 400px;
 }
 
-.overlay-text{
+.overlay-text {
   padding: 10px;
   font-size: 14px;
 }

@@ -6,10 +6,8 @@
   "dependencies": {
     "@google/model-viewer": "^1.7.1",
     "axios": "^0.21.1",
-    "bootstrap": "^5.0.1",
     "classnames": "2.2.6",
     "json-loader": "^0.5.7",
-    "mdb-react-ui-kit": "^1.0.0-beta5",
     "moment": "2.24.0",
     "node-sass": "4.13.1",
     "nouislider": "13.1.5",

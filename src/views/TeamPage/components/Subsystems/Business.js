@@ -6,7 +6,6 @@ import {
     Col
 } from "react-bootstrap";
 import business from "assets/img/businesstransparent.jpg"
-import { MDBRipple } from 'mdb-react-ui-kit';
 import businessteam from "../../../../data/BusinessTeam.json";
 import "./Subsys.css"
 
@@ -59,34 +58,7 @@ const Business = () => {
                                         {section.items.map((teamMember) => {
                                             return (
                                                 <Col lg="4" className="text-center img-col mr-auto ml-auto">
-                                                    <MDBRipple className='bg-image' rippleTag='div' rippleColor='light' >
-                                                        <img src={require("assets/img/" + teamMember.image)}
-                                                            className="content-image" />
-                                                        <div className='hover-overlay'>
-                                                            <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.2)' }}></div>
-                                                            <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.65)' }}>
-                                                                <div className='overlay-text h-100 text-left'>
-                                                                    {/* <h3 style={{ color: 'white' }}>This is a title</h3> */}
-                                                                    <p className="overlay-text">{teamMember.text}</p>
-                                                                    <ul className="social-list">
-                                                                        <li>
-                                                                            <a href={teamMember.facebook} target="blank">
-                                                                                <i className="social fa fa-facebook fa-2x" />
-                                                                            </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href={teamMember.linkedin} target="blank">
-                                                                                <i className="social fa fa-linkedin fa-2x" />
-                                                                            </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </MDBRipple>
-                                                    <h5>{teamMember.name}</h5>
-                                                    <h6>{teamMember.subheading}</h6>
-                                                    {/* <img src={require("assets/img/" + teamMember.image)}
+                                                    <img src={require("assets/img/" + teamMember.image)}
                                                         className="member-image" />
                                                     <h5>{teamMember.name}</h5>
                                                     <h6>{teamMember.subheading}</h6>
@@ -103,7 +75,7 @@ const Business = () => {
                                                                 </a>
                                                             </li>
                                                         </ul>
-                                                    </div> */}
+                                                    </div>
                                                 </Col>
                                             )
                                         })}
