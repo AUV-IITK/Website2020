@@ -1,20 +1,18 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import {
+    Accordion,
+    Card,
     Container,
     Row,
     Col
 } from "react-bootstrap";
-import niotwin from '../../../../assets/img/niotwinner.jpeg';
-import desbot from '../../../../assets/img/designbot.png';
-import atwork from '../../../../assets/img/atwork.png';
+
 import "./Subsystems.css"
 import Software from "./Software"
 import Electrical from "./Electrical"
 import Mechanical from "./Mechanical"
 import Business from "./Business"
-
-
 
 function Posts() {
     return (
@@ -25,30 +23,49 @@ function Posts() {
                         <Col className="ml-auto mr-auto" md="12">
                             <h2 className="text-center heading-main">Subsystems</h2>
                         </Col>
-
                     </Row>
-                    <Row>
-                        <Col md="3" xs="6" className="text-center subsys-link">
-                            <Link to="/business" className="subsys-text">Business</Link>
-                        </Col>
-                        <Col md="3" xs="6" className="text-center subsys-link">
-                            <Link to="/electrical" className="subsys-text">Electrical</Link>
-                        </Col>
-                        <Col md="3" xs="6" className="text-center subsys-link">
-                            <Link to="/mechanical" className="subsys-text">Mechanical</Link>
-                        </Col>
-                        <Col md="3" xs="6" className="text-center subsys-link">
-                            <Link to="/software" className="subsys-text">Software</Link>
-                        </Col>
-                    </Row>
-                    <br />
-                    <Row>
-                        <Route path="/business" exact component={Business} />
-                        <Route path="/electrical" exact component={Electrical} />
-                        <Route path="/mechanical" exact component={Mechanical} />
-                        <Route path="/software" exact component={Software} />
-                    </Row>
-
+                    <Accordion defaultActiveKey="0">
+                        <div className="accordian-section">
+                            <Accordion.Toggle as={Card.Header} eventKey="0" className="accordian-toggle text-center">
+                                BUSINESS
+                            </Accordion.Toggle>
+                            <Accordion.Collapse eventKey="0">
+                                <div>
+                                    <Business />
+                                </div>
+                            </Accordion.Collapse>
+                        </div>
+                        <div className="accordian-section">
+                            <Accordion.Toggle as={Card.Header} eventKey="1" className="accordian-toggle text-center">
+                                ELECTRICAL
+                            </Accordion.Toggle>
+                            <Accordion.Collapse eventKey="1">
+                                <div>
+                                    <Electrical />
+                                </div>
+                            </Accordion.Collapse>
+                        </div>
+                        <div className="accordian-section">
+                            <Accordion.Toggle as={Card.Header} eventKey="2" className="accordian-toggle text-center">
+                                MECHANICAL
+                            </Accordion.Toggle>
+                            <Accordion.Collapse eventKey="2">
+                                <div>
+                                    <Mechanical />
+                                </div>
+                            </Accordion.Collapse>
+                        </div>
+                        <div className="accordian-section">
+                            <Accordion.Toggle as={Card.Header} eventKey="3" className="accordian-toggle text-center">
+                                SOFTWARE
+                            </Accordion.Toggle>
+                            <Accordion.Collapse eventKey="3">
+                                <div>
+                                    <Software />
+                                </div>
+                            </Accordion.Collapse>
+                        </div>
+                    </Accordion>
                 </Container>
             </div>
         </Router>

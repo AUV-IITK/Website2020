@@ -11,28 +11,13 @@ import "./Subsys.css"
 
 const Mechanical = () => {
     return (
-        <div>
+        <div className="subsystem-section">
             <Container>
-                {/* <Card className="bg-dark text-white">
-                    <Card.Img src={mechanical} alt="Card image" className="card-image" />
-                    <Card.ImgOverlay>
-                        <Card.Title className="mb-4 text-center subsystem-heading">MECHANICAL</Card.Title>
-                        <Card.Text>
-                            The mechanical subsystem if responsible for design and
-                            manufacture of the vehicle. We design the entire vehicle and accessories -
-                            working on Fluid Dynamics, Actuator controls, and Pneumatics. We plan, simulate
-                            and test the physical structure of the AUV and then manufacture it
-                            using state of art manufacturing techniques. We use latest software such as SolidWorks and ANSYS
-                            to make the design robust, modular, light and strong.
-                        </Card.Text>
-                    </Card.ImgOverlay>
-                </Card> */}
                 <div className="card-background" style={{
                     backgroundImage: `url(${mechanical})`, backgroundPosition: 'center',
                     backgroundSize: 'cover'
                 }}>
                     <Card.Body>
-                        <Card.Title className="mb-4 text-center subsystem-heading">MECHANICAL</Card.Title>
                         <Card.Text className="subsystem-text">
                             The mechanical subsystem if responsible for design and
                             manufacture of the vehicle. We design the entire vehicle and accessories -
@@ -40,7 +25,7 @@ const Mechanical = () => {
                             and test the physical structure of the AUV and then manufacture it
                             using state of art manufacturing techniques. We use latest software such as SolidWorks and ANSYS
                             to make the design robust, modular, light and strong.
-                            </Card.Text>
+                        </Card.Text>
                     </Card.Body>
                 </div>
             </Container>
@@ -53,24 +38,22 @@ const Mechanical = () => {
                                     <Row>
                                         {section.items.map((teamMember) => {
                                             return (
-                                                <Col lg="4" className="text-center img-col mr-auto ml-auto">
-                                                    <img src={require("assets/img/" + teamMember.image)}
-                                                        className="member-image" />
-                                                    <h5>{teamMember.name}</h5>
-                                                    <h6>{teamMember.subheading}</h6>
-                                                    <div className="middle">
-                                                        <ul className="social-list">
-                                                            <li>
-                                                                <a href={teamMember.facebook} target="blank">
-                                                                    <i className="social fa fa-facebook fa-2x" />
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href={teamMember.linkedin} target="blank">
-                                                                    <i className="social fa fa-linkedin fa-2x" />
-                                                                </a>
-                                                            </li>
-                                                        </ul>
+                                                <Col lg="3" className="team img-col text-center mr-auto ml-auto">
+                                                    <div className="member">
+                                                        <div className="member-img">
+                                                            <div className="overlay">
+                                                                <img src={require("assets/img/" + teamMember.image)}
+                                                                    className="member-img img-fluid" alt="" />
+                                                            </div>
+                                                            <div className="social">
+                                                                <a href={teamMember.facebook}><i className="fa fa-facebook fa-2x" /></a>
+                                                                <a href={teamMember.linkedin}><i className="fa fa-linkedin fa-2x" /></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="member-info">
+                                                            <h4>{teamMember.name}</h4>
+                                                            <span>{teamMember.subheading}</span>
+                                                        </div>
                                                     </div>
                                                 </Col>
                                             )

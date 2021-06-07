@@ -1,30 +1,35 @@
 {
     "teamData": [
         {
-            "heading": "Faculty Advisor & Team Captain ",
+            "heading": "Faculty Advisor",
             "items": [
                 {
                     "name": "Prof. Indranil Saha",
                     "subheading": "Faculty Advisor, CSE Dept, IITK",
                     "image": "team/indranilSaha.jpg",
                     "facebook": "https://www.facebook.com/",
-                    "linkedin": "https://www.linkedin.com/",
+                    "linkedin": "https://www.linkedin.com/in/indranil-saha-8859135/?originalSubdomain=in",
                     "text": "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut "
-                },
+                }
+            ]
+        },
+        {
+            "heading": "Team Heads",
+            "items":[
                 {
                     "name": "Ayush Gupta",
                     "subheading": "Y17, Team Captain",
                     "image": "team/ayush.jpg",
-                    "facebook": "https://www.facebook.com/",
-                    "linkedin": "https://www.linkedin.com/",
+                    "facebook": "https://www.facebook.com/7ayushgupta",
+                    "linkedin": "https://www.linkedin.com/in/7ayushgupta/",
                     "text": "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut "
                 },
                 {
                     "name": "Devendra Kharolia",
                     "subheading": "Y18, Team Vice-Captain",
                     "image": "team/devendra.jpg",
-                    "facebook": "https://www.facebook.com/",
-                    "linkedin": "https://www.linkedin.com/",
+                    "facebook": "https://www.facebook.com/devendra.kharolia.5",
+                    "linkedin": "https://www.linkedin.com/in/devendra-kharolia17/",
                     "text": "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut "
                 }
             ]

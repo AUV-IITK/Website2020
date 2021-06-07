@@ -11,31 +11,13 @@ import "./Subsys.css"
 
 const Business = () => {
     return (
-        <div>
+        <div className="subsystem-section">
             <Container>
-                {/* <Card className="bg-dark text-white">
-                    <Card.Img src={business} alt="Card image" className="card-image" />
-                    <Card.ImgOverlay>
-                        <Card.Title className="mb-4 text-center subsystem-heading">BUSINESS</Card.Title>
-                        <Card.Text>
-                            <p className="subsystem-text">
-                                The Business subsystem manages the fundings and outreach
-                                activities of the team. We manage the expenditures and fundings of the team.
-                                We represent the team before our sponsors and try to procure them.
-                                We maintain the team website and pages on the different social media platforms.
-                                The main aim of the business subsystem is to ensure that the team gets sufficient
-                                fundings and has an excellent outreach to ensure the smooth functioning of the other
-                                three subsystems.
-                            </p>
-                        </Card.Text>
-                    </Card.ImgOverlay>
-                </Card> */}
                 <div className="card-background" style={{
                     backgroundImage: `url(${business})`, backgroundPosition: 'center',
                     backgroundSize: 'cover'
                 }}>
                     <Card.Body >
-                        <Card.Title className="mb-4 text-center subsystem-heading">BUSINESS</Card.Title>
                         <Card.Text className="subsystem-text">
                             The Business subsystem manages the fundings and outreach
                             activities of the team. We manage the expenditures and fundings of the team.
@@ -44,7 +26,7 @@ const Business = () => {
                             The main aim of the business subsystem is to ensure that the team gets sufficient
                             fundings and has an excellent outreach to ensure the smooth functioning of the other
                             three subsystems.
-                            </Card.Text>
+                        </Card.Text>
                     </Card.Body>
                 </div>
             </Container>
@@ -57,24 +39,22 @@ const Business = () => {
                                     <Row>
                                         {section.items.map((teamMember) => {
                                             return (
-                                                <Col lg="4" className="text-center img-col mr-auto ml-auto">
-                                                    <img src={require("assets/img/" + teamMember.image)}
-                                                        className="member-image" />
-                                                    <h5>{teamMember.name}</h5>
-                                                    <h6>{teamMember.subheading}</h6>
-                                                    <div className="middle">
-                                                        <ul className="social-list">
-                                                            <li>
-                                                                <a href={teamMember.facebook} target="blank">
-                                                                    <i className="social fa fa-facebook fa-2x" />
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href={teamMember.linkedin} target="blank">
-                                                                    <i className="social fa fa-linkedin fa-2x" />
-                                                                </a>
-                                                            </li>
-                                                        </ul>
+                                                <Col lg="3" className="team img-col text-center mr-auto ml-auto">
+                                                    <div className="member">
+                                                        <div className="member-img">
+                                                            <div className="overlay">
+                                                                <img src={require("assets/img/" + teamMember.image)}
+                                                                    className="member-img img-fluid" alt="" />
+                                                            </div>
+                                                            <div className="social">
+                                                                <a href={teamMember.facebook}><i className="fa fa-facebook fa-2x" /></a>
+                                                                <a href={teamMember.linkedin}><i className="fa fa-linkedin fa-2x" /></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="member-info">
+                                                            <h4>{teamMember.name}</h4>
+                                                            <span>{teamMember.subheading}</span>
+                                                        </div>
                                                     </div>
                                                 </Col>
                                             )

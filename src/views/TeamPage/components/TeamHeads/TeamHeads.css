@@ -1,5 +1,6 @@
 .img-col {
-  padding: 30px;
+  padding: 10px;
+  padding-bottom: 20px;
 }
 
 .social-list {
@@ -12,6 +13,7 @@
 .member-image {
   width: 100%;
   max-width: 400px;
+  max-height: 320px;
 }
 
 .overlay-text {

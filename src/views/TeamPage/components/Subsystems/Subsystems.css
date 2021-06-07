@@ -1,21 +1,18 @@
-.subsys-link {
-  padding: 15px;
+.accordian-section {
+  margin-bottom: 20px;
+}
+.accordian-toggle {
+  background-color: var(--color-tertiary);
+  max-height: 150px;
+  cursor: pointer;
+  padding: 10px;
   font-size: 2.5rem;
-  text-decoration: none;
+  font-weight: 700;
+  font-family: var(--font-heading);
+  color: var(--color-black);
 }
 
-.subsys-text{
-  text-decoration: none;
-  color: black;
-  font-weight: 500;
+.accordian-toggle:hover {
   transition: all 0.3s ease-in-out;
-}
-
-.subsys-text:hover{
-  color: blue;
-  font-size: 2.65rem;
-}
-
-.heading-main{
-  padding-top: 10px;
+  color: #fff;
 }
