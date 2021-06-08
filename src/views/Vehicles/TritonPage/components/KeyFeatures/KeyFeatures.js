@@ -15,7 +15,7 @@ function Posts() {
                 <Container>
                     <div className="title-block">
                         <Row className="mt-5 justify-content-center">
-                            <div>
+                            <div style={{textAlign:'center'}}>
                                 <h2 className="heading-main">TRITON</h2>
                                 <h3 className="small-heading">The God</h3>
                             </div>
@@ -31,17 +31,18 @@ function Posts() {
                                 auto-rotate 
                                 src={tritonCAD}
                                 class="cad-model"
+                                style={{boxShadow:'none'}}
                                 alt="A 3D model of a Triton"></model-viewer>
                         </Col>
                         <Col sm="12" lg="6" className="featureCol my-auto">
                             <div className="briefspec">
                                 <Tabs defaultActiveKey="home" id="uncontrolled-tab">
-                                    <Tab className="Tab-content" eventKey="home" title="What we made">
+                                    <Tab className="tab-content" eventKey="home" title="What we made">
                                         <div className="my-1 brief">
                                         {specs.brief}
                                         </div>
                                     </Tab>
-                                    <Tab className="Tab-content" eventKey="specs" title="Specifications">
+                                    <Tab className="tab-content" eventKey="specs" title="Specifications">
                                         <Table bordered className="my-1">
                                         <tbody>
                                             {

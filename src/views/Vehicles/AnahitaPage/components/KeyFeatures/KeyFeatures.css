@@ -35,8 +35,8 @@
   list-style: none;
 }
 
-.Tab-content {
-  background: white !important;
+.tab-content {
+  background: white;
   height: 100%;
 }
 
