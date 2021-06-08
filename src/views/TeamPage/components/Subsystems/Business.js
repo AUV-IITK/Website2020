@@ -13,10 +13,7 @@ const Business = () => {
     return (
         <div className="subsystem-section">
             <Container>
-                <div className="card-background" style={{
-                    backgroundImage: `url(${business})`, backgroundPosition: 'center',
-                    backgroundSize: 'cover'
-                }}>
+                <div className="card-background">
                     <Card.Body >
                         <Card.Text className="subsystem-text">
                             The Business subsystem manages the fundings and outreach
@@ -47,8 +44,8 @@ const Business = () => {
                                                                     className="member-img img-fluid" alt="" />
                                                             </div>
                                                             <div className="social">
-                                                                <a href={teamMember.facebook}><i className="fa fa-facebook fa-2x" /></a>
-                                                                <a href={teamMember.linkedin}><i className="fa fa-linkedin fa-2x" /></a>
+                                                                <a href={teamMember.facebook} target='_blank'><i className="fa fa-facebook fa-2x" /></a>
+                                                                <a href={teamMember.linkedin} target='_blank'><i className="fa fa-linkedin fa-2x" /></a>
                                                             </div>
                                                         </div>
                                                         <div class="member-info">

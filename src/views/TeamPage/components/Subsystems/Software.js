@@ -50,8 +50,8 @@ const Software = () => {
                                                                     className="member-img img-fluid" alt="" />
                                                             </div>
                                                             <div className="social">
-                                                                <a href={teamMember.facebook}><i className="fa fa-facebook fa-2x" /></a>
-                                                                <a href={teamMember.linkedin}><i className="fa fa-linkedin fa-2x" /></a>
+                                                                <a href={teamMember.facebook} target='_blank'><i className="fa fa-facebook fa-2x" /></a>
+                                                                <a href={teamMember.linkedin} target='_blank'><i className="fa fa-linkedin fa-2x" /></a>
                                                             </div>
                                                         </div>
                                                         <div class="member-info">

@@ -1,18 +1,21 @@
 .accordian-section {
   margin-bottom: 20px;
+  width: 100%;
+  box-shadow: 0px 2px 15px rgba(53, 35, 35, 0.2);
 }
+
 .accordian-toggle {
   background-color: var(--color-tertiary);
   max-height: 150px;
   cursor: pointer;
   padding: 10px;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   font-family: var(--font-heading);
   color: var(--color-black);
 }
 
 .accordian-toggle:hover {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
   color: #fff;
 }
