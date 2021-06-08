@@ -33,7 +33,7 @@ function LandingPage () {
   }
   const event2 = {
     name: 'NIOT SAVe',
-    link: 'https://www.niot.res.in/SAVe/',
+    link: 'http://www.indiamts.com/activities%20Report/6th_National_Competition_on_Student_Autonomous_underwater_Vehicle_SAVe_2019.pdf',
     heading: 'Location',
     subheading: 'Chennai, India',
     heading02: 'Our Participation',
