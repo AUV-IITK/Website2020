@@ -36,7 +36,7 @@ const Business = () => {
                                     <Row>
                                         {section.items.map((teamMember) => {
                                             return (
-                                                <Col lg="3" className="team img-col text-center mr-auto ml-auto">
+                                                <Col lg="3" md="6" className="team img-col text-center mr-auto ml-auto">
                                                     <div className="member">
                                                         <div className="member-img">
                                                             <div className="overlay">

@@ -17,7 +17,7 @@ import Business from "./Business"
 function Posts() {
     return (
         <Router>
-            <div className="section landing-section">
+            <div className="section team-data landing-section">
                 <Container>
                     <Row className="d-flex justify-content-center">
                         <Col className="ml-auto mr-auto" md="12">

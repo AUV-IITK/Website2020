@@ -13,10 +13,7 @@ const Software = () => {
     return (
         <div className="subsystem-section">
             <Container>
-                <div className="card-background" style={{
-                    backgroundImage: `url(${software})`, backgroundPosition: 'center',
-                    backgroundSize: 'cover'
-                }}>
+                <div className="card-background">
                     <Card.Body>
                         <Card.Text className="subsystem-text">
                             The software subsystem develops the algorithms
@@ -33,7 +30,7 @@ const Software = () => {
                     </Card.Body>
                 </div>
             </Container>
-            <div className="section text-center">
+            <div className="section  text-center">
                 <Container>
                     {
                         softwareteam.teamData.map((section) => {
@@ -42,7 +39,7 @@ const Software = () => {
                                     <Row>
                                         {section.items.map((teamMember) => {
                                             return (
-                                                <Col lg="3" className="team img-col text-center mr-auto ml-auto">
+                                                <Col lg="3" md="6" className="team text-center mr-auto ml-auto">
                                                     <div className="member">
                                                         <div className="member-img">
                                                             <div className="overlay">

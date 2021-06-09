@@ -1,22 +1,20 @@
-.img-col {
-  padding: 10px;
-  padding-bottom: 20px;
-}
-
-.social-list {
-  padding: 10px;
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
 .member-image {
   width: 100%;
   max-width: 400px;
   max-height: 320px;
 }
 
-.overlay-text {
-  padding: 10px;
-  font-size: 14px;
+.alignment {
+  align-items: center;
+}
+
+.team-data {
+  padding: 20px;
+}
+
+.description > p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-black);
+  font-family: var(--font-primary);
 }

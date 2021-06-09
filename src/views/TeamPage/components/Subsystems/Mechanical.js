@@ -13,10 +13,7 @@ const Mechanical = () => {
     return (
         <div className="subsystem-section">
             <Container>
-                <div className="card-background" style={{
-                    backgroundImage: `url(${mechanical})`, backgroundPosition: 'center',
-                    backgroundSize: 'cover'
-                }}>
+                <div className="card-background">
                     <Card.Body>
                         <Card.Text className="subsystem-text">
                             The mechanical subsystem if responsible for design and
@@ -38,7 +35,7 @@ const Mechanical = () => {
                                     <Row>
                                         {section.items.map((teamMember) => {
                                             return (
-                                                <Col lg="3" className="team img-col text-center mr-auto ml-auto">
+                                                <Col lg="3" md="6" className="team img-col text-center mr-auto ml-auto">
                                                     <div className="member">
                                                         <div className="member-img">
                                                             <div className="overlay">
