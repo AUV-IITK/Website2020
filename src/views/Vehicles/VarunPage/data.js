@@ -49,6 +49,16 @@ const data = {
             "title": "Thrusters",
             "content": "Varun uses six AUV/ROV BTD-150 thrusters from SeaBotix® Inc. The actuators are positioned to provide the vehicle with a total of five degrees of freedom. The two thrusters mounted on the side plates ensure translation motion while the other four thrusters' assembly provides sway and vertical motion along with yaw and pitch. According to the data collected for the thruster calibration, a 100W thruster develops over two kg-force forward thrusts and up to two kg-force reverse thrusts."
         },
+        {
+            "id": 6,
+            "title": "Internal Hull",
+            "content": "A three rack internal tray provides the area for placing all the electronic components inside the hull comfortably, ensuring sufficient space for cooling and running wires throughout the hull. It consists of four annular disks, which are fixed inside the hull using tie rods. The circuit plates can slide smoothly into the grooves made in the disc for them. The shelf has LCD Display mounted on top to provide the required data from the electronic systems. The middle shelf contains the microprocessor and micro-controller, and the bottom shelf carries the batteries supply."
+        },
+        {
+            "id": 7,
+            "title": "Design Optimization",
+            "content": "Ansys was used for all simulation and optimization purposes after creating the initial basic models using SolidWorks. Several iterations of the designing and analysis cycle led to Varun's final design. Fluent and Static Structure were the two primary tools used from the Ansys Workbench. To optimize the parts using structural analysis, the curves and shapes in the part's geometry are parametrized, followed by the optimization paradigm for given parameters in Ansys. A minimum factor of safety of 10 ensured safety. Ansys Fluent solves the Navier–Stokes equations for fluids using the finite element method (FEM) with a cell-centered formulation."
+        },
     ],
     "electrical": [
         {
