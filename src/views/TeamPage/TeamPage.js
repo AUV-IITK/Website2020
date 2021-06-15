@@ -37,11 +37,10 @@ import React from "react";
 import ExamplesNavbar from "../../components/Navbars/ExamplesNavbar";
 
 // core components
-import Team from "../LandingPage/components/Team/Team.js";
 import Subsytems from "./components/Subsystems/Subsystems";
-import SubsystemHeads from './components/SubsystemHeads/SubsystemHeads';
 import TeamVideo from './components/TeamVideo/TeamVideo';
 import LegacyCarousel from "./components/LegacyCarousel/LegacyCarousel";
+import TeamHeads from "./components/TeamHeads/TeamHeads";
 
 function LandingPage() {
     document.documentElement.classList.remove("nav-open");
@@ -52,12 +51,11 @@ function LandingPage() {
         };
     });
     return (
-        <div className="mobile-responsive">
+        <div>
             <ExamplesNavbar activePage="/team" />
             <div className="main">
-                <Team style={{ marginTop: "8rem" }} />
+                <TeamHeads />
                 <Subsytems />
-                <SubsystemHeads />
                 <TeamVideo />
                 <LegacyCarousel />
             </div>
