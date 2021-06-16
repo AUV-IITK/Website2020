@@ -12,7 +12,7 @@ function Footer() {
   return (
     <footer className="footer-new">
       <Container>
-        <Row >
+        <Row className="footer-row">
           <Col lg="7" md="6" className="logo-description mr-auto ml-auto">
             <Row className="align-items-center">
               <Col xs="4" className="my-auto">
@@ -22,15 +22,15 @@ function Footer() {
                 <div className="footer-heading-primary">Team AUV-IITK</div>
                 <div className="footer-address">
                   AUV Room, Hall-2,
-                <br />Indian Institute of Technology Kanpur,
-                <br />Uttar Pradesh-208016, India
+                  <br />Indian Institute of Technology Kanpur,
+                  <br />Uttar Pradesh-208016, India
                 </div>
               </Col>
             </Row>
           </Col>
           <Col lg="5" md="6" className="quick-social-links mr-auto ml-auto my-auto">
             <Row>
-              <Col md="12" xs="4">
+              <Col md="12" xs="5">
                 <div className="footer-links-heading">Quick Links</div>
                 <NavLink to="/landing-page" tag={Link} className="footer-nav-link">
                   Home
@@ -48,7 +48,7 @@ function Footer() {
                   Contact Us
                 </NavLink>
               </Col>
-              <Col md="12" xs="8" className="my-auto">
+              <Col md="12" xs="7" className="my-auto">
                 <div className="nav-icons-container">
                   <NavLink
                     data-placement="bottom"
