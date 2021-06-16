@@ -30,7 +30,7 @@ const LegacyCarousel = () => {
                                                         <Card.Body>
                                                             <Card.Title>{teamMember.name}</Card.Title>
                                                             <Card.Text>{teamMember.subheading} </Card.Text>
-                                                            <a href={teamMember.linkedin}> <i className="fa fa-linkedin fa-2x" /></a>
+                                                            <a href={teamMember.linkedin} target="_blank"> <i className="fa fa-linkedin fa-2x" /></a>
                                                         </Card.Body>
                                                     </div>
                                                 </div>

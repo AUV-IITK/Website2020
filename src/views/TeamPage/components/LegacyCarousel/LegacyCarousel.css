@@ -11,14 +11,15 @@
 
 .carousel-item {
   display: flex;
-  color: #fff;
   padding: 20px;
+  height: 100%;
 }
 
 .legacy-cards {
   background-color: var(--color-white);
   border-radius: 1.5rem;
   box-shadow: 0px 5px 12px rgba(37, 32, 32, 0.4);
+  height: 100%;
 }
 
 .legacy-images {
@@ -31,12 +32,5 @@
 .rec.rec-arrow {
   border-radius: 0;
   size: 16px;
-}
-
-.rec.rec-arrow:hover {
-  border-radius: 50%;
-}
-
-.rec.rec-arrow:disabled {
   visibility: hidden;
 }
