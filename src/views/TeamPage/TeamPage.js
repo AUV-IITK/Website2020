@@ -56,8 +56,8 @@ function LandingPage() {
             <div className="main">
                 <TeamHeads />
                 <Subsytems />
-                <TeamVideo />
                 <LegacyCarousel />
+                <TeamVideo />
             </div>
         </div>
     );

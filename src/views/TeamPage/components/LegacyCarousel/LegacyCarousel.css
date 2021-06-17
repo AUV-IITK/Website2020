@@ -16,7 +16,6 @@
 }
 
 .legacy-cards {
-  background-color: var(--color-white);
   border-radius: 1.5rem;
   box-shadow: 0px 5px 12px rgba(37, 32, 32, 0.4);
   height: 100%;
@@ -29,8 +28,26 @@
   border-radius: 30rem;
 }
 
+.legacy-name {
+  color: var(--color-primary);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 2px;
+}
+
+.legacy-position {
+  color: var(--color-primary);
+  font-family: var(--font-primary);
+  margin-bottom: 2px;
+}
+
+.legacy-social:hover {
+  color: var(--color-quartenary);
+  transition: all 0.3s ease-in-out;
+}
+
 .rec.rec-arrow {
-  border-radius: 0;
-  size: 16px;
-  visibility: hidden;
+  border-radius: 50px;
+  transform: scale(0.6);
 }

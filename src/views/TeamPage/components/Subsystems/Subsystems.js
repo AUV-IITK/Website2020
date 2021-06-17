@@ -27,11 +27,11 @@ function Posts() {
                     <Accordion defaultActiveKey="0">
                         <div className="accordian-section">
                             <Accordion.Toggle as={Card.Header} eventKey="0" className="accordian-toggle text-center">
-                                BUSINESS
+                                MECHANICAL
                             </Accordion.Toggle>
                             <Accordion.Collapse eventKey="0">
                                 <div>
-                                    <Business />
+                                    <Mechanical />
                                 </div>
                             </Accordion.Collapse>
                         </div>
@@ -47,21 +47,21 @@ function Posts() {
                         </div>
                         <div className="accordian-section">
                             <Accordion.Toggle as={Card.Header} eventKey="2" className="accordian-toggle text-center">
-                                MECHANICAL
+                                SOFTWARE
                             </Accordion.Toggle>
                             <Accordion.Collapse eventKey="2">
                                 <div>
-                                    <Mechanical />
+                                    <Software />
                                 </div>
                             </Accordion.Collapse>
                         </div>
                         <div className="accordian-section">
                             <Accordion.Toggle as={Card.Header} eventKey="3" className="accordian-toggle text-center">
-                                SOFTWARE
+                                BUSINESS
                             </Accordion.Toggle>
                             <Accordion.Collapse eventKey="3">
                                 <div>
-                                    <Software />
+                                    <Business />
                                 </div>
                             </Accordion.Collapse>
                         </div>
