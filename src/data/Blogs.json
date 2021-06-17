@@ -1,0 +1,100 @@
+{
+    "blogsData": [
+        {
+            "heading": "Designing Anahita",
+            "author": "Priank Prasad",
+            "date": "8 October, 2020",
+            "abstract": "Developing an underwater vehicle can be a very long and tedious task. All processes involved should be done perfectly, as a minor error could result in unexpected water leakage. A highly efficient plan of action is needed- which can take care of all the possible minor errors. The planning should not be limited to inputs from the mechanical subsystem; the electrical wiring and sensor placement should be thought of properly. This article will be focusing on the design aspects of the Anahita, assuming essential planning has already been devised.",
+            "bannerImage": "bot_orientation.jpg",
+            "blogId": "designing_anahita",            
+            "body": [
+                {
+                    "type":"para",
+                    "content": "Developing an underwater vehicle can be a very long and tedious task. All processes involved should be done perfectly, as a minor error could result in unexpected water leakage. A highly efficient plan of action is needed- which can take care of all the possible minor errors. The planning should not be limited to inputs from the mechanical subsystem; the electrical wiring and sensor placement should be thought of properly. This article will be focusing on the design aspects of the Anahita, assuming essential planning has already been devised." 
+                },
+                {
+                    "type": "para",
+                    "content":"Designing can be broken down into two substeps - part designing and vehicle positional orientation. After our first AUV Varun, we wanted to make our AUV modular for easier debugging purposes. For Anahita, we decided to have seven separate watertight casings- Main hull, solenoid hull, imu casing, two battery pods, two camera casing. All the parts were designed while keeping track of the buoyancy. The total buoyancy of the vehicle should be about 1-2% more than the total weight of the vehicle. In case of an unexpected power shutdown, the vehicle should be capable of surfacing."
+                },
+                {
+                    "type": "para",
+                    "content":"After designing the parts, we move to determine the orientation of the vehicle. It is the most critical step as it gives an idea of the total drag faced by the AUV. Think of all possible positional orientations containing all the parts and make a solid model. Shortlist the designs keeping in mind the required degree of freedom, size restriction (according to problem statement), accessibility of each part, sensor placement, and thruster positioning. Now, run all the shortlisted designs for drag analysis through Ansys fluent. Select the design with minimum drag, has adequate accessibility for each part, and has correct sensors’ placement. For Anahita, about 30 designs were suggested. And around ten designs were simulated in Ansys Fluent. We selected the following design with a drag of 10N for 0.6 m/s speed of the vehicle:"    
+                },
+                {
+                    "type":"image",
+                    "src":"bot_orientation.jpg"
+                },
+                {
+                    "type":"para",
+                    "content":"The final step in vehicle design is designing the frame. Choose a rectangular sheet of metal and mound all parts to it. Now, calculate the stresses for each metal individually. This is done by using Ansys Structural and Ansys Topology Optimization. Ansys Structural is used to find stresses across a metal plate. In contrast, Ansys Topology Optimization is used to optimize the metal weight- it removes non-essential weight (areas corresponding to lower stress). A total of about 90% metal mass was removed. The output of topology optimization has rough surfaces. In the remaining 10% area, truss-like structures were extruded to give additional structural strength to the frame part. While forming trusses, it should be noted that no trusses should have pointed sides- i.e., all sides should have fillet- otherwise, they may form Stress Concentration. This procedure was performed for all the frame components. For Anahita, we had a total of seven major metal sheets- four sides, two middle, one bottom- and individual analysis was carried out. The final design of Anahita is as follows:"
+                },
+                {
+                    "type":"image",
+                    "src":"final_orientation.jpg"
+                }
+            ]
+        },
+        {
+            "heading": "Story of Hydrophones",
+            "author": "Inshu Namdev",
+            "date": "12 December, 2020",
+            "abstract": "Underwater acoustic localization refers to the task of locating the position of the pinger. The main idea involved in solving this task is that the analog signal received is first amplified and then passed through an analog filter. Next, the filtered signal is again amplified and then converted into digital signals. Hereafter these digital signals are sent to the onboard computer for further processing.",
+            "bannerImage": "hydrophone.jpeg",
+            "blogId": "story_of_hydrophones",
+            "body": [
+                {
+                    "type":"h2",
+                    "content": "Introduction" 
+                },
+                {
+                    "type": "para",
+                    "content":"Underwater acoustic localization refers to the task of locating the position of the pinger. The main idea involved in solving this task is that the analog signal received is first amplified and then passed through an analog filter. Next, the filtered signal is again amplified and then converted into digital signals. Hereafter these digital signals are sent to the onboard computer for further processing. "
+                },
+                {
+                    "type":"h2",
+                    "content": "Proposed Solution" 
+                },
+                {
+                    "type":"image",
+                    "src":"hydrophones_workflow.png"
+                },
+                {
+                    "type":"h2",
+                    "content": "Setup" 
+                },
+                {
+                    "type":"list-block",
+                    "listHeading":"Instruments to be used",
+                    "listItems": [
+                        "Hydrophones - AS-1 from Aquarian Audio",
+                        "Pinger - In SAUVC, RJ International Pinger model no.ULB-362B/45 RJ International Pinger model no.ULB-362PL/B37 are used as pingers. In Robosub AUVSI, the pinger used is FLEXI-pinger ALP-365/EL/SW 4 which is functional at a frequency in the range of 20-30 kHz.",
+                        "ADC-LTC2383",
+                        "The PCB for the analog part",
+                        "Arduino Mega 2560",
+                        "The NUC"
+                    ]
+                },
+                {
+                    "type": "para",
+                    "content":"The magnitude of the Signal received by the hydrophone was small, and hence there was a need for an amplifier to increase the signal’s amplitude before passing it into the filter. Initially, the gain was set to 25 times and then to 50. The filter used was a low-pass filter with a cutoff frequency of 37.5 kHz. After amplification, this signal is passed through an ADC (ADCS7476 in our case), converting it into a digital signal. Finally, this digital signal was passed on to the NUC"
+                },
+                {
+                    "type": "para",
+                    "content":"After simulating the above circuit on LTSpice, its PCB was designed. The PCB had four inputs for the signals received by the hydrophones. Each signal received by the hydrophones is initially put through an amplifier and analog filtering. The amplifier adds a gain of fifty and sends it to the analog filter, which is a 6th order low-pass filter with a cutoff frequency of 37.5 kHz. The low-pass filter output is re-amplified to map the output of the filter into the input range of ADC for maximum efficiency. Now the signal is converted into the differential form to send it to the ADC (ADCS7476). The Arduino Mega takes signals sent from the ADC and transfers them into the processor's memory. At this point, the data has been successfully transferred into the NUC. The processed information is used to find coordinates using the algorithm given below:"    
+                },
+                {
+                    "type":"image",
+                    "src":"hydrophones_page_1.jpeg"    
+                },
+                {
+                    "type":"image",
+                    "src":"hydrophones_page_2.jpeg"    
+                },
+                {
+                    "type":"image",
+                    "src":"hydrophones_page_3.jpeg"    
+                }
+            ]
+        }
+    ]
+}

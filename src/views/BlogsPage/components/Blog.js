@@ -1,48 +1,43 @@
 // eslint-disable-next-line no-use-before-define
-import React from 'react'
-import { Container, Row, Col } from 'reactstrap'
-import './Blog.css'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Container, Row, Col } from "reactstrap";
+import "./Blog.css";
+import bI from "../../../assets/img/blog/BlogImages/hydrophone.jpeg";
+import { Link } from "react-router-dom";
 
 /* eslint-disable react/prop-types */
-function Blog (props) {
-  const topath = '/blogs/' + props.blog[1].id
-  console.log('Props recieved in blog are')
-  console.log(props.blog[1])
+function Blog(props) {
+  const topath = "/blogs/" + props.id;
+  console.log(topath);
   return (
-        <>
-            <div className="section landing-section ">
-                <Container className="w-100">
-                    <Row className="blog-container">
-                        <Col sm="0" md="4" className=""/>
-
-                        <Col sm="12" md="8" className="headings-container">
-                            <h2 className="small-heading-edited blog-date">
-                                {props.blog[1].date}
-                            </h2>
-                            <h1 className=" primary-heading-blog">{props.blog[1].heading}</h1>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col sm="12" md="4" className="">
-                            <img src={props.blog[1].image} className="blog-image" alt=""/>
-                        </Col>
-
-                        <Col sm="12" md="8" className="headings-container">
-                            <p className="auv-description-primary" style={{ textAlign: 'left' }}>
-                                {props.blog[1].para1}
-                            </p>
-                            <Link to={topath}>
-                                <div className="btn-blue">Read More</div>
-                                </Link>
-                            </Col>
-                        </Row>
-
-                    </Container>       
-            </div>
-
-        </>
-  )
+    <>
+      <div className="section blog-card">
+        <div className="blog-content">
+          <h1 className="blog-heading">{props.heading}</h1>
+          <div className="subheading-container">
+            <h3 className="blog-author">{props.author}</h3>
+            <h3 className="blog-date">{props.date}</h3>
+          </div>
+          <Row>
+            <Col lg="6">
+              <img
+                src={require("assets/img/blog/BlogImages/" + props.bannerImage)}
+                className="blog-banner-image"
+              ></img>
+            </Col>
+            <Col style={{ display: "flex" }} lg="6">
+              <p className="blogs-description">
+                {props.abstract}
+                <Link to={topath} className="blogs-more-button">
+                  Read More
+                </Link>
+              </p>
+            </Col>
+          </Row>
+        </div>
+      </div>
+    </>
+  );
 }
 
-export default Blog
+export default Blog;
