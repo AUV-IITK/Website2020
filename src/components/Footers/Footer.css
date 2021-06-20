@@ -1,184 +1,66 @@
-.footer-new{
-    background-color: #2e2e2e;
-    width: 100%;
-    margin: 0 auto;
+.footer-new {
+  background-color: #2e2e2e;
+  width: 100%;
+  margin: 0px;
+  padding-bottom: 20px;
 }
 
-.footer-heading{
-
-    background-color: rgba(102,97,91); 
-    width: 100%;
-    margin: 0;
-    padding:0;
-}
- 
-.footer-heading-content{
-    font-family: var(--font-primary);
-    font-weight: 400;
-    color: white;
-    margin: 1rem auto;
-    font-size: 3rem;
+.footer-heading {
+  background-color: rgba(102, 97, 91);
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.footer-heading-color{
-    color: rgba(35, 174, 244);
+.logo-description {
+  padding: 40px 10px;
 }
 
-.footer-auv-logo{
-    width: 120px;
-    height: 12rem;
-    margin: 3rem ; 
-    /* background-image: linear-gradient(to bottom, orange, orange), url(../../assets/img/auv-logo-mini.png); */
-    background-image:  url(../../assets/img/logos/auv_logo2.png);
-    background-size: 100% 100%;
+.footer-heading-primary {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  color: white;
+  font-size: 2.5rem;
 }
 
-.footer-heading-primary{
-    margin: 3rem ; 
-    font-size: 2rem;
-    color: white;
-    letter-spacing: 1px;
-    font-family: var(--font-primary);
-    font-weight: 700;
-    /* s */
-    width: 45%
+.footer-address {
+  font-family: var(--font-primary);
+  color: white;
+  font-size: 14px;
 }
 
-.footer-address{
-    margin: 3rem ; 
-    margin-bottom: 5rem;
-    font-size: 1.4rem;
-    color: white;
-    letter-spacing: 1px;
-    font-family: var(--font-primary);
-    font-weight: 400;
-    /* s */
-    width: 100%;
+.quick-social-links {
+  padding: 40px 20px;
 }
 
-.footer-nav-link{
-    /* background-color: red; */
-    margin: 0;
-    padding:0.5rem;
-    font-family: var(--font-primary);
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 400;
+.footer-links-heading {
+  color: var(--color-tertiary);
+  font-size: 17px;
+  font-weight: 500;
 }
 
-.u-margin-top-large{
-    margin-top: 5rem!important;
+.footer-nav-link {
+  color: white;
+  font-size: 12px;
+  padding: 2px;
 }
 
-.footer-links-heading{
-    font-family: var(--font-primary);
-    font-weight: 400;
-    color: white;
-    margin-bottom: 1rem;
-    font-size: 2rem;
+.footer-nav-icon {
+  margin: 0.5rem 1rem;
+  text-align: center;
+  padding: 0.5rem;
+  font-family: var(--font-primary);
+  color: white;
+  font-size: 3rem;
+  font-weight: 400;
 }
 
-.footer-nav-icon{
-    /* background-color: red; */
-    /* display: inline-block; */
-    margin: 0.5rem 1rem;
-    text-align: center;
-    padding:0.5rem;
-    font-family: var(--font-primary);
-    color: white;
-    font-size: 3rem;
-    font-weight: 400;
+.nav-icons-container {
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
-.nav-icons-container{
-    display: flex;
-    margin-top: 1rem;
+.footer-nav-icon {
+  padding: 2px;
 }
-
-.footer-form{
-    margin-bottom: 2rem;
-    width: 90%;
-}
-
-.u-margin-top-negative{
-    margin-top: 0rem;
-}
-
-.footer-input-group{
-    font-family: var(--font-primary);
-    background-color: rgb(10,10,10);
-    border-style: none;
-}
-
-.u-margin-bottom-small{
-    margin-bottom: 2rem;
-}
-
-.u-margin-top-negative-medium{
-    margin-top: 4rem;
-}
-.u-margin-top-negative-small{
-    margin-top: 1rem;
-}
-
-.footer-section-left{
-    /* background-color: yellow; */
-    /* text-align: center; */
-}
-
-@media(max-width: 992px){
-    .footer-section-center{
-        /* background-color:   green; */
-        text-align: center;
-    }
-
-    .nav-icons-container{
-        /* background-color: red; */
-        display: flex;
-        /* justify-items: center; */
-        justify-content: center;
-    }
-
-    .footer-section-right{
-        /* background-color: green; */
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .footer-form{
-        margin: 0 auto;
-    }
-}
-
-
-@media(max-width: 768px){
-    .footer-section-left{
-        /* background-color: red; */
-    }
-
-    .footer-auv-logo{
-        margin: 0rem auto;
-    }
-
-    .footer-heading-primary{
-        /* background-color: green; */
-        margin: 2rem auto;
-        text-align: center;
-    }
-
-    .footer-address{
-        margin: 0 auto;
-        text-align: center;
-        margin-bottom: 4rem;
-    }
-
-    .footer-section-right{
-        /* background-color: purple; */
-        text-align: center;  
-    }
-
-    .footer-form{
-        margin: 1rem auto;
-    }
-}
-

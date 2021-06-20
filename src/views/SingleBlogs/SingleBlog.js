@@ -1,76 +1,78 @@
 import React, { Component } from "react";
-
+import "./SingleBlog.css"
 // reactstrap components
 import { Container, Row, Col, Spinner } from "reactstrap";
-
-// core components
+import data from "../../data/Blogs.json";
 import ExamplesNavbar from "../../components/Navbars/ExamplesNavbar";
-import axios from "../../axios-blogs";
 class BlogsPage extends Component {
   state = {
-    blogs: {
-      heading: "",
-      para1: "",
-      para2: "",
-      id: "",
-      subheading: "",
-      date: "",
-      image: "",
-    },
-    blogsArray: [],
+    pathid: "",
+    blogid: "",
     loading: false,
   };
-  
+
+  getLastItem = (thePath) => thePath.substring(thePath.lastIndexof("/") + 1);
+
   componentDidMount() {
     document.documentElement.classList.remove("nav-open");
-    window.scrollTo(0,0);
-    // console.log("single blog");
-    // console.log(this.props.location.pathname)
+    window.scrollTo(0, 0);
     this.setState({ loading: true });
-    axios
-      .get(
-        "https://auv-iitk.firebaseio.com" +
-          this.props.location.pathname +
-          ".json"
-      )
-      .then((response) => {
-        this.setState({ blogs: response.data, loading: false });
-        // console.log("blogs recieved");
-        const newArray = Object.entries(this.state.blogs);
-        this.setState({ blogsArray: newArray });
-        console.log(this.state.blogs);
-      });
+    if (data) {
+      this.setState({ loading: false });
+    }
+    this.setState({ pathid: this.props.location.pathname });
   }
   render() {
-
-
-    var content = null;
-    if(this.state.loading !== true){
-      content = <div><div className="section text-center ">
-      <Container className="reduce-margin">
-        <Row>
-          <h2 className="heading-main" style={{ display: "block" }}>
-            {this.state.blogs.heading}
-          </h2>
-          {/* <h2 className="small-heading"style={{display:'block'}}>{this.state.blogs.subheading}</h2>        */}
-        </Row>
-      </Container>
-    </div>
-    <div className="main">
-      <Container>
-        <img src={this.state.blogs.image} className="image-anahita"></img>
-        <h1 className="auv-description-primary">{this.state.blogs.para1}</h1>
-        <h1 className="auv-description-primary">{this.state.blogs.para2}</h1>
-      </Container>
-    </div></div>
-    }
-    else{
-      content = <Spinner className="blogs-page-spinner"/>
-    }
+    let blogid = this.state.pathid.substring(
+      this.state.pathid.lastIndexOf("/") + 1
+    );
+    console.log(blogid);
+    console.log(data.blogsData);
+    const disp = data.blogsData.map((recievedBlog) => {
+      if (blogid === recievedBlog.blogId) {
+        return (
+          <div className="single-blog">
+            <h1 className="blog-heading">{recievedBlog.heading}</h1>
+            <h2 className="single-blog-author">{recievedBlog.author}</h2>
+            <h2 className="single-blog-date"> {recievedBlog.date} </h2>
+            <div>
+              {recievedBlog.body.map((contentobject) => {
+                if (contentobject.type == "para") {
+                  return <p className="blogs-description text-left mb-5">{contentobject.content}</p>;
+                } else if (contentobject.type == "image") {
+                  return (
+                    <img
+                      className="single-blog-image"
+                      src={require("assets/img/blog/BlogImages/" +
+                        contentobject.src)}
+                    ></img>
+                  );
+                } else if (contentobject.type == "h2") {
+                  return <h2 className="blog-secondary-heading text-left">{contentobject.content}</h2>;
+                } else if (contentobject.type == "list-block") {
+                  return (
+                    <div className="blog-list-block">
+                      <h3 className="blog-list-heading">{contentobject.listHeading}</h3>
+                      {contentobject.listItems.map((listItem) => {
+                        return <li className="blog-list-item">{listItem}</li>;
+                      })}
+                    </div>
+                  );
+                } else {
+                  return;
+                }
+              })}
+            </div>
+          </div>
+        );
+      } else {
+        return;
+      }
+    });
     return (
       <div className="mobile-responsive">
         <ExamplesNavbar activePage="/blogs" />
-        {content}
+        {disp}
       </div>
     );
   }
