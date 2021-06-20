@@ -1,6 +1,6 @@
 import React from "react";
 import {Container, Row, Col, Accordion, Card} from "react-bootstrap";
-import anahita_exploded from "../../../../../assets/img/anahita/anahita_exploded.png";
+import mech_main from "../../../../../assets/img/anahita/mechmain.png";
 import powerimg from "../../../../../assets/img/anahita/AnahitaElec.jpg";
 import soft from "../../../../../assets/img/anahita/AnahitaSoft.jpg";
 
@@ -29,15 +29,15 @@ function Posts() {
                     <div className="spec-container">
                         <Row>
                             <Col lg="4" className="text-center my-auto imgCol">
-                                <img src={anahita_exploded} className="w-100"></img>
+                                <img src={mech_main} className="w-100"></img>
                                 <p className="small-heading-edited">
                                     ANAHITA VEHICLE : STRUCTURE
                                 </p>
                             </Col>
                             <Col lg="8" className="featureCol my-auto">
-                                The mechanical subsystem is responsible for design and manufacture of the vehicle. Anahita’s mechanical system consists of the vehicle’s frame, grabber, marker dropper, torpedo, connectors and penetrators. The mechanical design of Anahita is made more modular, easy to assemble and robust as compared to its predecessor Varun. Furthermore, the addition of interchangeable components and work specific parts increases the vehicle's modularity significantly.
+                                The mechanical subsystem is responsible for design and manufacture of the vehicle. Anahita’s mechanical system consists of the vehicle’s frame, grabber, marker dropper, torpedo, connectors and penetrators. The mechanical design of Anahita is made more modular, easy to assemble and robust as compared to its predecessor Varun. Furthermore, the addition of interchangeable components and task specific parts increases the vehicle's modularity significantly.
                                 <div style={{marginBottom:'20px'}}></div>
-                                <Accordion defaultActiveKey="">
+                                <Accordion defaultActiveKey=""> 
                                 {
                                     specs.mechanical.map(
                                         (data) => (
@@ -53,7 +53,7 @@ function Posts() {
                                                         {data.content}
                                                     </div>
                                                     <div style={{display:'grid', placeItems:'center'}}>
-                                                        {data.img && <img src={require("assets/img/anahita/" + data.img)}/>} 
+                                                        {data.img && <img className="w-50 accord-img" src={require("assets/img/anahita/" + data.img)}/>} 
                                                     </div>
                                                 </Card.Body>
                                                 </Accordion.Collapse>
@@ -86,7 +86,14 @@ function Posts() {
                                                 {data.title}
                                                 </Accordion.Toggle>
                                                 <Accordion.Collapse eventKey={String(data.id)}>
-                                                <Card.Body>{data.content}</Card.Body>
+                                                <Card.Body>
+                                                    <div>
+                                                        {data.content}
+                                                    </div>
+                                                    <div style={{display:'grid', placeItems:'center'}}>
+                                                        {data.img && <img className="w-50 accord-img" src={require("assets/img/anahita/" + data.img)}/>} 
+                                                    </div>
+                                                </Card.Body>
                                                 </Accordion.Collapse>
                                             </Card>
                                         )
@@ -135,7 +142,14 @@ function Posts() {
                                                 {data.title}
                                                 </Accordion.Toggle>
                                                 <Accordion.Collapse eventKey={String(data.id)}>
-                                                <Card.Body>{data.content}</Card.Body>
+                                                <Card.Body>
+                                                    <div>
+                                                        {data.content}
+                                                    </div>
+                                                    <div style={{display:'grid', placeItems:'center'}}>
+                                                        {data.img && <img className="w-50 accord-img" src={require("assets/img/anahita/" + data.img)}/>} 
+                                                    </div>
+                                                </Card.Body>
                                                 </Accordion.Collapse>
                                             </Card>
                                         )
