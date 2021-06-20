@@ -110,7 +110,7 @@ const data = {
             "id":1,
             "title": "Framework",
             "content": "The software architecture of Varun uses ROS (Robot Operating System). ROS is an open-source, meta-operating system that provides essential operating system services, including hardware abstraction, low-level device control, implementation of commonly-used functionality, message-passing between processes, and package management. It also provides tools and libraries for obtaining, building, writing, and running code across multiple computers. We can develop our application in simulation and then deploy it to the physical robot with little or no changes in our code.",
-            "img": "SoftwareFrameworks.png"
+            "img": ""
         },
         {   "id":2,
             "title": "Simulation and Testing",

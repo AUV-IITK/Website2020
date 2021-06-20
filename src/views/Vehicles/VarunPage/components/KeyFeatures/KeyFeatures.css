@@ -1,3 +1,28 @@
+* {
+  font-family: var(--font-primary);
+  color: var(--color-primary);
+}
+
+td {
+  font-family: var(--font-primary) !important;
+  color: var(--color-primary) !important;
+}
+
+.heading-component {
+  font-family: var(--font-heading);
+  color: var(--color-primary);
+}
+
+.heading-component h2{
+  font-weight: 700;
+  font-size: 5.6rem;
+}
+
+.heading-component h3 {
+  font-weight: 400;
+  font-size: 5rem;
+}
+
 .col-main {
   display: flex;
   flex-direction: row;

@@ -14,15 +14,13 @@ function Posts() {
         {
             <div className="section landing-section">
                 <Container>
-                    <Row>
-                        <Col md="2"></Col>
-                        <Col className="ml-auto mr-auto" md="8">
-                            <h2 className="text-center mb-4 heading-main">
+                    <div className="title-block">
+                        <Row className="justify-content-center heading-components">
+                            <div style={{textAlign:'center'}}>
                                 <b>COMPONENTS</b>
-                            </h2>
-                        </Col>
-                        <Col md="2"></Col>
-                    </Row>
+                            </div>
+                        </Row>    
+                    </div>
                     <Row className="subsystem-headings">
                         <h3 className="small-heading">Mechanical</h3>
                     </Row>

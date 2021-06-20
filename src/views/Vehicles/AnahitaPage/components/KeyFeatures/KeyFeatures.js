@@ -14,10 +14,10 @@ function Posts() {
             <div className="mt-5">
                 <Container>
                     <div className="title-block">
-                        <Row className="mt-5 justify-content-center">
+                        <Row className="mt-5 justify-content-center heading-component">
                             <div style={{textAlign:'center'}}>
-                                <h2 className="heading-main">ANAHITA</h2>
-                                <h3 className="small-heading">The Goddess of Water</h3>
+                                <h2>ANAHITA</h2>
+                                <h3>The Goddess of Water</h3>
                             </div>
                         </Row>     
                     </div>
