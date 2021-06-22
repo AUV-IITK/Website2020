@@ -2,7 +2,6 @@ import React from "react";
 import {useEffect} from "react";
 import "./KeyFeatures.css";
 import {Container, Row, Col, Tabs, Tab, Table} from "react-bootstrap";
-import tritonCAD from '../../../../../assets/models/TritonCAD.gltf';
 import specs from "../../data.js";
 
 function Posts() {
@@ -24,15 +23,9 @@ function Posts() {
 
                     <Row className="d-flex col-main justify-content-center">
                         <Col sm="12" lg="6" className="my-auto text-center mt-5"> 
-                                <model-viewer 
-                                id="reveal" 
-                                loading="eager" 
-                                camera-controls 
-                                auto-rotate 
-                                src={tritonCAD}
-                                class="cad-model"
-                                style={{boxShadow:'none'}}
-                                alt="A 3D model of a Triton"></model-viewer>
+                            <div className="iframe-container">
+                                <iframe style={{boxShadow:'none'}} title="A 3D model" className="cad-model sketchfab-responsive" src="https://sketchfab.com/models/ef2d053e91174d70923b179430afe19d/embed?autostart=1&preload=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                            </div>
                         </Col>
                         <Col sm="12" lg="6" className="featureCol my-auto">
                             <div className="briefspec">

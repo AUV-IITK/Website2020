@@ -4,15 +4,35 @@ const data = {
     "specsTable" : [
         {
             "name": "Weight (in air)",
-            "spec": "100kg"
+            "spec": "32 kgs"
         },
         {
-            "name": "Weight (in air)",
-            "spec": "100kg"
+            "name": "Propulsions",
+            "spec": " T200 thrusters (from Blue Robotics)"
         },
         {
-            "name": "Weight (in air)",
-            "spec": "100kg"
+            "name": "Power",
+            "spec": "25V Lipo Blue Robotics batteries"
+        },
+        {
+            "name": "Camera",
+            "spec": "Logitech C930E cameras"
+        },
+        {
+            "name": "Navigation Sensors",
+            "spec": " DVL, Hydrophones, Camera"
+        },
+        {
+            "name": "Main Computer",
+            "spec": "Intel i7 NUC"
+        },
+        {
+            "name": "Degrees of Freedom",
+            "spec": "6"
+        },
+        {
+            "name": "Operation Time",
+            "spec": "4 hours"
         }
     ],
     "mechanical": [

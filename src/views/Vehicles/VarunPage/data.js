@@ -19,7 +19,7 @@ const data = {
             "spec": "Ordroid X2 processor with Samsung Exynyos 4412 chip and 2GB RAM"
         },
         {
-            "name": "Something",
+            "name": "Degrees of Freedom",
             "spec": "6 AUV/ROV BTD-150 Seabotix Inc. Thrusters. 5 Degrees of Freedom"
         }
     ],
