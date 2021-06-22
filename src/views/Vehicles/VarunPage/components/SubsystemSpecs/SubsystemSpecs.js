@@ -28,7 +28,7 @@ function Posts() {
                     <div className="spec-container">
                         <Row>
                             <Col lg="5" className="text-center my-auto imgCol">
-                                <img src={mech_main} className="w-100"></img>
+                                <img src={mech_main} alt="spec-img" className="w-100"></img>
                                 <p className="small-heading-edited">
                                     VARUN: STRUCTURE
                                 </p>
@@ -51,7 +51,7 @@ function Posts() {
                                                         {data.content}
                                                     </div>
                                                     <div style={{display:'grid', placeItems:'center'}}>
-                                                        {data.img && <img className="w-75 accord-img" src={require("assets/img/varun/VARUN-AUV/" + data.img)}/>} 
+                                                        {data.img && <img className="w-75 accord-img" alt="spec-img" src={require("assets/img/varun/VARUN-AUV/" + data.img)}/>} 
                                                     </div>
                                                 </Card.Body>
                                                 </Accordion.Collapse>
@@ -87,7 +87,7 @@ function Posts() {
                                                         {data.content}
                                                     </div>
                                                     <div style={{display:'grid', placeItems:'center'}}>
-                                                        {data.img && <img className="w-75 accord-img" src={require("assets/img/varun/VARUN-AUV/" + data.img)}/>} 
+                                                        {data.img && <img className="w-75 accord-img" alt="spec-img" src={require("assets/img/varun/VARUN-AUV/" + data.img)}/>} 
                                                     </div>
                                                 </Card.Body>
                                                 </Accordion.Collapse>
@@ -98,7 +98,7 @@ function Posts() {
                                 </Accordion>
                             </Col>
                             <Col lg="4" className="text-center my-auto imgCol">
-                                <img src={elec_main} className="w-100"></img>
+                                <img src={elec_main} alt="spec-img" className="w-100"></img>
                                 <p className="small-heading-edited">
                                     VARUN: ELECTRICAL ARCHITECTURE
                                 </p>
@@ -111,7 +111,7 @@ function Posts() {
                     <div className="spec-container">    
                         <Row>
                             <Col lg="4" className="text-center my-auto imgCol">
-                                <img src={soft_main} className="w-100"></img>
+                                <img src={soft_main} alt="spec-img" className="w-100"></img>
                                 <p className="small-heading-edited">
                                     VARUN: SOFTWARE ARCHIETECTURE
                                 </p>
@@ -135,7 +135,7 @@ function Posts() {
                                                         {data.content}
                                                     </div>
                                                     <div style={{display:'grid', placeItems:'center'}}>
-                                                        {data.img && <img className="w-75 accord-img" src={require("assets/img/varun/VARUN-AUV/" + data.img)}/>} 
+                                                        {data.img && <img className="w-75 accord-img" alt="spec-img" src={require("assets/img/varun/VARUN-AUV/" + data.img)}/>} 
                                                     </div>
                                                 </Card.Body>
                                                 </Accordion.Collapse>

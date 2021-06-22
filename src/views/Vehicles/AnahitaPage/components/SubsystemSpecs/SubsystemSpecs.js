@@ -6,7 +6,6 @@ import soft from "../../../../../assets/img/anahita/AnahitaSoft.jpg";
 
 import "./subs.css";
 import specs from "../../data.js";
-const baseUrl = "assets/img/anahita/";
 function Posts() {
     console.log(specs);
     return (
@@ -27,7 +26,7 @@ function Posts() {
                     <div className="spec-container">
                         <Row>
                             <Col lg="4" className="text-center my-auto imgCol">
-                                <img src={mech_main} className="w-100"></img>
+                                <img src={mech_main} alt="spec-img" className="w-100"></img>
                                 <p className="small-heading-edited">
                                     ANAHITA VEHICLE : STRUCTURE
                                 </p>
@@ -51,7 +50,7 @@ function Posts() {
                                                         {data.content}
                                                     </div>
                                                     <div style={{display:'grid', placeItems:'center'}}>
-                                                        {data.img && <img className="w-50 accord-img" src={require("assets/img/anahita/" + data.img)}/>} 
+                                                        {data.img && <img className="w-50 accord-img" alt="spec-img" src={require("assets/img/anahita/" + data.img)}/>} 
                                                     </div>
                                                 </Card.Body>
                                                 </Accordion.Collapse>
@@ -89,7 +88,7 @@ function Posts() {
                                                         {data.content}
                                                     </div>
                                                     <div style={{display:'grid', placeItems:'center'}}>
-                                                        {data.img && <img className="w-50 accord-img" src={require("assets/img/anahita/" + data.img)}/>} 
+                                                        {data.img && <img className="w-50 accord-img" alt="spec-img" src={require("assets/img/anahita/" + data.img)}/>} 
                                                     </div>
                                                 </Card.Body>
                                                 </Accordion.Collapse>
@@ -100,7 +99,7 @@ function Posts() {
                                 </Accordion>
                             </Col>
                             <Col md="4" className="text-center my-auto imgCol">
-                                <img src={powerimg} className="w-100"></img>
+                                <img src={powerimg} alt="spec-img" className="w-100"></img>
                                 <p className="small-heading-edited">
                                     ELECTRICAL ARCHITECTURE
                                 </p>
@@ -113,7 +112,7 @@ function Posts() {
                     <div className="spec-container">
                         <Row>
                             <Col md="4" className="text-center my-auto imgCol">
-                                <img src={soft} className="w-100"></img>
+                                <img src={soft} alt="spec-img" className="w-100"></img>
                                 <p className="small-heading-edited">
                                     SOFTWARE DATA & CONTROL FLOW
                                 </p>
@@ -145,7 +144,7 @@ function Posts() {
                                                         {data.content}
                                                     </div>
                                                     <div style={{display:'grid', placeItems:'center'}}>
-                                                        {data.img && <img className="w-50 accord-img" src={require("assets/img/anahita/" + data.img)}/>} 
+                                                        {data.img && <img className="w-50 accord-img" alt="spec-img" src={require("assets/img/anahita/" + data.img)}/>} 
                                                     </div>
                                                 </Card.Body>
                                                 </Accordion.Collapse>
