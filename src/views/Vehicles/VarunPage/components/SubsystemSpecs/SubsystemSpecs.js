@@ -8,8 +8,9 @@ import soft_main from "../../../../../assets/img/varun/VARUN-AUV/SoftwareFramewo
 import "./subs.css";
 import specs from "../../data.js";
 
+import FadeIn from "../../../../../FadeIn";
+
 function Posts() {
-    console.log(specs);
     return (
         <>
         {
@@ -25,6 +26,7 @@ function Posts() {
                     <Row className="subsystem-headings">
                         <h3>Mechanical</h3>
                     </Row>
+                    <FadeIn>
                     <div className="spec-container">
                         <Row>
                             <Col lg="5" className="text-center my-auto imgCol">
@@ -63,9 +65,11 @@ function Posts() {
                             </Col>
                         </Row>
                      </div>
+                     </FadeIn>
                     <Row className="subsystem-headings">
                         <h3>Electrical</h3>
                     </Row>
+                    <FadeIn>
                     <div className="spec-container">
                         <Row>
                             <Col lg="8" sm={{ order: 'last' }} lg={{order:'first'}} xs={{ order: 'last' }} className="my-auto featureCol">
@@ -105,9 +109,11 @@ function Posts() {
                             </Col>
                         </Row>
                      </div>
+                     </FadeIn>
                     <Row className="subsystem-headings">
                         <h3>Software</h3>
                     </Row>
+                    <FadeIn>
                     <div className="spec-container">    
                         <Row>
                             <Col lg="4" className="text-center my-auto imgCol">
@@ -148,6 +154,7 @@ function Posts() {
                             <Col md="3"></Col>
                         </Row>
                     </div>
+                    </FadeIn>
                 </Container>
             </div>
         }
