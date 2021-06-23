@@ -7,7 +7,7 @@ import soft from "../../../../../assets/img/anahita/AnahitaSoft.jpg";
 import "./subs.css";
 import specs from "../../data.js";
 
-import FadeIn from "../../../../../FadeIn";
+import FadeIn from "../../../../Animations/FadeIn";
 
 function Posts() {
     console.log(specs);
@@ -54,7 +54,10 @@ function Posts() {
                                                         {data.content}
                                                     </div>
                                                     <div style={{display:'grid', placeItems:'center'}}>
-                                                        {data.img && <img className="w-50 accord-img" alt="spec-img" src={require("assets/img/anahita/" + data.img)}/>} 
+                                                        {data.img && <img className="w-50 accord-img" alt="spec-img" src={require("assets/img/anahita/" + data.img)}/>}
+                                                        <div className="card-image-description" style={{fontFamily:'monospace', textAlign:'center'}} >
+                                                            {data.imgDesc}
+                                                        </div>
                                                     </div>
                                                 </Card.Body>
                                                 </Accordion.Collapse>
@@ -94,7 +97,10 @@ function Posts() {
                                                         {data.content}
                                                     </div>
                                                     <div style={{display:'grid', placeItems:'center'}}>
-                                                        {data.img && <img className="w-50 accord-img" alt="spec-img" src={require("assets/img/anahita/" + data.img)}/>} 
+                                                        {data.img && <img className="w-50 accord-img" alt="spec-img" src={require("assets/img/anahita/" + data.img)}/>}
+                                                        <div className="card-image-description" style={{fontFamily:'monospace', textAlign:'center'}} >
+                                                            {data.imgDesc}
+                                                        </div>
                                                     </div>
                                                 </Card.Body>
                                                 </Accordion.Collapse>
@@ -152,7 +158,10 @@ function Posts() {
                                                         {data.content}
                                                     </div>
                                                     <div style={{display:'grid', placeItems:'center'}}>
-                                                        {data.img && <img className="w-50 accord-img" alt="spec-img" src={require("assets/img/anahita/" + data.img)}/>} 
+                                                        {data.img && <img className="w-50 accord-img" alt="spec-img" src={require("assets/img/anahita/" + data.img)}/>}
+                                                        <div className="card-image-description" style={{fontFamily:'monospace', textAlign:'center'}} >
+                                                            {data.imgDesc}
+                                                        </div>
                                                     </div>
                                                 </Card.Body>
                                                 </Accordion.Collapse>
