@@ -182,7 +182,7 @@ function ExamplesNavbar(props) {
                   style={{ textAlign: "center", color: "white" }}
                 >
                   <i className="fa fa-facebook-square nav-social" />
-                  <p className="d-lg-none">Facebook</p>
+                  <p className="d-lg-none" style={{ color: "white" }}>Facebook</p>
                 </NavLink>
               </NavItem>
               <NavItem>
@@ -194,7 +194,7 @@ function ExamplesNavbar(props) {
                   style={{ textAlign: "center", color: "white" }}
                 >
                   <i className="fa fa-github nav-social" />
-                  <p className="d-lg-none">GitHub</p>
+                  <p className="d-lg-none" style={{ color: "white" }} >GitHub</p>
                 </NavLink>
               </NavItem>
             </Nav>
