@@ -343,3 +343,9 @@
 .description2 h4 {
     margin: 0;
 }
+
+@media (max-width: 1200px) {
+    .description2 h4 {
+        margin: 30px;
+    }
+}
