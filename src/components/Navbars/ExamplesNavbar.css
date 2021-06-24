@@ -94,6 +94,10 @@
   border-radius: 0;
 }
 
+.nav-social {
+  color: #ffffff;
+}
+
 .nav-social:hover {
   color: var(--color-tertiary);
   transition: all 0.25s ease-in;
