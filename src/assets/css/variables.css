@@ -1,15 +1,15 @@
-:root{
+:root {
+  /* Color Scheme */
+  --color-primary: #1f2833;
+  --color-secondary: #2152cc;
+  --color-tertiary: #5ab9ea;
+  --color-quartenary: #8fc1e3;
+  --color-black: #0b0c01;
+  --color-white: #c5c6c7;
+  --color-navbar: rgba(2, 41, 80, 1);
 
-    /* Color Scheme */
-    --color-primary: #1F2833;
-    --color-secondary: #2152CC;
-    --color-tertiary: #5AB9EA;
-    --color-quartenary: #8FC1E3;
-    --color-black: #0B0C01;
-    --color-white: #C5C6C7;
-
-    --color-primary-light: #334e6e;
-    /* Fonts */
-    --font-primary: Titillium Web, Roboto, Arial;
-    --font-heading: Overpass;
+  --color-primary-light: #334e6e;
+  /* Fonts */
+  --font-primary: Titillium Web, Roboto, Arial;
+  --font-heading: Overpass;
 }
