@@ -1,6 +1,6 @@
 .blog-card{
     /* border: 1rem solid black; */
-    box-shadow: -5px 5px 30px rgba(0,0,0,0.3);
+    box-shadow: -5px 5px 10px rgba(0,0,0,0.2);
     width: 60%;
     margin: 8rem auto;
 }
