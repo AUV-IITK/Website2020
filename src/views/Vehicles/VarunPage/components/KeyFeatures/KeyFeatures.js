@@ -22,12 +22,12 @@ function Posts() {
                     </div>
 
                     <Row className="d-flex col-main justify-content-center">
-                        <Col sm="12" lg="6" className="my-auto text-center mt-5"> 
+                        <Col sm="12" lg="8" className="my-auto text-center mt-5"> 
                             <div className="iframe-container">
                                 <iframe style={{boxShadow:'none'}} title="A 3D model" className="cad-model sketchfab-responsive" src="https://sketchfab.com/models/6e1274e10d9e4b6a922a5ed0baf9445f/embed?preload=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
                             </div>
                         </Col>
-                        <Col sm="12" lg="6" className="featureCol my-auto">
+                        <Col sm="12" lg="4" className="featureCol my-auto">
                             <div className="briefspec">
                                 <Tabs defaultActiveKey="home" id="uncontrolled-tab">
                                     <Tab className="tab-content" eventKey="home" title="What we made">

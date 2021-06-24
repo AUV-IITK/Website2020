@@ -29,13 +29,14 @@ function Posts() {
                     <FadeIn>
                     <div className="spec-container">
                         <Row>
-                            <Col lg="5" className="text-center my-auto imgCol">
+                            {/* <Col lg="5" className="text-center my-auto imgCol">
                                 <img src={mech_main} alt="spec-img" className="w-100"></img>
                                 <p className="small-heading-edited">
                                     VARUN: STRUCTURE
                                 </p>
-                            </Col>
-                            <Col lg="7" className="featureCol my-auto">
+                            </Col> */}
+                            <Col lg="1"></Col>
+                            <Col lg="10" className="featureCol my-auto">
                                 Varun's mechanical system comprises an aluminium structural frame, pressure casings, and electromagnetic actuators. The mechanical parts were first designed in Solidworks and Autodesk Inventor and then improved using Ansys Workbench before its final fabrication using available in-house facilities at the institute.
                                 <div style={{marginBottom:'20px'}}></div>
                                 <Accordion defaultActiveKey="">
@@ -66,6 +67,7 @@ function Posts() {
                                 }
                                 </Accordion>
                             </Col>
+                            <Col lg="1"></Col>
                         </Row>
                      </div>
                      </FadeIn>
@@ -75,7 +77,8 @@ function Posts() {
                     <FadeIn>
                     <div className="spec-container">
                         <Row>
-                            <Col lg="8" sm={{ order: 'last' }} lg={{order:'first'}} xs={{ order: 'last' }} className="my-auto featureCol">
+                            <Col lg="1"></Col>
+                            <Col lg="10" className="my-auto featureCol">
                                 The Electrical system provides the interface between the processor and the other electronic devices. There will be three layers of stacks inside the hull, which will be used for mounting different electronic devices and PCBs.The Arduino used in Varun is the ATmega1280 microcontroller and has an operating voltage of 5V. It has 16 Analog input pins and 54 digital I/O pins (of which 15 provide PWM output). The open-source Arduino platform is used to process the input signals from the main processor and convert it into desired signals to the actuators like motor drivers and pneumatic system.
                                 <div style={{marginBottom:'20px'}}></div>
                                 <Accordion defaultActiveKey="">
@@ -107,12 +110,13 @@ function Posts() {
                                 }
                                 </Accordion>
                             </Col>
-                            <Col lg="4" className="text-center my-auto imgCol">
+                            <Col lg="1"></Col>
+                            {/* <Col lg="5" className="text-center my-auto imgCol">
                                 <img src={elec_main} alt="spec-img" className="w-100"></img>
                                 <p className="small-heading-edited">
                                     VARUN: ELECTRICAL ARCHITECTURE
                                 </p>
-                            </Col>
+                            </Col> */}
                         </Row>
                      </div>
                      </FadeIn>
@@ -122,13 +126,14 @@ function Posts() {
                     <FadeIn>
                     <div className="spec-container">    
                         <Row>
-                            <Col lg="4" className="text-center my-auto imgCol">
+                            {/* <Col lg="5" className="text-center my-auto imgCol">
                                 <img src={soft_main} alt="spec-img" className="w-100"></img>
                                 <p className="small-heading-edited">
                                     VARUN: SOFTWARE ARCHIETECTURE
                                 </p>
-                            </Col>
-                            <Col lg="8" className="my-auto featureCol">
+                            </Col> */}
+                            <Col lg="1"></Col>
+                            <Col lg="10" className="my-auto featureCol">
                                 The Software Architecture of Varun is based on the Robot Operating System (ROS) Software Framework from Willow Garage, which encompasses the underlying messaging infrastructure for inter-process communications in our distributed system.
                                 <div style={{marginBottom:'20px'}}></div>
                                 <Accordion defaultActiveKey="">
@@ -160,7 +165,7 @@ function Posts() {
                                 }
                                 </Accordion>
                             </Col>
-                            <Col md="3"></Col>
+                            <Col lg="1"></Col>
                         </Row>
                     </div>
                     </FadeIn>
