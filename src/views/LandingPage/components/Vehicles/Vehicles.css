@@ -4,6 +4,7 @@
 }
 .vehicle-heading {
   font-family: var(--font-heading);
+  font-size: 3.5rem;
 }
 
 .text-info1 {
@@ -59,4 +60,8 @@
 
 .vehicle-image {
   margin-bottom: 15px;
+}
+
+.vehicle-row {
+  margin-bottom: 50px;
 }
