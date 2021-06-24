@@ -1,5 +1,5 @@
 .achievement-card {
-  background-color: var(--color-quartenary);
+  background-color: var(--color-tertiary);
   box-shadow: 0px 10px 15px rgba(53, 35, 35, 0.3);
   height: 95%;
 }
