@@ -20,21 +20,21 @@ function Posts () {
                         <Col sm="12" lg="4" className="text-center">
                             <h3 className="small-heading"/>
                             <img src={niot} className="border border-dark w-100 " alt=""/>
-                            <p className="auv-description-primary">Twice Runners’ Up (2017 & 2019) at the NIOT SAVe, organised by the
+                            <p className="auv-description-primary text-center">Twice Runners’ Up (2017 & 2019) at the NIOT SAVe, organised by the
                                 National Insitute Of Ocean Technology, Chennai.</p>
                         </Col>
 
                         <Col sm="12" lg="4" className="text-center">
                             <h3 className="small-heading"/>
                             <img src={paper} className="w-100 " alt=""/>
-                            <p className="auv-description-primary">Published a paper at IEEE OES Symposium 2018, on design and
+                            <p className="auv-description-primary text-center">Published a paper at IEEE OES Symposium 2018, on design and
                                 development of an open frame AUV: Anahita (Our 2nd Gen Vehicle)</p>
                         </Col>
 
                         <Col sm="12" lg="4" className="text-center">
                             <h3 className="small-heading"/>
                             <img src={robosub} className="border border-dark w-100" alt=""/>
-                            <p className="auv-description-primary">Qualified and Participated in Robosub-2019 held at TRANSDEC
+                            <p className="auv-description-primary text-center">Qualified and Participated in Robosub-2019 held at TRANSDEC
                                 Anechoic pool in San Diego, California.</p>
                         </Col>
 

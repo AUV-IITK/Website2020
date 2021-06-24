@@ -5,11 +5,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(2, 41, 80, 1),
-    rgba(2, 41, 80, 1)
-  );
+  background-color: rgb(34, 70, 109);
   transition: all 0.2s ease;
   z-index: 100;
 }
@@ -101,6 +97,7 @@
 
 .nav-social {
   color: #ffffff;
+  text-align: center;
 }
 
 .nav-social:hover {

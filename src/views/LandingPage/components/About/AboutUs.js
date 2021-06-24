@@ -13,6 +13,7 @@ function AboutUs () {
   useEffect(() => {
     window.scrollTo(0, 0)
   })
+  console.log(this.props.location);
   return (
         <>
             <div className="section landing-section text-center ">
@@ -49,7 +50,7 @@ function AboutUs () {
                                 <div className=" icon-auv">
                                     <i className=" mt-4 fa fa-cogs fa-5x"/>
                                     <div className="description">
-                                        <h4 className=""><strong>2 Vehicles Made</strong></h4>
+                                        <h4 className=""><strong>3 Vehicles Made</strong></h4>
 
                                     </div>
                                 </div>
@@ -58,7 +59,7 @@ function AboutUs () {
                                 <div className=" icon-auv">
                                     <i className="  mt-4 fa fa-users fa-5x"/>
                                     <div className="description">
-                                        <h4 className=""><strong>30 Team Members</strong></h4>
+                                        <h4 className=""><strong>20 Team Members</strong></h4>
 
                                     </div>
                                 </div>
@@ -83,7 +84,7 @@ function AboutUs () {
                             </div>
                         </div>
                         <div className="mt-5 col-md-12 align-items-center">
-                            <Link to='/about-us' className="btn-blue text-center">
+                            <Link to='/about-us' className="blogs-more-button text-center">
                                 More
                             </Link>
                         </div>
