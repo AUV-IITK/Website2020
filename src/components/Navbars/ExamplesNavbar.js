@@ -18,8 +18,6 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  NavbarToggler,
-
 } from "reactstrap";
 
 
@@ -203,7 +201,6 @@ function ExamplesNavbar(props) {
           </Collapse>
         </Container>
       </Navbar>
-
     </div>
   );
 }

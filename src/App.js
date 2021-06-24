@@ -15,6 +15,7 @@ import AboutUsPage from "views/AboutUsPage/AboutUsPage";
 import TeamPage from "views/TeamPage/TeamPage";
 import AnahitaPage from "views/Vehicles/AnahitaPage/AnahitaPage";
 import VarunPage from "views/Vehicles/VarunPage/VarunPage";
+import TritonPage from "views/Vehicles/TritonPage/TritonPage";
 import EventsPage from "views/EventsPage/EventsPage";
 import BlogsPage from "views/BlogsPage/BlogsPage";
 import ContactUsPage from "views/ContactUsPage/ContactUsPage";
@@ -42,7 +43,10 @@ const App = () => {
             path="/vehicles/varun"
             render={(props) => <VarunPage {...props} />}
           />
-
+          <Route
+            path="/vehicles/triton"
+            render={(props) => <TritonPage {...props} />}
+          />
           <Route path="/events" render={(props) => <EventsPage {...props} />} />
 
           <Route

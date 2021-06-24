@@ -1,8 +1,8 @@
 import React from "react";
 import {useEffect} from "react";
 import "./KeyFeatures.css";
-import {Container, Row, Col} from "react-bootstrap";
-import AnahitaCAD from "../../../../../assets/models/AnahitaCAD.glb";
+import {Container, Row, Col, Tabs, Tab, Table} from "react-bootstrap";
+import specs from "../../data.js";
 
 function Posts() {
     useEffect(() => {
@@ -13,47 +13,51 @@ function Posts() {
             <div className="mt-5">
                 <Container>
                     <div className="title-block">
-                        <Row className="mt-5 justify-content-center">
-                            <h2>
-                                ANAHITA
-                            </h2>
-                        </Row>    
-                        <Row className="title-name justify-content-center">
-                            <h3  className="mt-2 mb-2">The Goddess of Waters</h3>
-                        </Row>  
+                        <Row className="mt-5 justify-content-center heading-component">
+                            <div style={{textAlign:'center'}}>
+                                <h2>ANAHITA</h2>
+                                <h3>The Goddess of Water</h3>
+                            </div>
+                        </Row>     
                     </div>
-                    <model-viewer 
-                    id="reveal" 
-                    loading="eager" 
-                    camera-controls 
-                    auto-rotate 
-                    src={AnahitaCAD}
-                    class="cad-model"
-                    alt="A 3D model of a Triton"></model-viewer>
-                    <Row className="d-flex justify-content-center">
-                        <Col sm="12" lg="6" className=" imgCol my-auto text-center">
-                            <img
-                                src={require("../../../../../assets/img/anahita/anahita-3.jpg")}
-                                className="w-100 vehicleImage"
-                            />
+
+                    <Row className="d-flex col-main justify-content-center">
+                        <Col sm="12" lg="8" className="my-auto text-center mt-5"> 
+                            <div className="iframe-container">
+                                <iframe style={{boxShadow:'none'}} title="A 3D model" className="cad-model sketchfab-responsive" src="https://sketchfab.com/models/b92c344742d8408b822510230c1ec771/embed?autospin=0&autostart=1&preload=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                            </div>
                         </Col>
-                        <Col sm="12" lg="6" className="featureCol my-auto">
-                            <p className="text-center heading">Key Features</p>
-                            <ul className="key-features-list">
-                                <li> <b style={{fontWeight:600}}>Wired frame with truss structures,</b> for structural support and reduced mass.</li>
-                                <li>
-                                    On board Camera, IMU, DVL, Pressure Sensor & Hydrophones.
-                                </li>
-                                <li>
-                                    Only <b style={{fontWeight:600}}>32 Kgs</b> in weight.
-                                </li>
-                                <li>
-                                    Upto <b style={{fontWeight:600}}>4 hours of continuous operation</b> capability.
-                                </li>
-                                <li>
-                                    Production cost : Rs. <b style={{fontWeight:600}}>23,00,000</b>
-                                </li>
-                            </ul>
+                        <Col sm="12" lg="4" className="featureCol my-auto">
+                            <div className="briefspec">
+                                <Tabs defaultActiveKey="home" id="uncontrolled-tab">
+                                    <Tab className="tab-content" eventKey="home" title="What we made">
+                                        <div className="my-1">
+                                        {specs.brief}
+                                        </div>
+                                        <div>
+                                            <a className="tdr-button" href="https://drive.google.com/file/d/1AN2uvKzoERqeampDUTVilUPUmSCickFL/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                                Report
+                                            </a>
+                                        </div>
+                                    </Tab>
+                                    <Tab className="tab-content" eventKey="specs" title="Specifications">
+                                        <Table bordered className="my-1">
+                                        <tbody>
+                                            {
+                                                specs.specsTable.map(
+                                                    (data) => (
+                                                    <tr>
+                                                        <td style={{width:'30%', fontWeight:'bold'}}>{data.name}</td>
+                                                        <td>{data.spec}</td>
+                                                    </tr>
+                                                    )
+                                                )
+                                            }
+                                        </tbody>
+                                        </Table>
+                                    </Tab>
+                                </Tabs>
+                            </div>
                         </Col>
                     </Row>
                 </Container>
