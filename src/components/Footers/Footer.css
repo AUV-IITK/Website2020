@@ -16,6 +16,10 @@
   padding: 40px 10px;
 }
 
+.footer-row {
+  margin-right: 0;
+}
+
 .footer-heading-primary {
   font-family: var(--font-heading);
   font-weight: 400;
