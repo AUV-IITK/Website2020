@@ -1,5 +1,7 @@
 import React from 'react';
 import triton from "assets/img/triton.jpg";
+import varun from "assets/img/varun/varun-underwater.jpg";
+import anahita from "assets/img/anahita/anahita-underwater.png";
 import { Link } from "react-router-dom";
 import "./Vehicles.css"
 import {
@@ -19,9 +21,9 @@ function Vehicles() {
             </Col>
           </Row>
           <Row>
-            <Col sm="12" lg="5" className="text-center my-auto mb-5">
+            <Col sm="12" lg="5" className="text-center my-auto">
               <Link to='/vehicles/triton'>
-                <img src={triton} className="w-100 triton-image" />
+                <img src={triton} className="w-100 vehicle-image" />
               </Link>
             </Col>
             <Col sm="12" lg="7" className="my-auto">
@@ -29,7 +31,41 @@ function Vehicles() {
               <p className=" auv-description-primary">Triton is our third Autonomous Underwater Vehicle. Triton has a robust, leak-proof and lightweight central hull made from carbon fiber. It has sensors like IMU, DVL and cameras on-board and can efficiently perform tasks like torpedo shooting, localization in an unknown underwater environment and complex space-constrained manoeuvres. In addition, it has improved battery and additional safety mechanisms installed to prevent damage.</p>
               <p className=" auv-description-primary">Triton will participate in RoboSub-2021 held online due to the ongoing pandemic.</p>
               <div className="text-center">
+                <Link to='/vehicles/triton' className="blogs-more-button text-center">
+                  Read More
+                </Link>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col sm="12" lg="5" className="text-center my-auto">
+              <Link to='/vehicles/triton'>
+                <img src={anahita} className="w-100 vehicle-image" />
+              </Link>
+            </Col>
+            <Col sm="12" lg="7" className="my-auto">
+              <h2 className="text-center mt-0 mb-3 vehicle-heading">Anahita</h2>
+              <p className=" auv-description-primary">Anahita is an improvement over AUV-IITK’s previous vehicle Varun in terms of its modularity, robustness, ease of manufacturing and assembly. The vehicle is designed to perform complex spaceconstrained tasks and at the same time, not compromising on the maneuverability</p>
+              <p className=" auv-description-primary">Anahita participated in RoboSub-2019, San Diego and was the first runner up at NIOT-SAVe, 2019.</p>
+              <div className="text-center">
                 <Link to='/vehicles/anahita' className="blogs-more-button text-center">
+                  Read More
+                </Link>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col sm="12" lg="5" className="text-center my-auto">
+              <Link to='/vehicles/triton'>
+                <img src={varun} className="w-100 vehicle-image" />
+              </Link>
+            </Col>
+            <Col sm="12" lg="7" className="my-auto">
+              <h2 className="text-center mt-0 mb-3 vehicle-heading">Varun</h2>
+              <p className="auv-description-primary">Varun was the first Autonomous Underwater Vehicle developed by our team. With a modular design for easy assembly and installation, Varun could be used as a staging vehicle for carrying out experiments, autonomous underwater inspection and data collection. It has upto four hours of continuous operation capacity.</p>
+              <p className=" auv-description-primary">Bot Varun was the first runner up in NIOT-SAVe 2016.</p>
+              <div className="text-center">
+                <Link to='/vehicles/varun' className="blogs-more-button text-center">
                   Read More
                 </Link>
               </div>
