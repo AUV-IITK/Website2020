@@ -1,0 +1,124 @@
+{
+    "teamData": [
+        {
+            "items": [
+                {
+                    "name": "Saksham Mittal",
+                    "subheading": "Final Year Student, IIT Kanpur",
+                    "image": "Legacy/sakshammittal.jpeg",
+                    "linkedin": "https://www.linkedin.com/in/saksham-mittal/"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "Naman Agarwal",
+                    "subheading": "Final Year Student, IIT Kanpur",
+                    "image": "Legacy/namanaggarwal.jpeg",
+                    "linkedin": "https://www.linkedin.com/in/naman-ag/"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "Akash Kumar Singh ",
+                    "subheading": "Final Year Student, IIT Kanpur",
+                    "image": "Legacy/akash.jpg",
+                    "linkedin": "https://www.linkedin.com/in/akash-kumar-singh-605b39130/"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "Abhinav Arora",
+                    "subheading": "Final Year Student, IIT Kanpur",
+                    "image": "Legacy/abhinav.jpeg",
+                    "linkedin": "https://www.linkedin.com/in/abhinav-arora-27686a14b/"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "Yazur Gupta",
+                    "subheading": "Senior Software Engineer at Bajaj Finserv",
+                    "image": "Legacy/yazurgupta.jpeg",
+                    "linkedin": "https://www.linkedin.com/in/yazur-gupta-aa8b05121/"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "Manish Kumar",
+                    "subheading": "Credit Risk Analyst at HSBC",
+                    "image": "Legacy/manishkumar.jpeg",
+                    "linkedin": "https://www.linkedin.com/in/maniskj/"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "Rithvik Patibandla",
+                    "subheading": "Software Engineer at Microsoft",
+                    "image": "Legacy/rithvikpatibandla.jpeg",
+                    "linkedin": "https://www.linkedin.com/in/rithvikp1998/"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "Akash Jain",
+                    "subheading": "Software Engineer at Société Générale",
+                    "image": "Legacy/akashjain.jpeg",
+                    "linkedin": "https://www.linkedin.com/in/akashjain5396/"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "Harsh Sinha",
+                    "subheading": "Member Of Technical Staff at ThoughtSpot",
+                    "image": "Legacy/harshitsinha.jpeg",
+                    "linkedin": "https://www.linkedin.com/in/harsh-sinha-340a18122/"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "Siddhartha Saxena",
+                    "subheading": "ML Engineer at Jumio AI Labs",
+                    "image": "Legacy/siddhartha.jpeg",
+                    "linkedin": "https://www.linkedin.com/in/siddsax/"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "Shibhansh Dohare",
+                    "subheading": "Research Assistant at the University of Alberta",
+                    "image": "Legacy/shibhanshd.jpeg",
+                    "linkedin": "https://www.linkedin.com/in/shibhansh-dohare/"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "Mayank Mittal",
+                    "subheading": "Graduate Student at ETH Zurich",
+                    "image": "Legacy/mayankmittal.jpeg",
+                    "linkedin": "https://www.linkedin.com/in/mayankm-0096/"
+                }
+            ]
+        }
+    ]
+}
