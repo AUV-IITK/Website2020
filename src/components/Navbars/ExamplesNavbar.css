@@ -18,7 +18,6 @@
     margin: 0 !important;
     width: 100%;
   }
-  
 }
 
 .u-margin-zero {
@@ -110,16 +109,21 @@
 }
 .navbar-collapse .navbar-nav > .nav-item > .nav-link {
   margin: 0px 0px;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .navbar:not([class*="bg"]) .navbar-toggler .navbar-toggler-bar {
   background-color: #ffffff !important;
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
   .navbar .navbar-nav .nav-item .nav-link {
-    padding-top: 14px ;
+    padding-top: 14px;
     padding-bottom: 14px;
   }
+}
+
+.triton-image {
+  box-shadow: 0px 10px 15px rgba(53, 35, 35, 0.3);
+  margin-bottom: 15px;
 }

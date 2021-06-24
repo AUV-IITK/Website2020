@@ -19,9 +19,9 @@ function Vehicles() {
             </Col>
           </Row>
           <Row>
-            <Col sm="12" lg="5" className="text-center my-auto">
+            <Col sm="12" lg="5" className="text-center my-auto mb-5">
               <Link to='/vehicles/triton'>
-                <img src={triton} className="border border-info w-100"></img>
+                <img src={triton} className="w-100 triton-image" />
               </Link>
             </Col>
             <Col sm="12" lg="7" className="my-auto">
@@ -29,7 +29,7 @@ function Vehicles() {
               <p className=" auv-description-primary">Triton is our third Autonomous Underwater Vehicle. Triton has a robust, leak-proof and lightweight central hull made from carbon fiber. It has sensors like IMU, DVL and cameras on-board and can efficiently perform tasks like torpedo shooting, localization in an unknown underwater environment and complex space-constrained manoeuvres. In addition, it has improved battery and additional safety mechanisms installed to prevent damage.</p>
               <p className=" auv-description-primary">Triton will participate in RoboSub-2021 held online due to the ongoing pandemic.</p>
               <div className="text-center">
-                <Link to='/vehicles/anahita' className="btn-blue text-center">
+                <Link to='/vehicles/anahita' className="blogs-more-button text-center">
                   Read More
                 </Link>
               </div>
