@@ -330,3 +330,7 @@
         margin: 1rem;
     }
 }
+
+.description2 h4 {
+    margin: 0;
+}

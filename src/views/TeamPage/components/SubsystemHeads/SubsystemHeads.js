@@ -11,6 +11,7 @@ import {
 } from "reactstrap";
 import "./SubsystemHeads.css";
 import team from "../../../../data/TeamMembers.json";
+
 function TalkAbout() {
     console.log(String(team.teamData[0].items[0].image));
     return (

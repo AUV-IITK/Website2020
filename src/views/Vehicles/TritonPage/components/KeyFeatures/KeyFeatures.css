@@ -25,8 +25,8 @@
   font-size: 32px;
 }
 
-.Tab-content {
-  background: white !important;
+.tab-content {
+  background: white;
   height: 100%;
 }
 

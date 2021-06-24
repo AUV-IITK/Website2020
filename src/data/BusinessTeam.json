@@ -1,0 +1,33 @@
+{
+    "teamData": [
+        {
+            "heading": "Team Members",
+            "items": [
+                {
+                    "name": "Shubham Korde",
+                    "subheading": "Y19, Subsystem Head",
+                    "image": "team/shubham.jpg",
+                    "facebook": "https://www.facebook.com/shubham.korde.21",
+                    "linkedin": "https://www.linkedin.com/in/shubham-korde/",
+                    "text": "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut "
+                },
+                {
+                    "name": "Abhishek Shree",
+                    "subheading": "Y20, Team Member",
+                    "image": "team/abhishek.jpeg",
+                    "facebook": "https://www.facebook.com/xorified",
+                    "linkedin": "https://www.linkedin.com/in/abhishek-shree-159980145",
+                    "text": "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut "
+                },
+                {
+                    "name": "Ritam Jana",
+                    "subheading": "Y20, Team Member",
+                    "image": "team/ritam.jpeg",
+                    "facebook": "https://www.facebook.com/ritam.jana.81",
+                    "linkedin": "https://www.linkedin.com/in/ritam-jana",
+                    "text": "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut "
+                }
+            ]
+        }
+    ]
+}

@@ -1,10 +1,4 @@
 import React from "react";
-// reactstrap components
-import {
-  Container,
-  Row
-} from "reactstrap";
-
 import ExamplesNavbar from "../../../components/Navbars/ExamplesNavbar";
 
 // core components

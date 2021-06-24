@@ -2,7 +2,6 @@ import React from "react";
 import {useEffect} from "react";
 import "./KeyFeatures.css";
 import {Container, Row, Col, Tabs, Tab, Table} from "react-bootstrap";
-import anahitaCAD from '../../../../../assets/models/AnahitaCAD.glb';
 import specs from "../../data.js";
 
 function Posts() {
@@ -14,39 +13,34 @@ function Posts() {
             <div className="mt-5">
                 <Container>
                     <div className="title-block">
-                        <Row className="mt-5 justify-content-center">
-                            <div>
-                                <h2 className="heading-main">ANAHITA</h2>
-                                <h3 className="small-heading">The Goddess of Water</h3>
+                        <Row className="mt-5 justify-content-center heading-component">
+                            <div style={{textAlign:'center'}}>
+                                <h2>ANAHITA</h2>
+                                <h3>The Goddess of Water</h3>
                             </div>
                         </Row>     
                     </div>
 
                     <Row className="d-flex col-main justify-content-center">
-                        <Col sm="12" lg="6" className="my-auto text-center mt-5"> 
-                                <model-viewer 
-                                id="reveal" 
-                                loading="eager" 
-                                camera-controls 
-                                auto-rotate 
-                                src={anahitaCAD}
-                                class="cad-model"
-                                alt="A 3D model of a Triton"></model-viewer>
+                        <Col sm="12" lg="8" className="my-auto text-center mt-5"> 
+                            <div className="iframe-container">
+                                <iframe style={{boxShadow:'none'}} title="A 3D model" className="cad-model sketchfab-responsive" src="https://sketchfab.com/models/b92c344742d8408b822510230c1ec771/embed?autospin=0&autostart=1&preload=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                            </div>
                         </Col>
-                        <Col sm="12" lg="6" className="featureCol my-auto">
+                        <Col sm="12" lg="4" className="featureCol my-auto">
                             <div className="briefspec">
                                 <Tabs defaultActiveKey="home" id="uncontrolled-tab">
-                                    <Tab className="Tab-content" eventKey="home" title="What we made">
+                                    <Tab className="tab-content" eventKey="home" title="What we made">
                                         <div className="my-1">
                                         {specs.brief}
                                         </div>
                                         <div>
-                                            <a className="tdr-button" href="https://drive.google.com/file/d/1AN2uvKzoERqeampDUTVilUPUmSCickFL/view?usp=sharing" target="_blank">
+                                            <a className="tdr-button" href="https://drive.google.com/file/d/1AN2uvKzoERqeampDUTVilUPUmSCickFL/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                                                 Report
                                             </a>
                                         </div>
                                     </Tab>
-                                    <Tab className="Tab-content" eventKey="specs" title="Specifications">
+                                    <Tab className="tab-content" eventKey="specs" title="Specifications">
                                         <Table bordered className="my-1">
                                         <tbody>
                                             {

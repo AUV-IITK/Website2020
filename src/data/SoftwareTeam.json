@@ -1,0 +1,33 @@
+{
+    "teamData": [
+        {
+            "heading": "Team Members",
+            "items": [
+                {
+                    "name": "Prakhar Maheshwari",
+                    "subheading": "Y19, Subsystem Head",
+                    "image": "team/prakhar.jpg",
+                    "facebook": "https://www.facebook.com/prakhar.maheshwari.33821",
+                    "linkedin": "https://www.linkedin.com/in/prakhar-maheshwari-a236031a6/",
+                    "text": "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut "
+                },
+                {
+                    "name": "Aaryansh Mohan Bansal",
+                    "subheading": "Y19, Team Member",
+                    "image": "team/aryansh.jpg",
+                    "facebook": "https://www.facebook.com/aaryanshmohan.bansal.5",
+                    "linkedin": "https://www.linkedin.com/in/aaryansh-mohan-bansal-3326101a6/",
+                    "text": "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut "
+                },
+                {
+                    "name": "Krishna Agarwal",
+                    "subheading": "Y19, Team Member",
+                    "image": "team/Krishna.jpg",
+                    "facebook": "https://www.facebook.com/krishna.agrawal.1884",
+                    "linkedin": "https://www.linkedin.com/in/krishna-agrawal-3471921aa/",
+                    "text": "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut "
+                }
+            ]
+        }
+    ]
+}

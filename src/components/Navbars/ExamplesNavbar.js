@@ -23,7 +23,7 @@ import {
 
 
 function ExamplesNavbar(props) {
-    
+
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [navbarCollapse, setNavbarCollapse] = React.useState(false);
 
@@ -31,32 +31,36 @@ function ExamplesNavbar(props) {
     setNavbarCollapse(!navbarCollapse);
     document.documentElement.classList.toggle("nav-open");
   };
-const [scrolled,setScrolled]=React.useState(false);
+  const [scrolled, setScrolled] = React.useState(false);
 
-  const handleScroll=() => {
-    const offset=window.scrollY;
-    if(offset > 250 ){
+  const handleScroll = () => {
+    const offset = window.scrollY;
+    if (offset > 850) {
       setScrolled(true);
     }
-    else{
+    else {
       setScrolled(false);
     }
   }
   React.useEffect(() => {
-    window.addEventListener('scroll',handleScroll)
+    window.addEventListener('scroll', handleScroll)
   })
 
-  let x=['navbar','custom-navbar-auv'];
-  if(props.page == "landing-page"){
-    if(scrolled){
+  let x = ['navbar', 'custom-navbar-auv'];
+  if (props.page == "landing-page") {
+    if (scrolled) {
       x.push('scrolled');
-     }
+    }
   }
   else x.push('scrolled');
 
   return (
-    <div className={x.join(" ")}>
-      <Navbar color-on-scroll="300" expand="lg" className="custom-navbar-auv">
+    <div className={x.join(" ")} >
+      <Navbar
+        color-on-scroll="300"
+        expand="lg"
+        className="custom-navbar-auv"
+      >
         <Container className="navbar-container">
           <div className="navbar-translate">
             <NavbarBrand
@@ -70,13 +74,11 @@ const [scrolled,setScrolled]=React.useState(false);
             </NavbarBrand>
             <button
               aria-expanded={navbarCollapse}
-              className={classnames(
-                "navbar-toggler navbar-toggler u-margin-zero",
-                {
-                  toggled: navbarCollapse,
-                }
-              )}
+              className={classnames("navbar-toggler navbar-toggler u-margin-zero", {
+                toggled: navbarCollapse,
+              })}
               onClick={toggleNavbarCollapse}
+
             >
               <span className="navbar-toggler-bar bar1" />
               <span className="navbar-toggler-bar bar2" />
@@ -90,59 +92,21 @@ const [scrolled,setScrolled]=React.useState(false);
           >
             <Nav navbar className=" mr-5 navigation">
               <NavItem>
-                <NavLink
-                  className={
-                    props.activePage === "/landing-page"
-                      ? "navbar-content active"
-                      : "navbar-content"
-                  }
-                  to="/landing-page"
-                  tag={Link}
-                  onClick={toggleNavbarCollapse}
-                >
-                  Home
+                <NavLink className={props.activePage === "/landing-page" ? "navbar-content active" : "navbar-content"} to="/landing-page" tag={Link} onClick={toggleNavbarCollapse}>Home
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink
-                  className={
-                    props.activePage === "/about-us"
-                      ? "navbar-content active"
-                      : "navbar-content"
-                  }
-                  to="/about-us"
-                  tag={Link}
-                  onClick={toggleNavbarCollapse}
-                >
+                <NavLink className={props.activePage === "/about-us" ? "navbar-content active" : "navbar-content"} to="/about-us" tag={Link} onClick={toggleNavbarCollapse}>
                   About Us
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink
-                  className={
-                    props.activePage === "/team"
-                      ? "navbar-content active"
-                      : "navbar-content"
-                  }
-                  to="/team"
-                  tag={Link}
-                  onClick={toggleNavbarCollapse}
-                >
+                <NavLink className={props.activePage === "/team" ? "navbar-content active" : "navbar-content"} to="/team" tag={Link} onClick={toggleNavbarCollapse}>
                   Team
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink
-                  className={
-                    props.activePage === "/events"
-                      ? "navbar-content active"
-                      : "navbar-content"
-                  }
-                  to="/events"
-                  tag={Link}
-                  onClick={toggleNavbarCollapse}
-                  onClick={toggleNavbarCollapse}
-                >
+                <NavLink className={props.activePage === "/events" ? "navbar-content active" : "navbar-content"} to="/events" tag={Link} onClick={toggleNavbarCollapse} onClick={toggleNavbarCollapse}>
                   Events
                 </NavLink>
               </NavItem>
@@ -156,33 +120,21 @@ const [scrolled,setScrolled]=React.useState(false);
                   href="#pablo"
                   id="dropdownMenuButton"
                   nav
-                  onClick={(e) => e.preventDefault()}
+                  onClick={e => e.preventDefault()}
                   role="button"
-                  style={{ textAlign: "center" }}
-                  className={
-                    props.activePage === "/vehicles/anahita" ||
-                    props.activePage === "/vehicles/varun" ||
-                    props.activePage === "/vehicles/triton"
-                      ? "navbar-content active"
-                      : "navbar-content"
-                  }
+                  style={{ textAlign: 'center' }}
+                  className={props.activePage === "/vehicles/anahita" || props.activePage === "/vehicles/varun" ? "navbar-content active" : "navbar-content"}
                 >
                   Vehicles
                 </DropdownToggle>
                 <DropdownMenu
+
                   aria-labelledby="dropdownMenuButton"
                   className="dropdown-info ml-auto mr-auto"
-                  style={{
-                    backgroundColor: "rgb(220,220,220)",
-                    borderRadius: "0",
-                    textAlign: "center",
-                  }}
+                  style={{ borderRadius: "0", textAlign: "center" }}
                 >
-                  <Link
-                    to="/vehicles/triton"
-                    style={{ color: "black" }}
-                    className="auv-dropdown"
-                  >
+
+                  <Link to='/vehicles/triton'>
                     <DropdownItem
                       style={{ textAlign: "center" }}
                       className="auv-dropdown"
@@ -191,10 +143,8 @@ const [scrolled,setScrolled]=React.useState(false);
                       Triton
                     </DropdownItem>
                   </Link>
-                  <Link to="/vehicles/anahita" style={{ color: "black" }}>
+                  <Link to='/vehicles/anahita'>
                     <DropdownItem
-                      // href="#pablo"
-                      // onClick={e => e.preventDefault()}
                       style={{ textAlign: "center" }}
                       className=" auv-dropdown"
                       onClick={toggleNavbarCollapse}
@@ -202,12 +152,7 @@ const [scrolled,setScrolled]=React.useState(false);
                       Anahita
                     </DropdownItem>
                   </Link>
-
-                  <Link
-                    to="/vehicles/varun"
-                    style={{ color: "black" }}
-                    className="auv-dropdown"
-                  >
+                  <Link to='/vehicles/varun'>
                     <DropdownItem
                       style={{ textAlign: "center" }}
                       className="auv-dropdown"
@@ -219,28 +164,12 @@ const [scrolled,setScrolled]=React.useState(false);
                 </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem>
-                <NavLink
-                  className={
-                    props.activePage === "/blogs"
-                      ? "navbar-content active"
-                      : "navbar-content"
-                  }
-                  to="/blogs"
-                  tag={Link}
-                >
+                <NavLink className={props.activePage === "/blogs" ? "navbar-content active" : "navbar-content"} to="/blogs" tag={Link}>
                   Blogs
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink
-                  className={
-                    props.activePage === "/contact-us"
-                      ? "navbar-content active"
-                      : "navbar-content"
-                  }
-                  to="/contact-us"
-                  tag={Link}
-                >
+                <NavLink className={props.activePage === "/contact-us" ? "navbar-content active" : "navbar-content"} to="/contact-us" tag={Link}>
                   Contact Us
                 </NavLink>
               </NavItem>
@@ -250,9 +179,9 @@ const [scrolled,setScrolled]=React.useState(false);
                   href="https://www.facebook.com/auviitk"
                   target="_blank"
                   title="Like us on Facebook"
-                  style={{ textAlign: "center" }}
+                  style={{ textAlign: "center", color: "white" }}
                 >
-                  <i className="fa fa-facebook-square" />
+                  <i className="fa fa-facebook-square nav-social" />
                   <p className="d-lg-none">Facebook</p>
                 </NavLink>
               </NavItem>
@@ -262,9 +191,9 @@ const [scrolled,setScrolled]=React.useState(false);
                   href="https://github.com/AUV-IITK"
                   target="_blank"
                   title="Star on GitHub"
-                  style={{ textAlign: "center" }}
+                  style={{ textAlign: "center", color: "white" }}
                 >
-                  <i className="fa fa-github" />
+                  <i className="fa fa-github nav-social" />
                   <p className="d-lg-none">GitHub</p>
                 </NavLink>
               </NavItem>
