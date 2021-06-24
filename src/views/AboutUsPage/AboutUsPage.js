@@ -8,6 +8,8 @@ import Participation from './components/Participation/Participation'
 import Achievements from './components/Achievements/Achievements'
 import './AboutUsPage.css'
 
+import FadeIn from 'views/Animations/FadeIn'
+
 function LandingPage () {
   document.documentElement.classList.remove('nav-open')
   React.useEffect(() => {
@@ -21,9 +23,15 @@ function LandingPage () {
         <div className="mobile-responsive">
             <ExamplesNavbar activePage="/about-us"/>
             <div className="main ">
+              <FadeIn>
                 <AboutUs setMore="true"/>
+              </FadeIn>
+              <FadeIn>
                 <Participation/>
+              </FadeIn>
+              <FadeIn>
                 <Achievements/>
+              </FadeIn>
             </div>
         </div>
   )
