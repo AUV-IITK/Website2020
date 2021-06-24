@@ -1,5 +1,5 @@
 .achievement-card {
-  background-color: var(--color-white);
+  background-color: var(--color-quartenary);
   box-shadow: 0px 10px 15px rgba(53, 35, 35, 0.3);
   height: 95%;
 }
@@ -12,11 +12,12 @@
 .card-title {
   font-size: 2rem;
   font-family: var(--font-heading);
-  font-weight: 500;
+  font-weight: 600;
   color: var(--color-primary-light);
 }
 
 .card-info {
   font-size: 14px;
   color: var(--color-primary);
+  font-weight: 500;
 }
