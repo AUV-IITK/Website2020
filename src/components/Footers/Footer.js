@@ -13,12 +13,12 @@ function Footer() {
     <footer className="footer-new">
       <Container>
         <Row className="footer-row">
-          <Col lg="7" md="6" className="logo-description mr-auto ml-auto">
+          <Col lg="6" md="7" className="logo-description mr-auto ml-auto">
             <Row className="align-items-center">
               <Col xs="4" className="my-auto">
                 <img src={logo} className="w-100" style={{ maxWidth: '150px' }} />
               </Col>
-              <Col xs="6" className="my-auto">
+              <Col xs="5" className="my-auto mr-0">
                 <div className="footer-heading-primary">Team AUV-IITK</div>
                 <div className="footer-address">
                   AUV Room, Hall-2,
@@ -48,7 +48,7 @@ function Footer() {
                   Contact Us
                 </NavLink>
               </Col>
-              <Col md="12" xs="7" className="my-auto">
+              <Col md="12" xs="12" className="my-auto text-center mr-auto ml-auto">
                 <div className="nav-icons-container">
                   <NavLink
                     data-placement="bottom"
