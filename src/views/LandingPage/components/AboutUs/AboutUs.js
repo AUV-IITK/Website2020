@@ -18,7 +18,7 @@ function AboutUs() {
   return (
     <div >
       <div className=" text-center ">
-        <Container className="" style={{ marginTop: "10rem" }}>
+        <Container style={{ marginTop: "10rem" }}>
           <div className=" col-12 text-center">
             <h2 className="heading-main mt-5 mb-5">ABOUT US</h2>
           </div>
@@ -58,48 +58,49 @@ function AboutUs() {
                 <div className=" icon-auv">
                   <i className=" mt-4 fa fa-cogs fa-5x icon-responsive " />
                   <div className="description2">
-                    <h4 className=""><strong>2 Vehicles Made</strong></h4>
+                    <h4><strong>2 Vehicles Made</strong></h4>
 
+                  </div>
+                </div>
+
+                <div className="single-icon-container">
+                  <div className=" icon-auv">
+                    <i className="  mt-4 fa fa-users fa-5x icon-responsive" />
+                    {/* In order to align the icons center add the class 'icon-align' to each of the icon */}
+                    <div className="description2">
+                      <h4><strong>30 Members</strong></h4>
+
+                    </div>
+                  </div>
+                </div>
+                <div className="single-icon-container">
+                  <div className=" icon-auv">
+                    <i className="mt-4 fa fa-briefcase fa-5x icon-responsive" />
+                    <div className="description2">
+                      <h4> <strong>30+ Projects </strong></h4>
+
+                    </div>
+                  </div>
+                </div>
+                <div className="single-icon-container">
+                  <div className=" icon-auv">
+                    <i className="mt-4 fa fa-coffee fa-5x icon-responsive" />
+                    <div className="description2">
+                      <h4><strong>400+ NightOuts</strong></h4>
+
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div className="single-icon-container">
-                <div className=" icon-auv">
-                  <i className="  mt-4 fa fa-users fa-5x icon-responsive" />
-                  {/* In order to align the icons center add the class 'icon-align' to each of the icon */}
-                  <div className="description2">
-                    <h4 className=""><strong>15 Members</strong></h4>
-
-                  </div>
-                </div>
-              </div>
-              <div className="single-icon-container">
-                <div className=" icon-auv">
-                  <i className="mt-4 fa fa-briefcase fa-5x icon-responsive" />
-                  <div className="description2">
-                    <h4 className=""> <strong>30+ Projects </strong></h4>
-
-                  </div>
-                </div>
-              </div>
-              <div className="single-icon-container">
-                <div className=" icon-auv">
-                  <i className="mt-4 fa fa-coffee fa-5x icon-responsive" />
-                  <div className="description2">
-                    <h4 className=""><strong>400+ NightOuts</strong></h4>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </Row>
-          <br />
-          <br />
-        </Container>
+            </Row>
+            <br />
+            <br />
+          </Container >
+        </div >
       </div>
-    </div>
-  );
+      );
 }
-export default AboutUs;
+
+
+      export default AboutUs;

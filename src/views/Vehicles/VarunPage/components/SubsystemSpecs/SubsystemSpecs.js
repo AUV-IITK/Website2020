@@ -1,93 +1,179 @@
-import React from 'react';
-import {
+import React from "react";
+import {Container, Row, Col, Accordion, Card} from "react-bootstrap";
 
-    Container,
-    Row,
-    Col
-} from "reactstrap";
-import labelled from '../../../../../assets/img/varun/varun_labelled.png';
-import powerimg from '../../../../../assets/img/varun/varun_power.png';
-import soft from '../../../../../assets/img/varun/software_logos.png';
-import "./subs.css"
-const embedstyle= {
-    fontSize: "13px",
-    fontWeight: "normal",
-    margin: "5px",
-    color: "#4A4A4A"
-} 
+import mech_main from "../../../../../assets/img/varun/VARUN-AUV/MechanicalStructure.png";
+import elec_main from "../../../../../assets/img/varun/VARUN-AUV/ArduinoAtmega.png";
+import soft_main from "../../../../../assets/img/varun/VARUN-AUV/SoftwareFrameworks.png";
+
+import "./subs.css";
+import specs from "../../data.js";
+
+import FadeIn from "../../../../Animations/FadeIn";
+
 function Posts() {
     return (
         <>
+        {
             <div className="section landing-section">
-            <Container>
-                <Row className="">
-                    <Col className="ml-auto mr-auto" md="8">
-                        <h2 className="text-center mb-4 heading-main"><b>SPECIFICATIONS</b></h2>
-                    </Col>
-                </Row>
-                <Row>
-                    <h3 className="small-heading ml-auto mr-auto">Mechanical</h3>
-                </Row>
-                <Row>
-                    <Col sm="12" md="6" className="text-center my-auto imgCol">
-                        <img src={labelled} className="w-100"></img>
-                        <p className="small-heading-edited">VARUN VEHICLE : STRUCTURE</p>
-                    </Col>
-                    <Col sm="12" md="6" className="featureCol my-auto">
-                        <ul className="features-list">
-                            <li ><b style={{fontWeight:600}}>Five</b> degrees of freedom</li>
-                            <li >Weigth of <b style={{fontWeight:600}}>44.5 kg</b> with +1% buoyancy</li>
-                            <li >Max coefficient of drag at <b style={{fontWeight:600}}>1.5 m/s : 0.42</b></li>
-                            <li ><b style={{fontWeight:600}}>6x brushed-DC Seabotix thrusters</b> for locomotion</li>
-                            <li ><b style={{fontWeight:600}}>Pneumatics actuation</b> for torpedo shooting</li>
-                            <li >Fabricated using in-house manufacturing facilities</li>
-                        </ul>
-                    </Col>
-                </Row>
-                <Row>
-                    <h3 className="small-heading ml-auto mr-auto">Electrical</h3>
-                </Row>
-                <Row>
-                    
-                    <Col sm="12" md="6" className="text-center my-auto imgCol">
-                        <img src={powerimg} className="w-100"></img>
-                        <p className="small-heading-edited mt-5">POWER DISTRIBUTION</p>
-                    </Col>
-                    <Col sm="12" md="6" className="featureCol my-auto">    
-                        <ul className="features-list" >
-                            <li >Powered by four<b style={{fontWeight:600}}> 3S Lithium-Polymer Batteries</b></li>
-                            <li ><b style={{fontWeight:600}}>Custom made power-distribution board</b> with protection and monitoring circuits</li>
-                            <li >Two <b style={{fontWeight:600}}>Logitech C290 cameras</b> for 1080p video feed</li>
-                            <li ><b style={{fontWeight:600}}>Bluerobotics Depth Sensor</b> for precision depth</li>
-                            <li ><b style={{fontWeight:600}}>Intel NUC</b> for high-processing power</li>
-                        </ul>
-                    </Col>
-                </Row>
-                <Row>
-                    <h3 className="small-heading ml-auto mr-auto">Software</h3>
-                </Row>
-                <Row>
-                    <Col sm="12" md="6" className="text-center my-auto imgCol">
-                        <img src={soft} className="w-100"></img>
-                        <p className="small-heading-edited">FRAMEWORKS USED IN VARUN</p>
-                    </Col>
-                    <Col sm="12" md="6" className="featureCol my-auto">
-                        <ul className="features-list">
-                            <li >System integration through ROS on <b style={{fontWeight:600}}>Ubuntu 14.04</b></li>
-                            <li >Simulation through <b style={{fontWeight:600}}>Gazebo</b> to optimize testing time</li>
-                            <li >Image processing to perform vision-based tasks</li>
-                            <li >Navigation through <b style={{fontWeight:600}}>dead-reckoning sensors</b></li>
-                            <li ><b style={{fontWeight:600}}>GUI enabled</b> control for debugging</li>
-                            <li ><b style={{fontWeight:600}}>Code available on GitHub </b>with documentation under BSD-3 License Clause</li>
-                        </ul>
-                    </Col>                    
-                </Row>
-            </Container>
-            </div>
+                <Container>
+                    <div className="title-block">
+                        <Row className="justify-content-center heading-components">
+                            <div style={{textAlign:'center'}}>
+                                <b>COMPONENTS</b>
+                            </div>
+                        </Row>    
+                    </div>
+                    <Row className="subsystem-headings">
+                        <h3>Mechanical</h3>
+                    </Row>
+                    <FadeIn>
+                    <div className="spec-container">
+                        <Row>
+                            {/* <Col lg="5" className="text-center my-auto imgCol">
+                                <img src={mech_main} alt="spec-img" className="w-100"></img>
+                                <p className="small-heading-edited">
+                                    VARUN: STRUCTURE
+                                </p>
+                            </Col> */}
+                            <Col lg="1"></Col>
+                            <Col lg="10" className="featureCol my-auto">
+                                Varun's mechanical system comprises an aluminium structural frame, pressure casings, and electromagnetic actuators. The mechanical parts were first designed in Solidworks and Autodesk Inventor and then improved using Ansys Workbench before its final fabrication using available in-house facilities at the institute.
+                                <div style={{marginBottom:'20px'}}></div>
+                                <Accordion defaultActiveKey="">
+                                {
+                                    specs.mechanical.map(
+                                        (data) => (
+                                            <Card className="card-plain spec-card">
+                                                <Accordion.Toggle className="accord-head" as={Card.Header} eventKey={String(data.id)}>
+                                                <svg className="add-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z"/></svg>
+                                                {data.title}
+                                                </Accordion.Toggle>
+                                                <Accordion.Collapse eventKey={String(data.id)}>
+                                                <Card.Body>
+                                                    <div>
+                                                        {data.content}
+                                                    </div>
+                                                    <div style={{display:'grid', placeItems:'center'}}>
+                                                        {data.img && <img className="w-75 accord-img" alt="spec-img" src={require("assets/img/varun/VARUN-AUV/" + data.img)}/>}
+                                                        <div className="card-image-description" style={{fontFamily:'monospace', textAlign:'center'}} >
+                                                            {data.imgDesc}
+                                                        </div>
+                                                    </div>
+                                                </Card.Body>
+                                                </Accordion.Collapse>
+                                            </Card>
+                                        )
+                                    )
+                                }
+                                </Accordion>
+                            </Col>
+                            <Col lg="1"></Col>
+                        </Row>
+                     </div>
+                     </FadeIn>
+                    <Row className="subsystem-headings">
+                        <h3>Electrical</h3>
+                    </Row>
+                    <FadeIn>
+                    <div className="spec-container">
+                        <Row>
+                            <Col lg="1"></Col>
+                            <Col lg="10" className="my-auto featureCol">
+                                The Electrical system provides the interface between the processor and the other electronic devices. There will be three layers of stacks inside the hull, which will be used for mounting different electronic devices and PCBs.The Arduino used in Varun is the ATmega1280 microcontroller and has an operating voltage of 5V. It has 16 Analog input pins and 54 digital I/O pins (of which 15 provide PWM output). The open-source Arduino platform is used to process the input signals from the main processor and convert it into desired signals to the actuators like motor drivers and pneumatic system.
+                                <div style={{marginBottom:'20px'}}></div>
+                                <Accordion defaultActiveKey="">
+                                {
+                                    specs.electrical.map(
+                                        (data) => (
+                                            <Card className="card-plain spec-card">
+                                                <Accordion.Toggle className="accord-head" as={Card.Header} eventKey={String(data.id)}>
+                                                <svg className="add-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z"/></svg>
 
+                                                {data.title}
+                                                </Accordion.Toggle>
+                                                <Accordion.Collapse eventKey={String(data.id)}>
+                                                 <Card.Body>
+                                                    <div>
+                                                        {data.content}
+                                                    </div>
+                                                    <div style={{display:'grid', placeItems:'center'}}>
+                                                        {data.img && <img className="w-75 accord-img" alt="spec-img" src={require("assets/img/varun/VARUN-AUV/" + data.img)}/>} 
+                                                        <div className="card-image-description" style={{fontFamily:'monospace', textAlign:'center'}} >
+                                                            {data.imgDesc}
+                                                        </div>
+                                                    </div>
+                                                </Card.Body>
+                                                </Accordion.Collapse>
+                                            </Card>
+                                        )
+                                    )
+                                }
+                                </Accordion>
+                            </Col>
+                            <Col lg="1"></Col>
+                            {/* <Col lg="5" className="text-center my-auto imgCol">
+                                <img src={elec_main} alt="spec-img" className="w-100"></img>
+                                <p className="small-heading-edited">
+                                    VARUN: ELECTRICAL ARCHITECTURE
+                                </p>
+                            </Col> */}
+                        </Row>
+                     </div>
+                     </FadeIn>
+                    <Row className="subsystem-headings">
+                        <h3>Software</h3>
+                    </Row>
+                    <FadeIn>
+                    <div className="spec-container">    
+                        <Row>
+                            {/* <Col lg="5" className="text-center my-auto imgCol">
+                                <img src={soft_main} alt="spec-img" className="w-100"></img>
+                                <p className="small-heading-edited">
+                                    VARUN: SOFTWARE ARCHIETECTURE
+                                </p>
+                            </Col> */}
+                            <Col lg="1"></Col>
+                            <Col lg="10" className="my-auto featureCol">
+                                The Software Architecture of Varun is based on the Robot Operating System (ROS) Software Framework from Willow Garage, which encompasses the underlying messaging infrastructure for inter-process communications in our distributed system.
+                                <div style={{marginBottom:'20px'}}></div>
+                                <Accordion defaultActiveKey="">
+                                {
+                                    specs.software.map(
+                                        (data) => (
+                                            <Card className="card-plain spec-card">
+                                                <Accordion.Toggle className="accord-head" as={Card.Header} eventKey={String(data.id)}>
+                                                <svg className="add-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z"/></svg>
+
+                                                {data.title}
+                                                </Accordion.Toggle>
+                                                <Accordion.Collapse eventKey={String(data.id)}>
+                                                 <Card.Body>
+                                                    <div>
+                                                        {data.content}
+                                                    </div>
+                                                    <div style={{display:'grid', placeItems:'center'}}>
+                                                        {data.img && <img className="w-75 accord-img" alt="spec-img" src={require("assets/img/varun/VARUN-AUV/" + data.img)}/>}
+                                                        <div className="card-image-description" style={{fontFamily:'monospace', textAlign:'center'}} >
+                                                            {data.imgDesc}
+                                                        </div>
+                                                    </div>
+                                                </Card.Body>
+                                                </Accordion.Collapse>
+                                            </Card>
+                                        )
+                                    )
+                                }
+                                </Accordion>
+                            </Col>
+                            <Col lg="1"></Col>
+                        </Row>
+                    </div>
+                    </FadeIn>
+                </Container>
+            </div>
+        }
         </>
     );
-
-
 }
+
 export default Posts;
