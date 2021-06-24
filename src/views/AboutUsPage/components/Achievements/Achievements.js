@@ -1,56 +1,60 @@
 import React from 'react'
-import { Container, Row, Col } from 'reactstrap'
+import { Container, Row, Col, Card } from 'react-bootstrap'
 import niotwin from '../../../../assets/img/niotwinner.png'
 import desbot from '../../../../assets/img/anahita_design.jpg'
 import atwork from '../../../../assets/img/newreplaced.jpg'
 import './Achievements.css'
 
-function Posts () {
-  return (
+function Posts() {
+    return (
         <>
             <div className="section landing-section ">
-                   <Container>
-                       
+                <Container>
                     <Row className="d-flex justify-content-center">
-                        <Col xl="4" className="text-center">
-                            <h3 className="mt-0 mb-3 small-heading">
-                                {' '}
-                                &nbsp; Undergraduate Roboticists{' '}
-                            </h3>
-                            <img src={atwork} className="border border-info w-100 large-image-responsiveness"/>
-                            <p className="auv-description-primary">
-                                Selected after a comprehensive recruitment, sharing our love for
-                                robotics, we build low-cost robust AUV systems.
-                            </p>
+                        <Col lg="4" md="12" className="text-center mb-3">
+                            <Card className="achievement-card">
+                                <Card.Img src={atwork} className="card-img" />
+                                <Card.Body>
+                                    <Card.Title>Undergraduate Roboticists</Card.Title>
+                                    <p className="card-info">
+                                        Selected after a comprehensive recruitment, sharing our love for
+                                        robotics, we build low-cost robust AUV systems.
+                                    </p>
+                                </Card.Body>
+                            </Card>
                         </Col>
-                        <Col xl="4" className="text-center">
-                            <h3 className="mt-0 mb-3 small-heading">
-                                Ingenious Design & Creativity
-                            </h3>
-                            <img src={desbot} className="border border-info w-100 large-image-responsiveness"/>
-                            <p className="auv-description-primary ">
-                                The designing process behind our latest vehicle, Anahita, has
-                                been appreciated at the international level.
-                            </p>
+                        <Col lg="4" md="12" className="text-center mb-3">
+                            <Card className="achievement-card">
+                                <Card.Img variant="top" src={desbot} className="card-img" />
+                                <Card.Body>
+                                    <Card.Title>Ingenious Design & Creativity</Card.Title>
+                                    <p className="card-info">
+                                        The designing process behind our latest vehicle, Anahita, has
+                                        been appreciated at the international level.
+                                    </p>
+                                </Card.Body>
+                            </Card>
                         </Col>
-                        <Col xl="4" className="text-center">
-                            <h3 className="mt-0 mb-3 small-heading">
-                                National Competition Winner
-                            </h3>
-                            <img src={niotwin} className="border border-info w-100 large-image-responsiveness"/>
-                            <p className="auv-description-primary">
-                                Twice Runners’ Up (2017 & 2019) at the NIOT SAVe, organised by
-                                the National Insitute Of Ocean Technology, Chennai.
-                            </p>
+                        <Col lg="4" md="12" className="text-center mb-3">
+                            <Card className="achievement-card">
+                                <Card.Img variant="top" src={niotwin} className="card-img" />
+                                <Card.Body>
+                                    <Card.Title>National Competition Winner</Card.Title>
+                                    <p className="card-info">
+                                        Twice Runners’ Up (2017 & 2019) at the NIOT SAVe, organised by
+                                        the National Insitute Of Ocean Technology, Chennai.
+                                    </p>
+                                </Card.Body>
+                            </Card>
                         </Col>
-                        
+
                     </Row>
 
-                    </Container>       
+                </Container>
             </div>
 
         </>
-  )
+    )
 }
 
 export default Posts
