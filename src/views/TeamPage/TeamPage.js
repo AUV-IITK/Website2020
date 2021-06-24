@@ -39,6 +39,7 @@ import ExamplesNavbar from "../../components/Navbars/ExamplesNavbar";
 // core components
 import Subsytems from "./components/Subsystems/Subsystems";
 import TeamVideo from './components/TeamVideo/TeamVideo';
+import LegacyCarousel from "./components/LegacyCarousel/LegacyCarousel";
 import TeamHeads from "./components/TeamHeads/TeamHeads";
 
 function LandingPage() {
@@ -55,6 +56,7 @@ function LandingPage() {
             <div className="main">
                 <TeamHeads />
                 <Subsytems />
+                <LegacyCarousel />
                 <TeamVideo />
             </div>
         </div>
