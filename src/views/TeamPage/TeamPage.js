@@ -42,6 +42,7 @@ import TeamVideo from './components/TeamVideo/TeamVideo';
 import LegacyCarousel from "./components/LegacyCarousel/LegacyCarousel";
 import TeamHeads from "./components/TeamHeads/TeamHeads";
 
+import FadeIn from 'views/Animations/FadeIn';
 function LandingPage() {
     document.documentElement.classList.remove("nav-open");
     React.useEffect(() => {
@@ -54,10 +55,18 @@ function LandingPage() {
         <div>
             <ExamplesNavbar activePage="/team" />
             <div className="main">
-                <TeamHeads />
-                <Subsytems />
-                <LegacyCarousel />
-                <TeamVideo />
+                <FadeIn>
+                    <TeamHeads />
+                </FadeIn>
+                <FadeIn>
+                    <Subsytems />
+                </FadeIn>
+                <FadeIn>
+                    <LegacyCarousel />
+                </FadeIn>
+                <FadeIn>
+                    <TeamVideo />
+                </FadeIn>
             </div>
         </div>
     );
