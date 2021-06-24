@@ -2,9 +2,11 @@ import React from 'react'
 import { Container, Row, Col } from 'reactstrap'
 import './Event.css'
 
+import FadeIn from 'views/Animations/FadeIn'
 function Event(props) {
     return (
         <>
+        <FadeIn>
             <div className="">
                 <Container>
                     <Row className="event-container">
@@ -45,7 +47,7 @@ function Event(props) {
                     </Row>
                 </Container>
             </div>
-
+        </FadeIn>
         </>
     )
 }

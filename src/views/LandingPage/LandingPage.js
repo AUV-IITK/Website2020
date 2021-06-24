@@ -10,7 +10,7 @@ import Sponsors from "./components/Sponsors/Sponsors.js";
 import Vehicles from "./components/Vehicles/Vehicles.js";
 import Achievements from "./components/Achievements/Achievements";
 import "./LandingPage.css";
-
+import FadeIn from "views/Animations/FadeIn.js";
 function LandingPage() {
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
@@ -24,11 +24,21 @@ function LandingPage() {
       <LandingPageHeader />
       <ExamplesNavbar page="landing-page" />
       <div className="main">
-        <AboutUs />
-        <Team className="team" />
-        <Vehicles />
-        <Achievements />
-        <Sponsors className="sponsors" />
+        <FadeIn>
+          <AboutUs />
+        </FadeIn>
+        <FadeIn>
+          <Team className="team" />
+        </FadeIn>
+        <FadeIn>
+          <Vehicles />
+        </FadeIn>
+        <FadeIn>
+          <Achievements />
+        </FadeIn>
+        <FadeIn>
+          <Sponsors className="sponsors" />
+        </FadeIn>
       </div>
     </div>
   );

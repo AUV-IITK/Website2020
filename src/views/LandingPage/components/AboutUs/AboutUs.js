@@ -2,33 +2,33 @@ import React from "react";
 import anahitapic from "assets/img/anahita-1.jpg";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import './AboutUs.css';
-import {
+import "./AboutUs.css";
+import { Container, Row, Col } from "reactstrap";
 
-  Container,
-  Row,
-  Col,
-} from "reactstrap";
-
-function AboutUs() {
-
+function AboutUs(props) {
   useEffect(() => {
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   });
+
+  let MoreButton = props.setMore ? null : (
+    <Link
+      to="/about-us"
+      className="blogs-more-button"
+      style={{ margin: "0 auto" }}
+    >
+      More
+    </Link>
+  );
   return (
-    <div >
+    <div>
       <div className=" text-center ">
         <Container style={{ marginTop: "10rem" }}>
           <div className=" col-12 text-center">
             <h2 className="heading-main mt-5 mb-5">ABOUT US</h2>
           </div>
-          <Row >
+          <Row>
             <Col className="mt-0 left-desc" xl="9">
-
-              <img
-                src={anahitapic}
-                className=" w-100"
-              ></img>
+              <img src={anahitapic} className=" w-100"></img>
 
               <p className="description auv-description-primary">
                 We are a team of undergraduate students researching in the field
@@ -47,10 +47,7 @@ function AboutUs() {
               </p>
               <br />
 
-              <Link to='/about-us' className="btn-blue">
-                More
-              </Link>
-
+              {MoreButton}
             </Col>
 
             <div className="all-icons-container">
@@ -58,8 +55,9 @@ function AboutUs() {
                 <div className=" icon-auv">
                   <i className=" mt-4 fa fa-cogs fa-5x icon-responsive " />
                   <div className="description2">
-                    <h4><strong>2 Vehicles Made</strong></h4>
-
+                    <h4>
+                      <strong>2 Vehicles Made</strong>
+                    </h4>
                   </div>
                 </div>
               </div>
@@ -69,8 +67,9 @@ function AboutUs() {
                   <i className="  mt-4 fa fa-users fa-5x icon-responsive" />
                   {/* In order to align the icons center add the class 'icon-align' to each of the icon */}
                   <div className="description2">
-                    <h4><strong>30 Members</strong></h4>
-
+                    <h4>
+                      <strong>30 Members</strong>
+                    </h4>
                   </div>
                 </div>
               </div>
@@ -78,8 +77,10 @@ function AboutUs() {
                 <div className=" icon-auv">
                   <i className="mt-4 fa fa-briefcase fa-5x icon-responsive" />
                   <div className="description2">
-                    <h4> <strong>30+ Projects </strong></h4>
-
+                    <h4>
+                      {" "}
+                      <strong>30+ Projects </strong>
+                    </h4>
                   </div>
                 </div>
               </div>
@@ -87,13 +88,13 @@ function AboutUs() {
                 <div className=" icon-auv">
                   <i className="mt-4 fa fa-coffee fa-5x icon-responsive" />
                   <div className="description2">
-                    <h4><strong>400+ NightOuts</strong></h4>
-
+                    <h4>
+                      <strong>400+ NightOuts</strong>
+                    </h4>
                   </div>
                 </div>
               </div>
             </div>
-
           </Row>
           <br />
           <br />

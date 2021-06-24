@@ -21,7 +21,7 @@ function LandingPage () {
         <div className="mobile-responsive">
             <ExamplesNavbar activePage="/about-us"/>
             <div className="main ">
-                <AboutUs />
+                <AboutUs setMore="true"/>
                 <Participation/>
                 <Achievements/>
             </div>

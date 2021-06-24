@@ -26,7 +26,7 @@ function Team() {
                             <p className="description text-center mb-2 auv-description-primary">Over the past years, the team has witnessed a close collaboration between students from various departments coming and sharing ideas; creating a small yet strong network of people who are eagerly looking for a low-cost solution to large-scale problems.</p>
                             <p className="description text-center mb-3 auv-description-primary">Working long hours and brainstorming some complex problems leads to a very special bonding between the members of the teams. This leads to a lot of nicknames and some extremely fun gaming nights.</p>
                         </Col>
-                        <Link to='/team' className="mt-3 btn-blue ml-auto mr-auto">
+                        <Link to='/team' className="mt-3 blogs-more-button ml-auto mr-auto">
                         More
                         </Link>
                     </Row>

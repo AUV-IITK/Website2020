@@ -1,15 +1,11 @@
 .navbar {
   width: 100%;
-  height: 6rem;
+  height: 5rem;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(2, 41, 80, 1),
-    rgba(2, 41, 80, 1)
-  );
+  background-color: rgb(34, 70, 109);
   transition: all 0.2s ease;
   z-index: 100;
 }
@@ -46,7 +42,11 @@
 
 @media (max-width: 1200px) {
   .navbar-content {
-    font-size: 1rem !important;
+    font-size: 1.3rem !important;
+  }
+  .navbar .navbar-nav .nav-item .nav-link {
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
 
@@ -68,12 +68,13 @@
 }
 
 .active {
+  color: black !important;
   background-color: var(--color-tertiary);
 }
 
 .navbar-content:hover {
   background-color: var(--color-quartenary);
-  transform: translateY(3px);
+  /* transform: translateY(3px); */
 }
 
 .navbar .navbar-collapse::after {
@@ -94,6 +95,11 @@
   border-radius: 0;
 }
 
+.nav-social {
+  color: #ffffff;
+  text-align: center;
+}
+
 .nav-social:hover {
   color: var(--color-tertiary);
   transition: all 0.25s ease-in;
@@ -105,4 +111,16 @@
 
 .navbar:not([class*="bg"]) .navbar-toggler .navbar-toggler-bar {
   background-color: #ffffff !important;
+}
+
+@media (min-width: 1200px) {
+  .navbar .navbar-nav .nav-item .nav-link {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+}
+
+.triton-image {
+  box-shadow: 0px 10px 15px rgba(53, 35, 35, 0.3);
+  margin-bottom: 15px;
 }
