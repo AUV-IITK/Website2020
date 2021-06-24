@@ -24,7 +24,7 @@ function Posts() {
                         </Row>    
                     </div>
                     <Row className="subsystem-headings">
-                        <h3 className="small-heading">Mechanical</h3>
+                        <h3>Mechanical</h3>
                     </Row>
                     <FadeIn>
                     <div className="spec-container">
@@ -74,7 +74,7 @@ function Posts() {
                      </div>
                      </FadeIn>
                     <Row className="subsystem-headings">
-                        <h3 className="small-heading">Electrical</h3>
+                        <h3>Electrical</h3>
                     </Row>
                     <FadeIn>
                     <div className="spec-container">
@@ -124,7 +124,7 @@ function Posts() {
                      </div>
                      </FadeIn>
                     <Row className="subsystem-headings">
-                        <h3 className="small-heading">Software</h3>
+                        <h3>Software</h3>
                     </Row>
                     <FadeIn>
                     <div className="spec-container">
