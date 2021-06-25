@@ -119,6 +119,26 @@
                     "linkedin": "https://www.linkedin.com/in/mayankm-0096/"
                 }
             ]
+        },
+        {
+            "items":[
+                {
+                    "name": "Vikram Shree",
+                    "subheading": "PhD Student at Cornell University",
+                    "image":"Legacy/vikram.jpg",
+                    "linkedin": "https://www.linkedin.com/in/vikram-shree/"
+                }
+            ]
+        },
+        {
+            "items":[
+                {
+                    "name": "Mohit Pandey",
+                    "subheading": "PhD Student at IIT Kanpur",
+                    "image":"Legacy/mohit.jpg",
+                    "linkedin": "https://www.linkedin.com/in/mohit-pandey-2002408b/"
+                }
+            ]
         }
     ]
 }
