@@ -21,7 +21,7 @@
 
 .footer-heading-primary {
   font-family: var(--font-heading);
-  font-weight: 400;
+  font-weight: 500;
   color: white;
   font-size: 2.3rem;
 }
@@ -90,5 +90,11 @@
   .nav-icons-container {
     display: flex;
     justify-content: space-around;
+  }
+  .footer-heading-primary {
+    font-size: 1.8rem;
+  }
+  .footer-address {
+    font-size: 12px;
   }
 }

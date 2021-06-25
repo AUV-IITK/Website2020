@@ -15,10 +15,10 @@ function Footer() {
         <Row className="footer-row">
           <Col lg="6" md="7" className="logo-description mr-auto ml-auto">
             <Row className="align-items-center">
-              <Col xs="4" className="my-auto">
+              <Col xs="4" className="my-auto ml-auto mr-auto">
                 <img src={logo} className="w-100" style={{ maxWidth: '150px' }} />
               </Col>
-              <Col xs="5" className="my-auto mr-0">
+              <Col xs="5" className="my-auto mr-auto ml-auto">
                 <div className="footer-heading-primary">Team AUV-IITK</div>
                 <div className="footer-address">
                   AUV Room, Hall-2,
