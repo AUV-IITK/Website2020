@@ -4,6 +4,14 @@
             "heading": "Team Members",
             "items": [
                 {
+                    "name": "Ayush Gupta",
+                    "subheading": "Y17, Senior Member",
+                    "image": "team/ayush.jpg",
+                    "facebook": "https://www.facebook.com/7ayushgupta",
+                    "linkedin": "https://www.linkedin.com/in/7ayushgupta/",
+                    "text": "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut "
+                },
+                {
                     "name": "Prakhar Maheshwari",
                     "subheading": "Y19, Subsystem Head",
                     "image": "team/prakhar.jpg",
