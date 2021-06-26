@@ -32,9 +32,9 @@ class BlogsPage extends Component {
       if (blogid === recievedBlog.blogId) {
         return (
           <div className="single-blog">
-            <h1 className="blog-heading">{recievedBlog.heading}</h1>
-            <h2 className="single-blog-author">{recievedBlog.author}</h2>
-            <h2 className="single-blog-date"> {recievedBlog.date} </h2>
+            <h1 className="blog-heading" style={{ fontSize: "3.4rem" }}>{recievedBlog.heading}</h1>
+            <h2 className="single-blog-author" style={{ fontSize: "1.8rem" }}>{recievedBlog.author}</h2>
+            <h2 className="single-blog-date" style={{ fontSize: "1.8rem" }}> {recievedBlog.date} </h2>
             <div>
               {recievedBlog.body.map((contentobject) => {
                 if (contentobject.type == "para") {
