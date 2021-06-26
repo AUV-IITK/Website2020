@@ -46,7 +46,8 @@ function Posts() {
                                                     </div>
                                                     
                                                     <div style={{ display: 'grid', placeItems: 'center' }}>
-                                                        {data.img && <img className="w-75 accord-img" alt="spec-img" src={require("assets/img/tarang/" + data.img)} />}
+                                                        
+                                                        {data.img && <img className={(data.img === 'md working2.PNG') ? 'w-50' : 'w-75'+' accord-img' } alt="spec-img" src={require("assets/img/tarang/" + data.img)} />}
                                                         <div className="card-image-description" style={{ fontFamily: 'monospace', textAlign: 'center' }} >
                                                             {data.imgDesc}
                                                         </div>

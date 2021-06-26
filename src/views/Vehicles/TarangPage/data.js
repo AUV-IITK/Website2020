@@ -62,7 +62,7 @@ const data = {
             "title": "Marker Dropper",
             "content": "We have changed the design of the marker dropper from our previous vehicles. The previous design had several disadvantages like high precision requirement during manufacturing and tricky reloading procedure. It was also difficult to mount on the vehicle. The new design is much simpler, more accurate and more reliable. It will have two markers(golf balls) hydrodynamically designed to fall straight down once they are released. The marker dropper is located near the camera to minimize the errors due to frame transformations. It consists of a star shaped obstructor preventing the marker (golf balls from falling). Once a trigger signal is received, the servo actuated star-shaped obstructor rotates and allows the markers to fall.",
             "img": "md working2.PNG",
-            "imgDesc": ""
+            "imgDesc": "Marker Dropper Mechanism"
         },
         {
             "id":5,
