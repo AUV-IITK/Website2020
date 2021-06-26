@@ -14,8 +14,8 @@ function Posts() {
                 <Container>
                     <div className="title-block">
                         <Row className="mt-5 justify-content-center heading-component">
-                            <div style={{ textAlign: 'center' }}>
-                                <h2 style={{ fontSize: "4.5rem" }}>ANAHITA</h2>
+                            <div style={{ textAlign: 'center', marginBottom:'20px' }}>
+                                <h2 style={{ fontSize: "4.5rem", margin:'0' }}>ANAHITA</h2>
                                 {/* <h3 style={{ fontSize: "3rem" }}>The Goddess of Water</h3> */}
                             </div>
                         </Row>
