@@ -16,7 +16,7 @@ function Posts() {
                         <Row className="mt-5 justify-content-center heading-component">
                             <div style={{ textAlign: 'center' }}>
                                 <h2 style={{ fontSize: "4.5rem" }}>ANAHITA</h2>
-                                <h3 style={{ fontSize: "3rem" }}>The Goddess of Water</h3>
+                                {/* <h3 style={{ fontSize: "3rem" }}>The Goddess of Water</h3> */}
                             </div>
                         </Row>
                     </div>
