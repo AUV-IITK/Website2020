@@ -134,7 +134,7 @@ function ExamplesNavbar(props) {
                   style={{ borderRadius: "0", textAlign: "center" }}
                 >
 
-                  <Link to='/vehicles/triton'>
+                  <Link to='/vehicles/tarang'>
                     <DropdownItem
                       style={{ textAlign: "center" }}
                       className="auv-dropdown"

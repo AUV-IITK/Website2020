@@ -26,6 +26,14 @@
   border-bottom: 2px solid var(--color-primary);
 
 }
+
+.heading-components b {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 5.6rem;
+  color: var(--color-primary);
+}
+
 .spec-container {
   margin-bottom: 100px;
 }

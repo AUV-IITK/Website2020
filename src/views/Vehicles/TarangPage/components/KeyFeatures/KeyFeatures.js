@@ -13,26 +13,31 @@ function Posts() {
             <div className="mt-5">
                 <Container>
                     <div className="title-block">
-                        <Row className="mt-5 justify-content-center">
+                        <Row className="mt-5 justify-content-center heading-component">
                             <div style={{ textAlign: 'center' }}>
-                                <h2 className="heading-main">TRITON</h2>
-                                <h3 className="small-heading">The God</h3>
+                                <h2 style={{ fontSize: "4.5rem" }}>Tarang</h2>
+                                <h3 style={{ fontSize: "3rem" }}>The Goddess of Water</h3>
                             </div>
                         </Row>
                     </div>
 
                     <Row className="d-flex col-main justify-content-center">
-                        <Col sm="12" lg="6" className="my-auto text-center mt-5">
+                        <Col sm="12" lg="8" className="my-auto text-center mt-5">
                             <div className="iframe-container">
                                 <iframe style={{ boxShadow: 'none' }} title="A 3D model" className="cad-model sketchfab-responsive" src="https://sketchfab.com/models/de442321b07d49c09620569fa592889f/embed?autospin=1&autostart=1&preload=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
                             </div>
                         </Col>
-                        <Col sm="12" lg="6" className="featureCol my-auto">
+                        <Col sm="12" lg="4" className="featureCol my-auto">
                             <div className="briefspec">
                                 <Tabs defaultActiveKey="home" id="uncontrolled-tab">
                                     <Tab className="tab-content" eventKey="home" title="What we made">
                                         <div className="my-1 brief">
                                             {specs.brief}
+                                        </div>
+                                        <div>
+                                            <a className="tdr-button" href="https://drive.google.com/file/d/1AN2uvKzoERqeampDUTVilUPUmSCickFL/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                                Report
+                                            </a>
                                         </div>
                                     </Tab>
                                     <Tab className="tab-content" eventKey="specs" title="Specifications">

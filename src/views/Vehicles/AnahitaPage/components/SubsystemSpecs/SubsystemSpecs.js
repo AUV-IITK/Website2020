@@ -136,7 +136,7 @@ function Posts() {
                                 </p>
                             </Col> */}
                                     <Col lg="1"></Col>
-                                    <Col md="10" className="my-auto featureCol">
+                                    <Col lg="10" className="my-auto featureCol">
                                         The software stack of Anahita consists of dedicated layers for the hardware integration, controls and navigation, motion planning, perception and acoustic localization. It is built over the Robot Operating System (ROS) framework by Willow Garage, which acts as a communication middleware between all processes running on our robot.
 
                                         <div style={{ marginBottom: '20px' }}></div>
