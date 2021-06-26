@@ -33,7 +33,7 @@ const LegacyCarousel = () => {
                         <h2 className="text-center heading-main">Past Members</h2>
                     </Col>
                 </Row>
-                <div className="text-center">
+                <div className="text-center ml-auto mr-auto">
                     <Carousel swipeable={true}
                         draggable={true}
                         showDots={true}

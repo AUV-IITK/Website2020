@@ -42,7 +42,7 @@
 }
 
 .legacy-social:hover {
-  color: var(--color-quartenary);
+  color: var(--color-quartenary) !important;
   transition: all 0.3s ease-in-out;
 }
 
