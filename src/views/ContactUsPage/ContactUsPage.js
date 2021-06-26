@@ -32,27 +32,27 @@ class ContactUsPage extends Component {
       name: "",
       email: "",
       message: ""
-    })  
+    })
   }
 
   nameChangedHandler = (event) => {
     event.preventDefault();
     this.setState({
-        name: event.target.value
+      name: event.target.value
     })
   }
 
   messageChangedHandler = (event) => {
     event.preventDefault();
     this.setState({
-        message : event.target.value
+      message: event.target.value
     })
   }
 
   emailChangedHandler = (event) => {
     event.preventDefault();
     this.setState({
-        email : event.target.value
+      email: event.target.value
     })
   }
 
@@ -63,11 +63,11 @@ class ContactUsPage extends Component {
         <div className="section text-center ">
           <Container className="reduce-margin">
             <Row>
-              <h2 className="heading-contact-us" style={{textAlign:"center"}}>Contact Us</h2>
+              <h2 className="heading-contact-us" style={{ textAlign: "center" }}>Contact Us</h2>
             </Row>
           </Container>
         </div>
-        <div className="main">
+        <Container className="main">
           <div className="section landing-section">
             <Container className="u-border contact-us-section">
               <Row>
@@ -83,11 +83,11 @@ class ContactUsPage extends Component {
                               <i className="nc-icon nc-single-02" />
                             </InputGroupText>
                           </InputGroupAddon>
-                          <Input 
-                            placeholder="Name" 
-                            type="text" 
+                          <Input
+                            placeholder="Name"
+                            type="text"
                             value={this.state.name}
-                            onChange={this.nameChangedHandler}/>
+                            onChange={this.nameChangedHandler} />
                         </InputGroup>
                       </Col>
                       <Col md="12">
@@ -98,11 +98,11 @@ class ContactUsPage extends Component {
                               <i className="nc-icon nc-email-85" />
                             </InputGroupText>
                           </InputGroupAddon>
-                          <Input 
-                            placeholder="Email" 
-                            type="email" 
+                          <Input
+                            placeholder="Email"
+                            type="email"
                             value={this.state.email}
-                            onChange={this.emailChangedHandler}/>
+                            onChange={this.emailChangedHandler} />
                         </InputGroup>
                       </Col>
                     </Row>
@@ -151,7 +151,7 @@ class ContactUsPage extends Component {
               </Row>
             </Container>
           </div>
-        </div>
+        </Container>
       </>
     );
   }

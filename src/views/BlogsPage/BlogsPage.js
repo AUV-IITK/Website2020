@@ -42,7 +42,7 @@ class BlogsPage extends Component {
             date={recievedBlog.date}
             bannerImage={recievedBlog.bannerImage}
             abstract={recievedBlog.abstract}
-            id = {recievedBlog.blogId}
+            id={recievedBlog.blogId}
           ></Blog>
         </div>
       );
@@ -62,7 +62,7 @@ class BlogsPage extends Component {
         <div className="section text-center ">
           <Container className="reduce-margin">
             <Row>
-              <h2 className="heading-main">BLOGS</h2>
+              <h2 className="heading-main" style={{ fontSize: "4.3rem" }}>BLOGS</h2>
             </Row>
           </Container>
         </div>
