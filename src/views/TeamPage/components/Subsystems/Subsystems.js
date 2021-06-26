@@ -9,6 +9,7 @@ import {
 } from "react-bootstrap";
 
 import "./Subsystems.css"
+import electronics from '../../../../assets/img/electronics.png'
 import Software from "./Software"
 import Electrical from "./Electrical"
 import Mechanical from "./Mechanical"
@@ -37,7 +38,7 @@ function Posts() {
                         </div>
                         <div className="accordian-section">
                             <Accordion.Toggle as={Card.Header} eventKey="1" className="accordian-toggle text-center">
-                                ELECTRICAL <i class="fa fa-bolt fa-lg"></i>
+                                ELECTRICAL <img src={electronics} style={{ width: "25px", height: "25px" }} />
                             </Accordion.Toggle>
                             <Accordion.Collapse eventKey="1">
                                 <div>
