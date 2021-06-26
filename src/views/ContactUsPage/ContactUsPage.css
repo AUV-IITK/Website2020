@@ -11,7 +11,7 @@
   justify-self: center;
   font-family: var(--font-primary);
   color: var(--color-primary);
-  font-size: 3rem;
+  font-size: 2.6rem;
 }
 
 .contact-us-form-container {
@@ -45,4 +45,5 @@
 .desc-auv {
   color: var(--color-primary-light);
   font-weight: 500;
+  font-size: 2rem;
 }

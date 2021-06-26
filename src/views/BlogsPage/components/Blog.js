@@ -13,10 +13,10 @@ function Blog(props) {
     <>
       <div className="section blog-card">
         <div className="blog-content">
-          <h1 className="blog-heading">{props.heading}</h1>
+          <h1 className="blog-heading" style={{ fontSize: "3.4rem" }}>{props.heading}</h1>
           <div className="subheading-container">
-            <h3 className="blog-author">{props.author}</h3>
-            <h3 className="blog-date">{props.date}</h3>
+            <h3 className="blog-author" style={{ fontSize: "1.8rem" }}>{props.author}</h3>
+            <h3 className="blog-date" style={{ fontSize: "1.8rem" }}>{props.date}</h3>
           </div>
           <Row>
             <Col lg="6">
