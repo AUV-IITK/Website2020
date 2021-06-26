@@ -1,16 +1,12 @@
 import React from "react";
 import { Container, Row, Col, Accordion, Card } from "react-bootstrap";
-import mech_main from "../../../../../assets/img/anahita/mechmain.png";
-import powerimg from "../../../../../assets/img/anahita/AnahitaElec.jpg";
-import soft from "../../../../../assets/img/anahita/AnahitaSoft.jpg";
-
 import "./subs.css";
 import specs from "../../data.js";
 
 import FadeIn from "../../../../Animations/FadeIn";
 
 function Posts() {
-    console.log(specs);
+    // console.log(specs);
     return (
         <>
             {

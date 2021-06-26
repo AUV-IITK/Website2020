@@ -7,7 +7,7 @@ import specs from "../../data.js";
 import FadeIn from "../../../../Animations/FadeIn";
 
 function Posts() {
-    console.log(specs);
+    // console.log(specs);
     return (
         <>
         {
@@ -88,20 +88,34 @@ function Posts() {
                                             <br />
 
                                             <div><b>Custom made Boost Converter</b></div>
-                                            <div>The custom boost converter powers the onboard computer, which operates at 19V. As the power rating for the computer is high (54W), the boost converter had to be very efficient as the computer will be powered on for the complete duration of the mission. </div>
+                                            <div>The custom boost converter powers the onboard computer, which operates at 19V. As the power rating for the computer is high (54W), the boost converter had to be very efficient as the computer will be powered on for the complete duration of the mission. 
+                                                <div style={{ display: 'grid', placeItems: 'center' }}>
+                                                <img className="w-50 accord-img" alt="spec-img" src={require("assets/img/tarang/boost_render.png")}/>
+                                                <div className="card-image-description" style={{ fontFamily: 'monospace', textAlign: 'center' }} >
+                                                    Boost Converter
+                                                </div>
+                                                </div>
+                                            </div>
                                             <br />
 
                                             <div><b>Custom made Buck Converter</b></div>
-                                            <div>Most of the low power electronics are powered through the custom-designed buck converter, which outputs 12V. We ensured high efficiency for the buck to minimize the power losses. The power will be controlled through the buck converter using micro-controller GPIO. It will enable us to completely turn it off and save power.</div>
+                                            <div>Most of the low power electronics are powered through the custom-designed buck converter, which outputs 12V. We ensured high efficiency for the buck to minimize the power losses. The power will be controlled through the buck converter using micro-controller GPIO. It will enable us to completely turn it off and save power.
+                                                <div style={{ display: 'grid', placeItems: 'center' }}>
+                                                <img className="w-50 accord-img" alt="spec-img" src={require("assets/img/tarang/buck_render.png")}/>
+                                                <div className="card-image-description" style={{ fontFamily: 'monospace', textAlign: 'center' }} >
+                                                    Buck Converter
+                                                </div>
+                                                </div>
+                                            </div>
                                             <br />
 
                                             <div><b>5V power supply for servo</b></div>
                                             <div>The 5V power supply required for driving the servos is created through a regulator with the 12V input from the buck. The power losses of the regulator are insignificant as the regulator will be turned on only for the duration of servo usage. This saves us a lot of space and cost that can be expended in the making/using of another buck converter.We used the RP2040 micro-controller module on the Power board to build a robust and small solution while getting sufficient GPIOs for sensors and other peripherals.</div>
                                             
                                             <div style={{ display: 'grid', placeItems: 'center' }}>
-                                                {/* {data.img && <img className="w-75 accord-img" alt="spec-img" src={require("assets/img/tarang/" + data.img)} />} */}
+                                                <img className="w-100 accord-img" alt="spec-img" src={require("assets/img/tarang/electrical_architecture.jpg")}/>
                                                 <div className="card-image-description" style={{ fontFamily: 'monospace', textAlign: 'center' }} >
-                                                    {/* {data.imgDesc} */}
+                                                    Tarang's Electrical Architecture
                                                 </div>
                                             </div>
                                         </Card.Body>
@@ -189,9 +203,9 @@ function Posts() {
                                                 </ol>
                                             </div>
                                             <div style={{ display: 'grid', placeItems: 'center' }}>
-                                                {/* {data.img && <img className="w-75 accord-img" alt="spec-img" src={require("assets/img/tarang/" + data.img)} />} */}
+                                                {<img className="w-100 accord-img" alt="spec-img" src={require("assets/img/tarang/Software_Architecture.png")} />}
                                                 <div className="card-image-description" style={{ fontFamily: 'monospace', textAlign: 'center' }} >
-                                                    {/* {data.imgDesc} */}
+                                                    Tarang's Software Architecture
                                                 </div>
                                             </div>
                                         </Card.Body>
@@ -221,9 +235,9 @@ function Posts() {
                                             <div>A bilateral filter reduces the noise by using a non-linear smoothing filter to the image. The contrast-corrected image is then passed to the colour correction phase, which converts the image to CIE-Lab colour space and stretches L, a and b components followed by CIE-Lab to RGB conversion</div>
                                             
                                             <div style={{ display: 'grid', placeItems: 'center' }}>
-                                                {/* {data.img && <img className="w-75 accord-img" alt="spec-img" src={require("assets/img/tarang/" + data.img)} />} */}
+                                                {<img className="w-75 accord-img" alt="spec-img" src={require("assets/img/tarang/processing_combined.png")} />}
                                                 <div className="card-image-description" style={{ fontFamily: 'monospace', textAlign: 'center' }} >
-                                                    {/* {data.imgDesc} */}
+                                                    Image Before Preprocessing Vs Image After Preprocessing
                                                 </div>
                                             </div>
                                         </Card.Body>
