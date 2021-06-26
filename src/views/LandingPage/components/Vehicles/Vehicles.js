@@ -1,5 +1,5 @@
 import React from 'react';
-import triton from "assets/img/triton.jpg";
+import tarang from "assets/img/tarang.jpg";
 import varun from "assets/img/varun/varun-underwater.jpg";
 import anahita from "assets/img/anahita/anahita-underwater.png";
 import { Link } from "react-router-dom";
@@ -22,16 +22,16 @@ function Vehicles() {
           </Row>
           <Row className="vehicle-row">
             <Col sm="12" lg="5" className="text-center my-auto">
-              <Link to='/vehicles/triton'>
-                <img src={triton} className="w-100 vehicle-image" />
+              <Link to='/vehicles/tarang'>
+                <img src={tarang} className="w-100 vehicle-image" />
               </Link>
             </Col>
             <Col sm="12" lg="7" className="my-auto">
-              <h2 className="text-center mt-0 mb-3 vehicle-heading">Triton</h2>
-              <p className=" auv-description-primary">Triton is our third Autonomous Underwater Vehicle. Triton has a robust, leak-proof and lightweight central hull made from carbon fiber. It has sensors like IMU, DVL and cameras on-board and can efficiently perform tasks like torpedo shooting, localization in an unknown underwater environment and complex space-constrained manoeuvres. In addition, it has improved battery and additional safety mechanisms installed to prevent damage.</p>
-              <p className=" auv-description-primary">Triton will participate in RoboSub-2021 held online due to the ongoing pandemic.</p>
+              <h2 className="text-center mt-0 mb-3 vehicle-heading">Tarang</h2>
+              <p className=" auv-description-primary">Tarang is our third Autonomous Underwater Vehicle. Tarang has a robust, leak-proof and lightweight central hull made from carbon fiber. It has sensors like IMU, DVL and cameras on-board and can efficiently perform tasks like torpedo shooting, localization in an unknown underwater environment and complex space-constrained manoeuvres. In addition, it has improved battery and additional safety mechanisms installed to prevent damage.</p>
+              <p className=" auv-description-primary">Tarang will participate in RoboSub-2021 held online due to the ongoing pandemic.</p>
               <div className="text-center ml-auto mr-auto">
-                <Link to='/vehicles/triton' className="blogs-more-button text-center" style={{ margin: "0 auto" }}>
+                <Link to='/vehicles/tarang' className="blogs-more-button text-center" style={{ margin: "0 auto" }}>
                   Read More
                 </Link>
               </div>
@@ -39,7 +39,7 @@ function Vehicles() {
           </Row>
           <Row className="vehicle-row">
             <Col sm="12" lg="5" className="text-center my-auto">
-              <Link to='/vehicles/triton'>
+              <Link to='/vehicles/anahita'>
                 <img src={anahita} className="w-100 vehicle-image" />
               </Link>
             </Col>
@@ -56,7 +56,7 @@ function Vehicles() {
           </Row>
           <Row className="vehicle-row">
             <Col sm="12" lg="5" className="text-center my-auto">
-              <Link to='/vehicles/triton'>
+              <Link to='/vehicles/varun'>
                 <img src={varun} className="w-100 vehicle-image" />
               </Link>
             </Col>

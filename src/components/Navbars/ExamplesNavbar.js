@@ -140,7 +140,7 @@ function ExamplesNavbar(props) {
                       className="auv-dropdown"
                       onClick={toggleNavbarCollapse}
                     >
-                      Triton
+                      Tarang
                     </DropdownItem>
                   </Link>
                   <Link to='/vehicles/anahita'>

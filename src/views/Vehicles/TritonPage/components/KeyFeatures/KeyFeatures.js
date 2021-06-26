@@ -24,7 +24,7 @@ function Posts() {
                     <Row className="d-flex col-main justify-content-center">
                         <Col sm="12" lg="6" className="my-auto text-center mt-5">
                             <div className="iframe-container">
-                                <iframe style={{ boxShadow: 'none' }} title="A 3D model" className="cad-model sketchfab-responsive" src="https://sketchfab.com/models/ef2d053e91174d70923b179430afe19d/embed?autospin=1&autostart=1&preload=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                                <iframe style={{ boxShadow: 'none' }} title="A 3D model" className="cad-model sketchfab-responsive" src="https://sketchfab.com/models/de442321b07d49c09620569fa592889f/embed?autospin=1&autostart=1&preload=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
                             </div>
                         </Col>
                         <Col sm="12" lg="6" className="featureCol my-auto">
