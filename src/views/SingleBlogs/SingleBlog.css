@@ -67,6 +67,7 @@
         font-family: var(--font-primary);
         color: var(--color-primary);
         font-size: 2rem;
+        margin-bottom: 4rem;
     }
 
     .single-blog{

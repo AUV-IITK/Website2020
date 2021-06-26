@@ -11,6 +11,8 @@
     font-family: var(--font-heading);
     font-weight: 700;
     font-size: 5.5 rem;
+    max-width: 80%;
+    margin: 7rem auto;
     color: var(--color-primary);
 }
 .subheading-container{
