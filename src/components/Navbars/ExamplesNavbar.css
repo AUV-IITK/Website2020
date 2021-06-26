@@ -98,6 +98,7 @@
 .nav-social {
   color: #ffffff;
   text-align: center;
+  font-size: 2.3rem !important;
 }
 
 .nav-social:hover {

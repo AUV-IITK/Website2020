@@ -27,7 +27,7 @@ function Posts() {
                     <Accordion defaultActiveKey="0">
                         <div className="accordian-section">
                             <Accordion.Toggle as={Card.Header} eventKey="0" className="accordian-toggle text-center">
-                                MECHANICAL
+                                MECHANICAL <i class="fa fa-cogs fa-lg"></i>
                             </Accordion.Toggle>
                             <Accordion.Collapse eventKey="0">
                                 <div>
@@ -37,7 +37,7 @@ function Posts() {
                         </div>
                         <div className="accordian-section">
                             <Accordion.Toggle as={Card.Header} eventKey="1" className="accordian-toggle text-center">
-                                ELECTRICAL
+                                ELECTRICAL <i class="fa fa-bolt fa-lg"></i>
                             </Accordion.Toggle>
                             <Accordion.Collapse eventKey="1">
                                 <div>
@@ -46,8 +46,8 @@ function Posts() {
                             </Accordion.Collapse>
                         </div>
                         <div className="accordian-section">
-                            <Accordion.Toggle as={Card.Header} eventKey="2" className="accordian-toggle text-center">
-                                SOFTWARE
+                            <Accordion.Toggle as={Card.Header} eventKey="2" className="accordian-toggle text-center my-auto">
+                                SOFTWARE <i class="fa fa-code fa-lg" />
                             </Accordion.Toggle>
                             <Accordion.Collapse eventKey="2">
                                 <div>
@@ -57,7 +57,7 @@ function Posts() {
                         </div>
                         <div className="accordian-section">
                             <Accordion.Toggle as={Card.Header} eventKey="3" className="accordian-toggle text-center">
-                                BUSINESS
+                                BUSINESS <i class="fa fa-briefcase fa-lg"></i>
                             </Accordion.Toggle>
                             <Accordion.Collapse eventKey="3">
                                 <div>

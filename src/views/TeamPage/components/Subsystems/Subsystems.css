@@ -19,3 +19,8 @@
   transition: all 0.4s ease-in-out;
   color: #fff;
 }
+
+.accordian-toggle > i:hover {
+  transition: all 0.4s ease-in-out;
+  color: #fff;
+}
