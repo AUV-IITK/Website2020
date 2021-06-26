@@ -55,7 +55,7 @@ function AboutUs(props) {
                 <div className=" icon-auv">
                   <i className=" mt-4 fa fa-cogs fa-5x icon-responsive " />
                   <div className="description2">
-                    <h4>
+                    <h4 className="mt-3">
                       <strong>2 Vehicles Made</strong>
                     </h4>
                   </div>
@@ -67,7 +67,7 @@ function AboutUs(props) {
                   <i className="  mt-4 fa fa-users fa-5x icon-responsive" />
                   {/* In order to align the icons center add the class 'icon-align' to each of the icon */}
                   <div className="description2">
-                    <h4>
+                    <h4 className="mt-3">
                       <strong>30 Members</strong>
                     </h4>
                   </div>
@@ -77,8 +77,7 @@ function AboutUs(props) {
                 <div className=" icon-auv">
                   <i className="mt-4 fa fa-briefcase fa-5x icon-responsive" />
                   <div className="description2">
-                    <h4>
-                      {" "}
+                    <h4 className="mt-3">
                       <strong>30+ Projects </strong>
                     </h4>
                   </div>
@@ -88,7 +87,7 @@ function AboutUs(props) {
                 <div className=" icon-auv">
                   <i className="mt-4 fa fa-coffee fa-5x icon-responsive" />
                   <div className="description2">
-                    <h4>
+                    <h4 className="mt-3">
                       <strong>400+ NightOuts</strong>
                     </h4>
                   </div>
