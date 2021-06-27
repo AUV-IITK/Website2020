@@ -180,8 +180,8 @@
 }
 @media screen and (max-width: 767px) {
   .banner-content-container {
-    top: 40rem;
-    z-index: 1000;
+    top: 50vh;
+    z-index: 99;
   }
 }
 
@@ -198,7 +198,7 @@
 @media screen and (max-width: 400px) {
   .banner-content-container{
     width: 30rem;
-    top: 35rem;
+    top: 50vh;
   }
 
   .banner-heading {

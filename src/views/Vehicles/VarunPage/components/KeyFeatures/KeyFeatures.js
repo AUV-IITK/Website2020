@@ -35,7 +35,7 @@ function Posts() {
                                             {specs.brief}
                                         </div>
                                         <div>
-                                            <a className="tdr-button" href="https://drive.google.com/file/d/1npkLjXap83W4o32rJpHaKH61_lqaXzI1/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                            <a className="tdr-button" href="https://drive.google.com/file/d/0B952Pi5TJ8RGcWJRUWF5YllsM2M/view?resourcekey=0-YEob3LFfYmo5QhRv_96zdA" target="_blank" rel="noopener noreferrer">
                                                 Report
                                             </a>
                                         </div>
