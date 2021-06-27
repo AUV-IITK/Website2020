@@ -41,6 +41,16 @@
             ]
         },
         {
+            "items":[
+                {
+                    "name": "Nilay Saha",
+                    "subheading": "Final Year Student, IIT Kanpur",
+                    "image": "Legacy/nilay.jpeg",
+                    "linkedin": "https://www.linkedin.com/in/nilay-shah-217188175/"
+                }
+            ]
+        },
+        {
             "items": [
                 {
                     "name": "Yazur Gupta",
