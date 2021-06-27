@@ -77,6 +77,13 @@ const data = {
             "content": "The pneumatic system used in Tarang is a self-designed component capable of shooting torpedoes with accuracy. The assembly uses two IP 68 rated solenoid valves (one for each torpedo). Because the solenoid valve is waterproof, we can install the whole torpedo assembly as a single unit outside the vehicle and mount it at the base, thus removing the need for unnecessary air tubing and increasing space inside the hull for other components.",
             "img": "torpedo compartments.PNG",
             "imgDesc": "The Torpedo Compartments"
+        },
+        {
+            "id":7,
+            "title": "Simulation and Testing",
+            "content": "The vehicle was tested using various simulation software to get flow visualization and stress analysis. The simulations very performed in ANSYS to find the stress and pressure profile of the vehicle. Topological optimization was used by removing non-essential weight (area containing less stress) for DVL mount. The marker dropper, torpedo and grabber were simulated in Solidworks’ motion study.",
+             "img": "cfd.jpg",
+            "imgDesc": "Simulation in ANSYS"    
         }
 
     ],
@@ -140,6 +147,12 @@ const data = {
             "content": "The mission planner contains the strategy to perform all the other tasks. The master layer has the mission planner node, which gives all the different lower layers instructions to accomplish the tasks as per the defined strategy using service-client calls. The mission planner switches on the vision layer to detect the target and switches on the desired task node to execute a task. The task node can also perform the motions such as surge, sway, heave or yaw independently, enabling the vehicle to go from one location to another. A combination of these movements, which can be set in the master layer by the user, achieves the desired motion. The master layer also contains the switches for all the basic motions, the competition's main tasks, and the vision layer. Such a switch system gives easy control over vehicles motion and enables making changes in mission planner effortlessly.",
             "img": "",
             "imgDesc": ""
+        },
+        {   "id":5,
+            "title": "Gazebo Simulation",
+            "content": "Extensive testing was performed in the gazebo using the simulated robot model of our vehicle. The open-source simulation tool UUV-simulator was used to simulate an underwater environment. We tested the ability of the vehicle to perform tasks. A simulated gazebo world was made using exact models of the props used in competitions, and the tasks were performed autonomously in that simulation. We used the plugins from the UUV-simulator library to simulate the physics of the world. The vehicle performed the gate task, path follower task, buoy task, marker dropper task, and octagon task successfully. The controller was tested in the simulation and fine-tuned the parameters. As a result, the maximum overshoot was limited to less than 5 percent and achieved a settling time of 10 seconds and negligible steady-state error for a unit step signal.",
+            "img": "Gazebo Simulation.png",
+            "imgDesc": "Simulation in Gazebo"
         }
     ]
 }

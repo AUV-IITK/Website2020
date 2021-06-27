@@ -30,7 +30,7 @@ function Posts() {
                         <Col sm="12" lg="4" className="featureCol my-auto">
                             <div className="briefspec">
                                 <Tabs defaultActiveKey="home" id="uncontrolled-tab">
-                                    <Tab className="tab-content" eventKey="home" title="What we made">
+                                    <Tab className="tab-content" eventKey="home" title="Overview">
                                         <div className="my-1">
                                             {specs.brief}
                                         </div>
