@@ -16,7 +16,7 @@ const Mechanical = () => {
                 <div className="card-background">
                     <Card.Body>
                         <Card.Text className="subsystem-text">
-                            The mechanical subsystem if responsible for design and
+                            The mechanical subsystem is responsible for design and
                             manufacture of the vehicle. We design the entire vehicle and accessories -
                             working on Fluid Dynamics, Actuator controls, and Pneumatics. We plan, simulate
                             and test the physical structure of the AUV and then manufacture it

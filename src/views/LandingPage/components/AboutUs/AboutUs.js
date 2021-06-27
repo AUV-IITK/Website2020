@@ -51,16 +51,7 @@ function AboutUs(props) {
             </Col>
 
             <div className="all-icons-container">
-              <div className=" single-icon-container">
-                <div className=" icon-auv">
-                  <i className=" mt-4 fa fa-cogs fa-5x icon-responsive " />
-                  <div className="description2">
-                    <h4 className="mt-3">
-                      <strong>3 Vehicles</strong>
-                    </h4>
-                  </div>
-                </div>
-              </div>
+              
 
               <div className="single-icon-container">
                 <div className=" icon-auv">
@@ -73,12 +64,23 @@ function AboutUs(props) {
                   </div>
                 </div>
               </div>
+              
               <div className="single-icon-container">
                 <div className=" icon-auv">
                   <i className="mt-4 fa fa-briefcase fa-5x icon-responsive" />
                   <div className="description2">
                     <h4 className="mt-3">
                       <strong>30+ Projects </strong>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div className=" single-icon-container">
+                <div className=" icon-auv">
+                  <i className=" mt-4 fa fa-cogs fa-5x icon-responsive " />
+                  <div className="description2">
+                    <h4 className="mt-3">
+                      <strong>3 Vehicles made</strong>
                     </h4>
                   </div>
                 </div>

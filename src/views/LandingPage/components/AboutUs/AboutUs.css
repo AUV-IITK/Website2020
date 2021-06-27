@@ -301,11 +301,20 @@
     padding: 2rem;
   }
 }
+@media screen and (max-width: 460px) {
+  .icon-auv{
+    height: 15rem;
+  }  
+}
 @media (max-width: 430px) {
   .icon-auv {
     width: 14rem;
     /* background-color: aqua; */
     margin: 1rem;
+  }
+
+  .single-icon-container{
+    height: 17rem;
   }
 }
 @media (max-width: 380px) {
