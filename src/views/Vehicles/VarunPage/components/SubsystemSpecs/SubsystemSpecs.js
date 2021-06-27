@@ -39,10 +39,10 @@ function Posts() {
                                     <Col lg="10" className="featureCol my-auto">
                                         Varun's mechanical system comprises an aluminium structural frame, pressure casings, and electromagnetic actuators. The mechanical parts were first designed in Solidworks and Autodesk Inventor and then improved using Ansys Workbench before its final fabrication using available in-house facilities at the institute.
                                         <div style={{ marginBottom: '20px' }}></div>
-                                        <Accordion defaultActiveKey="">
                                             {
                                                 specs.mechanical.map(
                                                     (data) => (
+                                                    <Accordion defaultActiveKey="">
                                                         <Card className="card-plain spec-card">
                                                             <Accordion.Toggle className="accord-head" as={Card.Header} eventKey={String(data.id)}>
                                                                 <svg className="add-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z" /></svg>
@@ -62,10 +62,10 @@ function Posts() {
                                                                 </Card.Body>
                                                             </Accordion.Collapse>
                                                         </Card>
+                                                    </Accordion>
                                                     )
                                                 )
                                             }
-                                        </Accordion>
                                     </Col>
                                     <Col lg="1"></Col>
                                 </Row>
@@ -81,10 +81,10 @@ function Posts() {
                                     <Col lg="10" className="my-auto featureCol">
                                         The Electrical system provides the interface between the processor and the other electronic devices. There will be three layers of stacks inside the hull, which will be used for mounting different electronic devices and PCBs.The Arduino used in Varun is the ATmega1280 microcontroller and has an operating voltage of 5V. It has 16 Analog input pins and 54 digital I/O pins (of which 15 provide PWM output). The open-source Arduino platform is used to process the input signals from the main processor and convert it into desired signals to the actuators like motor drivers and pneumatic system.
                                         <div style={{ marginBottom: '20px' }}></div>
-                                        <Accordion defaultActiveKey="">
                                             {
                                                 specs.electrical.map(
                                                     (data) => (
+                                                    <Accordion defaultActiveKey="">
                                                         <Card className="card-plain spec-card">
                                                             <Accordion.Toggle className="accord-head" as={Card.Header} eventKey={String(data.id)}>
                                                                 <svg className="add-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z" /></svg>
@@ -105,10 +105,10 @@ function Posts() {
                                                                 </Card.Body>
                                                             </Accordion.Collapse>
                                                         </Card>
+                                                    </Accordion>
                                                     )
                                                 )
                                             }
-                                        </Accordion>
                                     </Col>
                                     <Col lg="1"></Col>
                                     {/* <Col lg="5" className="text-center my-auto imgCol">
@@ -136,10 +136,10 @@ function Posts() {
                                     <Col lg="10" className="my-auto featureCol">
                                         The Software Architecture of Varun is based on the Robot Operating System (ROS) Software Framework from Willow Garage, which encompasses the underlying messaging infrastructure for inter-process communications in our distributed system.
                                         <div style={{ marginBottom: '20px' }}></div>
-                                        <Accordion defaultActiveKey="">
                                             {
                                                 specs.software.map(
                                                     (data) => (
+                                                    <Accordion defaultActiveKey="">
                                                         <Card className="card-plain spec-card">
                                                             <Accordion.Toggle className="accord-head" as={Card.Header} eventKey={String(data.id)}>
                                                                 <svg className="add-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z" /></svg>
@@ -160,10 +160,10 @@ function Posts() {
                                                                 </Card.Body>
                                                             </Accordion.Collapse>
                                                         </Card>
+                                                    </Accordion>
                                                     )
                                                 )
                                             }
-                                        </Accordion>
                                     </Col>
                                     <Col lg="1"></Col>
                                 </Row>

@@ -30,10 +30,10 @@ function Posts() {
                             <Col lg="10" className="featureCol my-auto">
                                 Although the design of our previous AUV: Anahita, was acknowledged worldwide, it still had a few flaws. The design involved multiple hulls, leading to high susceptibility to leakages, often damaging the electronic components during pool testing. In addition, multiple hulls and casings limited the accessibility of the internal components, and the positioning of hulls produced relatively high hydrodynamic drag during motion. Finally, the heat dissipation was poor as acrylic is an inferior conductor of heat, resulting in performance degradation and often rendering electronic components inoperable. We tried improving these aspects while designing our new bot.
                                 <div style={{ marginBottom: '20px' }}></div>
-                                <Accordion defaultActiveKey="">
                                 {
                                     specs.mechanical.map(
                                         (data) => (
+                                            <Accordion defaultActiveKey="">
                                             <Card className="card-plain spec-card">
                                                 <Accordion.Toggle className="accord-head" as={Card.Header} eventKey={String(data.id)}>
                                                 <svg className="add-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z"/></svg>
@@ -55,10 +55,10 @@ function Posts() {
                                                 </Card.Body>
                                                 </Accordion.Collapse>
                                             </Card>
+                                        </Accordion>
                                         )
                                     )
                                 }
-                                </Accordion>
                             </Col>
                             <Col lg="1"></Col>
                         </Row>
@@ -122,9 +122,11 @@ function Posts() {
                                         </Card.Body>
                                     </Accordion.Collapse>
                                 </Card>
+                                </Accordion>
                                 {
                                     specs.electrical.map(
                                         (data) => (
+                                            <Accordion>
                                             <Card className="card-plain spec-card">
                                                 <Accordion.Toggle className="accord-head" as={Card.Header} eventKey={String(data.id)}>
                                                 <svg className="add-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z"/></svg>
@@ -146,10 +148,11 @@ function Posts() {
                                                 </Card.Body>
                                                 </Accordion.Collapse>
                                             </Card>
+                                            </Accordion>
                                         )
                                     )
                                 }
-                                </Accordion>
+                                {/* </Accordion> */}
                             </Col>
                             <Col lg="1"></Col>
                         </Row>
@@ -212,6 +215,8 @@ function Posts() {
                                         </Card.Body>
                                     </Accordion.Collapse>
                                 </Card>
+                                </Accordion>
+                                <Accordion>
                                 <Card className="card-plain spec-card">
                                     <Accordion.Toggle className="accord-head" as={Card.Header} eventKey={43}>
                                     <svg className="add-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z"/></svg>
@@ -244,9 +249,11 @@ function Posts() {
                                         </Card.Body>
                                     </Accordion.Collapse>
                                 </Card>
+                                </Accordion>
                                 {
                                     specs.software.map(
                                         (data) => (
+                                            <Accordion>
                                             <Card className="card-plain spec-card">
                                                 <Accordion.Toggle className="accord-head" as={Card.Header} eventKey={String(data.id)}>
                                                 <svg className="add-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z"/></svg>
@@ -268,10 +275,11 @@ function Posts() {
                                                 </Card.Body>
                                                 </Accordion.Collapse>
                                             </Card>
+                                            </Accordion>
                                         )
                                     )
                                 }
-                                </Accordion>
+                                {/* </Accordion> */}
                             </Col>
                             <Col lg="1"></Col>
                         </Row>
