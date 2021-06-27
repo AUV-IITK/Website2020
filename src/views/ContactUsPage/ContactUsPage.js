@@ -63,7 +63,7 @@ class ContactUsPage extends Component {
         <div className="section text-center ">
           <Container className="reduce-margin">
             <Row>
-              <h2 className="heading-contact-us" style={{ textAlign: "center", zIndex:"10" }}>Contact Us</h2>
+              <h2 className="heading-contact-us" style={{ textAlign: "center", zIndex:"10" }}>CONTACT US</h2>
             </Row>
           </Container>
         </div>

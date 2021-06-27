@@ -66,7 +66,7 @@ function LandingPage() {
       <div className="section text-center ">
         <Container className="reduce-margin">
           <Row>
-            <h2 className="heading-main">AUV Events & Competitions</h2>
+            <h2 className="heading-main">AUV EVENTS & COMPETITIONS</h2>
           </Row>
         </Container>
       </div>
