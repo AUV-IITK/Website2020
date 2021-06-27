@@ -6,7 +6,7 @@ import {
   Row, Container, Col, NavLink,
 } from "reactstrap";
 import './Footer.css'
-import logo from "assets/img/logos/AUVlogowhite.png"
+import logo from "assets/img/logos/whitelogo.png"
 
 function Footer() {
   return (

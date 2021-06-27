@@ -11,8 +11,15 @@
     font-family: var(--font-heading);
     font-weight: 700;
     font-size: 5.5 rem;
+    color: var(--color-primary);
+}
+.blog-heading-single-page{
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 5.5 rem;
     max-width: 80%;
     margin: 7rem auto;
+    margin-bottom: 2rem;
     color: var(--color-primary);
 }
 .subheading-container{

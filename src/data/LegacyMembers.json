@@ -139,6 +139,26 @@
                     "linkedin": "https://www.linkedin.com/in/mohit-pandey-2002408b/"
                 }
             ]
+        },
+        {
+            "items": [
+                {
+                    "name": "Naveen Chandra",
+                    "subheading": "Masters Student at IIT Kanpur",
+                    "image": "Legacy/naveen.jpeg",
+                    "linkedin":"https://www.linkedin.com/in/naveen-chandra-r-7230aa192/"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "Nilay Shah",
+                    "subheading": "Hardware Engineer at Google",
+                    "image": "Legacy/nilay.jpeg",
+                    "linkedin":"https://www.linkedin.com/in/nilay-shah-217188175/"
+                }
+            ]
         }
     ]
 }

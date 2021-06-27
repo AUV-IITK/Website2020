@@ -32,7 +32,7 @@ class BlogsPage extends Component {
       if (blogid === recievedBlog.blogId) {
         return (
           <div className="single-blog">
-            <h1 className="blog-heading" style={{ fontSize: "3.4rem" }}>{recievedBlog.heading}</h1>
+            <h1 className="blog-heading-single-page" style={{ fontSize: "3.4rem" }}>{recievedBlog.heading}</h1>
             <h2 className="single-blog-author" style={{ fontSize: "1.8rem" }}>{recievedBlog.author}</h2>
             <h2 className="single-blog-date" style={{ fontSize: "1.8rem" }}> {recievedBlog.date} </h2>
             <div>

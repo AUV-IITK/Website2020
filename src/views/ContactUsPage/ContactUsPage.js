@@ -63,7 +63,7 @@ class ContactUsPage extends Component {
         <div className="section text-center ">
           <Container className="reduce-margin">
             <Row>
-              <h2 className="heading-contact-us" style={{ textAlign: "center" }}>Contact Us</h2>
+              <h2 className="heading-contact-us" style={{ textAlign: "center", zIndex:"10" }}>Contact Us</h2>
             </Row>
           </Container>
         </div>
@@ -72,7 +72,7 @@ class ContactUsPage extends Component {
             <Container className="u-border contact-us-section">
               <Row>
                 <Col lg="6" className="contact-us-form-container">
-                  <h2 className=" heading-small-contact-us">Keep in touch with us</h2>
+                  <h2 className=" heading-small-contact-us">Share Feedback or Ask your Queries </h2>
                   <Form className="contact-form" onSubmit={this.postDataHandler}>
                     <Row>
                       <Col md="12">
