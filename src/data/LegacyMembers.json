@@ -169,6 +169,36 @@
                     "linkedin":"https://www.linkedin.com/in/nilay-shah-217188175/"
                 }
             ]
+        },
+        {
+            "items": [
+                {
+                    "name": "Ayush Gupta",
+                    "subheading": "Y17, Senior Member",
+                    "image": "team/ayush.jpg",
+                    "linkedin": "https://www.linkedin.com/in/7ayushgupta/"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "Inshu Namdev",
+                    "subheading": "Y17, Senior Member",
+                    "image": "team/inshu.jpg",
+                    "linkedin": "https://www.linkedin.com/in/inshu-namdev/"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "Priank Prasad",
+                    "subheading": "Y17, Senior Member",
+                    "image": "team/p.jpg",
+                    "linkedin": "https://www.linkedin.com/in/priank/"
+                }
+            ]
         }
     ]
 }

@@ -6,25 +6,33 @@
                 {
                     "name": "Shubham Korde",
                     "subheading": "Y19, Subsystem Head",
-                    "image": "team/shubham.jpg",
+                    "image": "team/shubham-korde.jpg",
                     "facebook": "https://www.facebook.com/shubham.korde.21",
                     "linkedin": "https://www.linkedin.com/in/shubham-korde/",
                     "text": "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut "
                 },
                 {
-                    "name": "Abhishek Shree",
+                    "name": "Hitesh Arunagiri",
                     "subheading": "Y20, Team Member",
-                    "image": "team/abhishek.jpeg",
-                    "facebook": "https://www.facebook.com/xorified",
-                    "linkedin": "https://www.linkedin.com/in/abhishek-shree-159980145",
+                    "image": "team/HiteshArunagiri.jpeg",
+                    "facebook": "https://www.facebook.com/hitesh.arunagiri",
+                    "linkedin": "https://www.linkedin.com/in/hitesh-arunagiri-00231020b",
                     "text": "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut "
                 },
                 {
-                    "name": "Ritam Jana",
+                    "name": "Mahavir Agarwal",
                     "subheading": "Y20, Team Member",
-                    "image": "team/ritam.jpeg",
-                    "facebook": "https://www.facebook.com/ritam.jana.81",
-                    "linkedin": "https://www.linkedin.com/in/ritam-jana",
+                    "image": "team/MahavirAgarwal.jpg",
+                    "facebook": "https://www.facebook.com/mahavir.agarwal.1694",
+                    "linkedin": "https://www.linkedin.com/in/mahavir-agarwal-524a22212",
+                    "text": "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut "
+                },
+                {
+                    "name": "Vedant Gitte",
+                    "subheading": "Y20, Team Member",
+                    "image": "team/VedantGitte.jpeg",
+                    "facebook": "https://www.facebook.com/vedant.gitte.5/",
+                    "linkedin": "https://www.linkedin.com/in/vedant-gitte-4076b920b/",
                     "text": "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut "
                 }
             ]

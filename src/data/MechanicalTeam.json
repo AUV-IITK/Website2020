@@ -4,14 +4,6 @@
             "heading": "Team Members",
             "items": [
                 {
-                    "name": "Priank Prasad",
-                    "subheading": "Y17, Senior Member",
-                    "image": "team/p.jpg",
-                    "facebook": "https://www.facebook.com/priank.prasad",
-                    "linkedin": "https://www.linkedin.com/in/priank/",
-                    "text": "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut "
-                },
-                {
                     "name": "Jaskeerat Singh",
                     "subheading": "Y18, Senior Member",
                     "image": "team/jaskeerat.jpg",
@@ -33,6 +25,46 @@
                     "image": "team/shashank.jpeg",
                     "facebook": "https://www.facebook.com/shashank.katiyar.313/",
                     "linkedin": "https://www.linkedin.com/in/shashankkat/",
+                    "text": "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut "
+                },
+                {
+                    "name": "Kushal Sosale",
+                    "subheading": "Y20, Team Member",
+                    "image": "team/KushalSosale.jpg",
+                    "facebook": "https://www.facebook.com/DarkStar.010/",
+                    "linkedin": "https://www.linkedin.com/in/kushal-sosale-14904b204/",
+                    "text": "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut "
+                },
+                {
+                    "name": "Om Jee",
+                    "subheading": "Y20, Team Member",
+                    "image": "team/OmJee.jpg",
+                    "facebook": "https://www.facebook.com/profile.php?id=100057579249812",
+                    "linkedin": "https://www.linkedin.com/in/om-jee-322b12212",
+                    "text": "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut "
+                },
+                {
+                    "name": "Sarath Kamal",
+                    "subheading": "Y20, Team Member",
+                    "image": "team/SarathK.jpeg",
+                    "facebook": "https://www.facebook.com/sarath.kamal.7545",
+                    "linkedin": "http://linkedin.com/in/sarath-kamal-iitk",
+                    "text": "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut "
+                },
+                {
+                    "name": "Shivang Pandey",
+                    "subheading": "Y20, Team Member",
+                    "image": "team/shivangpandey.jpeg",
+                    "facebook": "https://www.facebook.com/shivang.pandey.35110/",
+                    "linkedin": "https://www.linkedin.com/in/shivang-pandey-313a76212/",
+                    "text": "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut "
+                },
+                {
+                    "name": "Tanmay Grover",
+                    "subheading": "Y20, Team Member",
+                    "image": "team/Tanmaygrover.jpg",
+                    "facebook": "https://www.facebook.com/tanmay.grover.7",
+                    "linkedin": "https://www.linkedin.com/in/tanmay-grover-1968ba20b",
                     "text": "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut "
                 }
             ]
