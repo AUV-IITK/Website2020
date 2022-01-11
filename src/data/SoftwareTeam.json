@@ -4,14 +4,6 @@
             "heading": "Team Members",
             "items": [
                 {
-                    "name": "Ayush Gupta",
-                    "subheading": "Y17, Senior Member",
-                    "image": "team/ayush.jpg",
-                    "facebook": "https://www.facebook.com/7ayushgupta",
-                    "linkedin": "https://www.linkedin.com/in/7ayushgupta/",
-                    "text": "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut "
-                },
-                {
                     "name": "Prakhar Maheshwari",
                     "subheading": "Y19, Subsystem Head",
                     "image": "team/prakhar.jpg",
@@ -33,6 +25,70 @@
                     "image": "team/Krishna.jpg",
                     "facebook": "https://www.facebook.com/krishna.agrawal.1884",
                     "linkedin": "https://www.linkedin.com/in/krishna-agrawal-3471921aa/",
+                    "text": "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut "
+                },
+                {
+                    "name": "Abhishek Shree",
+                    "subheading": "Y20, Team Member",
+                    "image": "team/abhishek.jpeg",
+                    "facebook": "https://www.facebook.com/abhishek.shree30",
+                    "linkedin": "https://www.linkedin.com/in/abhishekshree/",
+                    "text": "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut "
+                },
+                {
+                    "name": "Arnav Pandey",
+                    "subheading": "Y20, Team Member",
+                    "image": "team/ArnavPandey.jpg",
+                    "facebook": "https://m.facebook.com/arnav.pandey.37853",
+                    "linkedin": "https://www.linkedin.com/in/arnavp7",
+                    "text": "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut "
+                },
+                {
+                    "name": "Divyansh Kankariya",
+                    "subheading": "Y20, Team Member",
+                    "image": "team/divyanshkankariya.jpg",
+                    "facebook": "https://www.facebook.com/divyansh.kankariya/",
+                    "linkedin": "https://www.linkedin.com/in/divyansh-kankariya-078421213/",
+                    "text": "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut "
+                },
+                {
+                    "name": "Jasjot Singh",
+                    "subheading": "Y20, Team Member",
+                    "image": "team/JasjotSingh.jpg",
+                    "facebook": "https://www.facebook.com/profile.php?id=100012642188598",
+                    "linkedin": "https://www.linkedin.com/in/jasjotsingh26/",
+                    "text": "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut "
+                },
+                {
+                    "name": "Ritam Jana",
+                    "subheading": "Y20, Team Member",
+                    "image": "team/ritam.jpeg",
+                    "facebook": "https://www.facebook.com/ritam.jana.81",
+                    "linkedin": "www.linkedin.com/in/ritamjana",
+                    "text": "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut "
+                },
+                {
+                    "name": "Sahil Bansal",
+                    "subheading": "Y20, Team Member",
+                    "image": "team/sahilbansal.jpeg",
+                    "facebook": "https://www.facebook.com/profile.php?id=100007571763593",
+                    "linkedin": "https://www.linkedin.com/in/sahil-bansal-4b0136228/",
+                    "text": "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut "
+                },
+                {
+                    "name": "Shrey Wadhawan",
+                    "subheading": "Y20, Team Member",
+                    "image": "team/SW.jpg",
+                    "facebook": "https://www.facebook.com/shrey.wadhawan.10",
+                    "linkedin": "https://www.linkedin.com/in/shrey-wadhawan/",
+                    "text": "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut "
+                },
+                {
+                    "name": "Shubham Kumar",
+                    "subheading": "Y20, Team Member",
+                    "image": "team/ShubhamKumar.jpg",
+                    "facebook": "https://www.facebook.com/profile.php?id=100012516582601",
+                    "linkedin": "https://www.linkedin.com/in/kshubham20",
                     "text": "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut "
                 }
             ]
